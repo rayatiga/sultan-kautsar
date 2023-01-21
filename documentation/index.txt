@@ -18,12 +18,20 @@ Template HTML for head, navigation, and footer.
 - Navigation    : Path /asset/template/navigation.html
 - Footer        : Path /asset/template/footer.html
 
-Documentation 4 - Code Change.
+Documentation 4 - Visual Debugging
+Debug layout with all selector css.
+- Code  :
+* {
+    outline: 1px solid #000000;
+    background: #ff00001a;
+}
+
+Documentation 5 - Code Change.
 Code change from original source, intended for localization purposes.
 - Change 1  : Bootstrap to Utility.
 - Change 2  : Code start with -bs change to -root.
 
-Documentation 5 - Comment.
+Documentation 6 - Comment.
 Comment with code "Modified" following by integer e.g. "(1)" and status e.g. "Disable" inside square brackets for e.g. "[Modified (1) Disable]" indicate the modified line.
 List of "[Modified (<int>) <status>]" information:
 - <int>     : Numbering or identifier category of modified.
@@ -32,6 +40,17 @@ List of "[Modified (<int>) <status>]" information:
 - Change    : Commenting above line and changed line at the bottom.
 - Addition  : Commenting between additional line.
 
-Documentation 6 - FormSpree.
+Documentation 7 - FormSpree.
 FormSpree API URL in form action attribute.
 - Form URL  : https://formspree.io/f/xknavynp
+
+Documentation 8 - Asset Backup
+Backup main file inside asset folder before minify.
+- Backup 1  : Path /documentation/main.css.bak
+- Backup 2  : Path /documentation/main.js.bak
+
+Documentation 9 - Ignore File
+Ignoring file for uploading to public zone.
+- Ignore 1  : **/documentation/**
+- Ignore 2  : README.md
+- Ignore 3  : LICENSE
