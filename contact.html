@@ -98,12 +98,50 @@
                 <h1 class="fw-bolder" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
                     <span class="fw-lighter">My</span> Contact.
                 </h1>
-                <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <!-- Contact (1) <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                     Feel free to contact me at
                     <a href="mailto:contact@sultankautsar.com?subject=Hello Sultan Kautsar!" target="_blank"
                         >contact@sultankautsar.com</a
                     >
+                </p> -->
+                <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    Feel free to contact me, just fill your email and message.
                 </p>
+                <!-- Form Contact Us (with API from https://formspree.io/) -->
+                <section class="text-start w-100 bg-light">
+                    <div class="container mb-5">
+                        <form action="https://formspree.io/f/xknavynp" method="post">
+                            <div class="mb-3">
+                                <label for="email" class="form-label"
+                                    >Email address <span class="text-danger">*</span></label
+                                >
+                                <input
+                                    type="email"
+                                    name="email"
+                                    class="form-control bg-transparent border-secondary"
+                                    id="email"
+                                    placeholder="name@example.com"
+                                    required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label"
+                                    >Comment or message <span class="text-danger">*</span></label
+                                >
+                                <textarea
+                                    name="message"
+                                    class="form-control bg-transparent border-secondary"
+                                    id="message"
+                                    rows="5"
+                                    placeholder="What's on your mind?"
+                                    required></textarea>
+                                <button type="submit" class="btn btn-dark mt-3 d-none d-md-block">Send Message</button>
+                                <button type="submit" class="btn btn-dark mt-3 d-block d-md-none w-100">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
             </div>
         </main>
         <!-- Script -->
