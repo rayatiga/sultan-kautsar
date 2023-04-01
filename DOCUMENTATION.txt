@@ -1,0 +1,8 @@
+Documentation 1 - [Modified (<int>) <status>]
+Comment with code "Modified" following by integer e.g. "(1)" and status e.g. "Disable" inside square brackets for e.g. "[Modified (1) Disable]" indicate the modified line.
+List of "[Modified (<int>) <status>]" information:
+- <int>     : Numbering or identifier category of modified.
+- <status>  : Describe status as disable, change, or addition.
+- Disable  : Commenting the line and not be used.
+- Change    : Commenting above line and changed line at the bottom.
+- Addition  : Commenting between additional line.
