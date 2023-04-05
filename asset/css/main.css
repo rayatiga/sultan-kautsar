@@ -16,6 +16,9 @@
     color: var(--bs-light);
     background-color: var(--bs-dark);
 }
+body::-webkit-scrollbar {
+    display: none;
+}
 main {
     animation-name: fade;
     animation-duration: 500ms;
@@ -29,6 +32,18 @@ main {
     to {
         opacity: 1;
     }
+}
+.scroll-top {
+    opacity: 0;
+    right: 25px;
+    bottom: 20px;
+    z-index: 99;
+    position: fixed;
+    padding: 5px 10px;
+    transition: 500ms all;
+    background: #f8f9fa;
+    border: 1px solid #212529;
+    outline: 5px solid #f8f9fa;
 }
 .h-73px {
     height: 73px !important;
@@ -44,6 +59,13 @@ main {
 .btn-magenta:hover {
     background: #c208c2c5 !important;
 }
+.btn-magenta:focus-visible {
+    background: #c208c2c5 !important;
+    box-shadow: 0 0 0 0.25rem rgba(184, 12, 109, 0.5) !important;
+}
 .link-magenta {
     color: #c208c2 !important;
+}
+.text-justify {
+    text-align: justify !important;
 }
