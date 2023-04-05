@@ -2,12 +2,17 @@
     font-family: 'Work Sans-Local';
     src: url(../font/work-sans.ttf);
 }
+/* #AIM-FOR-DEBUGGING,
+* {
+    outline: 1px solid #000000;
+    background: rgba(255, 0, 0, 0.1) fixed;
+} */
 * {
     font-family: 'Work Sans-Local', sans-serif;
 }
 *::selection {
-    --bs-light: #f8f9fa;
     --bs-dark: #212529;
+    --bs-light: #f8f9fa;
     color: var(--bs-light);
     background-color: var(--bs-dark);
 }
@@ -24,4 +29,21 @@ main {
     to {
         opacity: 1;
     }
+}
+.h-73px {
+    height: 73px !important;
+}
+.single-page {
+    padding-top: 73px !important;
+    min-height: calc(100vh - 73px) !important;
+}
+.btn-magenta {
+    color: #ffffff !important;
+    background: #c208c2 !important;
+}
+.btn-magenta:hover {
+    background: #c208c2c5 !important;
+}
+.link-magenta {
+    color: #c208c2 !important;
 }
