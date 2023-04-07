@@ -11,10 +11,10 @@
     font-family: 'Work Sans-Local', sans-serif;
 }
 *::selection {
-    --bs-dark: #212529;
-    --bs-light: #f8f9fa;
-    color: var(--bs-light);
-    background-color: var(--bs-dark);
+    --root-dark: #212529;
+    --root-light: #f8f9fa;
+    color: var(--root-light);
+    background-color: var(--root-dark);
 }
 body::-webkit-scrollbar {
     display: none;
