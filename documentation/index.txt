@@ -2,7 +2,7 @@ Documentation 1 - Active Page.
 Effective used page, displayed in the navigation bar.
 List of effective used page:
 - Home          : Path /
-- Achievement   : Path /achievement/
+- Achievement   : Path /achv/
 - Contact       : Path /contact/
 - Link          : Path /link/
 - Project       : Path /project/
