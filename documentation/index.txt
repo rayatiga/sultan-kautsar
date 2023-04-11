@@ -8,12 +8,22 @@ List of effective used page:
 - Project       : Path /project/
 - Resume        : Path /resume/
 
-Documentation 2 - Code Change.
+Documentation 2 - 404 Not Found Page
+Page return for not founded a resources in web.
+- 404.html  : Path /404.html
+
+Documentation 3 - Template Resources.
+Template HTML for head, navigation, and footer.
+- Head          : Path /asset/template/head.html
+- Navigation    : Path /asset/template/navigation.html
+- Footer        : Path /asset/template/footer.html
+
+Documentation 4 - Code Change.
 Code change from original source, intended for localization purposes.
 - Change 1  : Bootstrap to Utility.
 - Change 2  : Code start with -bs change to -root.
 
-Documentation 3 - Comment.
+Documentation 5 - Comment.
 Comment with code "Modified" following by integer e.g. "(1)" and status e.g. "Disable" inside square brackets for e.g. "[Modified (1) Disable]" indicate the modified line.
 List of "[Modified (<int>) <status>]" information:
 - <int>     : Numbering or identifier category of modified.
@@ -22,6 +32,6 @@ List of "[Modified (<int>) <status>]" information:
 - Change    : Commenting above line and changed line at the bottom.
 - Addition  : Commenting between additional line.
 
-Documentation 4 - FormSpree.
+Documentation 6 - FormSpree.
 FormSpree API URL in form action attribute.
 - Form URL  : https://formspree.io/f/xknavynp

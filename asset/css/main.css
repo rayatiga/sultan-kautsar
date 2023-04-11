@@ -33,7 +33,7 @@ main {
         opacity: 1;
     }
 }
-.scroll-top {
+#scrollTop {
     opacity: 0;
     right: 25px;
     bottom: 20px;
