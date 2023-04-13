@@ -2,7 +2,7 @@ Documentation 1 - Active Page.
 Effective used page, displayed in the navigation bar.
 List of effective used page:
 - Home          : Path /
-- Achievement   : Path /achv/
+- Achievement   : Path /achievement/
 - Contact       : Path /contact/
 - Link          : Path /link/
 - Project       : Path /project/
@@ -30,6 +30,7 @@ Documentation 5 - Code Change.
 Code change from original source, intended for localization purposes.
 - Change 1  : Bootstrap to Utility.
 - Change 2  : Code start with -bs change to -root.
+- Change 3  : Code shortened.
 
 Documentation 6 - Comment.
 Comment with code "Modified" following by integer e.g. "(1)" and status e.g. "Disable" inside square brackets for e.g. "[Modified (1) Disable]" indicate the modified line.
@@ -44,12 +45,7 @@ Documentation 7 - FormSpree.
 FormSpree API URL in form action attribute.
 - Form URL  : https://formspree.io/f/xknavynp
 
-Documentation 8 - Asset Backup
-Backup main file inside asset folder before minify.
-- Backup 1  : Path /documentation/main.css.bak
-- Backup 2  : Path /documentation/main.js.bak
-
-Documentation 9 - Ignore File
+Documentation 8 - Ignore File
 Ignoring file for uploading to public zone.
 - Ignore 1  : **/documentation/**
 - Ignore 2  : README.md
