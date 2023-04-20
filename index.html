@@ -38,7 +38,7 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="manifest" href="/manifest.json" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <!-- Meta Element (Name: Microsoft Application Tile Color, Theme Color) -->
         <meta name="msapplication-TileColor" content="#da532c" />
@@ -64,13 +64,15 @@
                     ></sup>
                     services. I'm also a UI/UX, Web Developer, and Technology Enthusiast.
                 </p>
-                <div class="d-flex flex-shrink-1 flex-wrap justify-content-center gap-2">
-                    <a href="https://rayatiga.com/" class="btn btn-dark">Rayatiga</a>
-                    <a href="/contact/" class="btn btn-magenta">Contact Me</a>
-                </div>
+                <a href="/resume/" class="btn btn-dark">My Resume</a>
             </div>
         </main>
         <!-- Footer Element -->
         <footer></footer>
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/sw.js', { scope: '/' })
+            }
+        </script>
     </body>
 </html>
