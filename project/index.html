@@ -33,7 +33,7 @@
         <script defer type="text/javascript" src="/asset/js/main.js"></script>
         <script defer type="text/javascript" src="/asset/js/root.js"></script>
         <script defer type="text/javascript" src="/asset/js/template.js"></script>
-        <script defer type="text/javascript" src="/asset/js/masonry.js"></script>
+        <script defer type="text/javascript" src="/asset/js/project.js"></script>
         <script defer type="text/javascript" src="/asset/js/angular.min.js"></script>
         <!-- Link Element (Relationship: Apple Touch Icon, Icon, Manifest, Mask Icon)-->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -53,17 +53,17 @@
         <header><div></div></header>
         <!-- Main Element -->
         <main>
-            <div class="container bg-light text-center d-flex flex-column justify-content-center align-items-center single-page">
-                <h1 class="fw-bold"><i class="icon icon-rocket-takeoff d-block"></i><span class="fw-lighter">My</span> Projects.</h1>
-                <ul class="list-unstyled">
-                    <li>Backend with Google Cloud &mdash; <a href="https://github.com/bydzen/Rebage-Cloud/" rel="nofollow noopener noreferrer" target="_blank" class="link-magenta">Rebage Cloud</a></li>
-                    <li>Apache2 web server bechmark &mdash; <a href="https://github.com/rayatiga/apache2-benchmark/" rel="nofollow noopener noreferrer" target="_blank" class="link-magenta">Apache2 Benchmark</a></li>
-                    <li>WordPress Multisite Portfolio &mdash; <a href="https://res.sultankautsar.com/" rel="nofollow noopener noreferrer" target="_blank" class="link-magenta">Sultan Kautsar's Resources</a></li>
-                    <li>WordPress script installer for Linux server &mdash; <a href="https://github.com/rayatiga/wordpress-installer/" rel="nofollow noopener noreferrer" target="_blank" class="link-magenta">WordPress Installer</a></li>
-                    <li>First website get copyrighted by Indonesian (<a href="https://pawonkos799.com/res/hki-pawonkos799.pdf" rel="nofollow noopener noreferrer" target="_blank" class="link-magenta">HKI</a>) &mdash; <a href="https://pawonkos799.com/" rel="nofollow noopener noreferrer" target="_blank" class="link-magenta">Pawonkos799</a></li>
-                    <li>Custom php.ini config for speedup Apache2 &mdash; <a href="https://github.com/rayatiga/php-ini-configuration/" rel="nofollow noopener noreferrer" target="_blank" class="link-magenta">PHP ini Configuration</a></li>
-                </ul>
-                <a href="https://github.com/bydzen/" rel="nofollow noopener noreferrer" class="btn btn-dark" target="_blank">GitHub Profile</a>
+            <div class="container bg-light text-center justify-content-center align-items-center single-page">
+                <div class="py-4">
+                    <h1 class="fw-bold"><i class="icon icon-award d-block"></i><span class="fw-lighter">My</span> Projects.</h1>
+                    <p>List of My Projects that I have been done with skills that I have for putting in it.</p>
+                    <div class="text-start">
+                        <div class="row" id="projectList">
+                        </div>
+                    </div>
+                    <a href="https://github.com/bydzen/" rel="nofollow noopener noreferrer" class="btn btn-dark" target="_blank">Complete Project</a>
+                </div>
+                <button id="scrollTop" class="rounded-1" onclick="scrollTopAction()"><i class="icon icon-arrow-up-square-fill"></i></button>
             </div>
         </main>
         <!-- Footer Element -->
