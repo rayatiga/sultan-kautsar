@@ -1,11 +1,11 @@
 /* Cascading Style Sheet Main */
 @font-face {
-    font-family: 'Work Sans-Local';
+    font-family: "Work Sans-Local";
     src: url(../font/work-sans.ttf);
 }
 /* Kit */
 * {
-    font-family: 'Work Sans-Local', sans-serif;
+    font-family: "Work Sans-Local", sans-serif;
 }
 *::selection {
     --root-dark: #212529;
@@ -34,9 +34,6 @@
     box-shadow: 0 0 0 calc(var(--root-navbar-toggler-focus-width) - 0.15rem) var(--root-dark) !important;
 }
 /* Element */
-body::-webkit-scrollbar {
-    display: none;
-}
 main {
     animation-name: fadeIn;
     animation-duration: 500ms;
