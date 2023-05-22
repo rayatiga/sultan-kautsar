@@ -5,7 +5,7 @@ projectList = [
         image: "makglengcoffee.png",
         name: "Makgleng Coffee",
         desc: "Business and e-commerce website for UMK Makgleng Coffee Indonesia built with CMS WordPress with LAMP Stack.",
-        link: "https://data.sultankautsar.com/makglengcoffe/",
+        link: "https://data.sultankautsar.com/makglengcoffee/",
         tag: ["LAMP", "WordPress", "Business"],
     },
     {
