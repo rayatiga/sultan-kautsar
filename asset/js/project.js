@@ -33,7 +33,7 @@ projectList = [
         image: "pawonkos799new.png",
         name: "Pawonkos799 (static)",
         desc: "Business and e-commerce website for UMK Pawonkos799 built with HTML CCS JS Bootstrap. Also registred (<a href='https://pawonkos799.com/res/hki-pawonkos799.pdf'>copyright docs</a>) by DJKI.",
-        link: "https://pawonkos799.com/",
+        link: "https://data.sultankautsar.com/pawonkos799/",
         tag: ["LAMP", "Static", "E-commerce"],
     },
     {
