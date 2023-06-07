@@ -1,11 +1,11 @@
 /* Cascading Style Sheet Main */
 @font-face {
-    font-family: "Work Sans-Local";
-    src: url(../font/work-sans.ttf);
+    font-family: "space-grotesk";
+    src: url(../font/space-grotesk.ttf);
 }
 /* Kit */
 * {
-    font-family: "Work Sans-Local", sans-serif;
+    font-family: "space-grotesk", sans-serif;
 }
 *::selection {
     --root-dark: #212529;
