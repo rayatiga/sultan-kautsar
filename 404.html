@@ -31,11 +31,13 @@
         <link rel="stylesheet" href="/asset/css/main.css" />
         <link rel="stylesheet" href="/asset/css/root.css" />
         <link rel="stylesheet" href="/asset/css/icon.css" />
+        <link rel="stylesheet" href="/asset/css/animation.css" />
+        <link rel="stylesheet" href="/asset/css/aos.css" />
         <!-- Script Element (Type: Text/JavaScript) -->
+        <script defer type="text/javascript" src="/asset/js/aos.js"></script>
         <script defer type="text/javascript" src="/asset/js/main.js"></script>
         <script defer type="text/javascript" src="/asset/js/root.js"></script>
         <script defer type="text/javascript" src="/asset/js/template.js"></script>
-        <script defer type="text/javascript" src="/asset/js/masonry.js"></script>
         <script defer type="text/javascript" src="/asset/js/angular.min.js"></script>
         <!-- Link Element (Relationship: Apple Touch Icon, Icon, Manifest, Mask Icon)-->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -56,9 +58,10 @@
         <!-- Main Element -->
         <main>
             <div class="container bg-light text-center d-flex flex-column justify-content-center align-items-center single-page">
-                <h1 class="fw-bold"><i class="icon icon-file-earmark-x d-block"></i><span class="fw-lighter">404</span> Not Found.</h1>
-                <p>Sorry, the specified resource could not be found.</p>
-                <a href="/" class="btn btn-dark">Go to Homepage</a>
+                <h1 class="animate__animated animate__fadeInUp"><i class="icon icon-file-earmark-x d-block"></i></h1>
+                <h1 class="fw-bold animate__animated animate__fadeInUp animate__delay-1s"><span class="fw-lighter">404</span> Not Found.</h1>
+                <p class="animate__animated animate__fadeInUp animate__delay-2s">Sorry, the specified resource could not be found.</p>
+                <a href="/" class="btn btn-dark animate__animated animate__fadeInUp animate__delay-3s">Go to Homepage</a>
             </div>
         </main>
         <!-- Footer Element -->
