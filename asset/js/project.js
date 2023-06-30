@@ -116,7 +116,7 @@ if (project) {
             <div class="card bg-light border-dark shadow h-100">
                 <div class="card-header d-flex flex-wrap gap-1 small"><span class="${projectList[i].tag[0] == "LAMP" ? "text-bg-danger" : "text-bg-dark"} rounded-1 px-1">${projectList[i].tag[0]}</span><span class="${projectList[i].tag[1] == "WordPress" ? "text-bg-primary" : "text-bg-dark"} rounded-1 px-1">${projectList[i].tag[1]}</span><span class="${projectList[i].tag[2] == "E-commerce" || projectList[i].tag[2] == "Company" || projectList[i].tag[2] == "Agency" ? "text-bg-success" : "text-bg-warning"} rounded-1 px-1">${projectList[i].tag[2]}</span></div>
                 <div class="card-body">
-                    <a href="${projectList[i].link}" target="_blank" rel="nofollow noopener noreferrer" class="text-decoration-none link-dark"><img src="/asset/image/project/${projectList[i].image}" alt="${projectList[i].name} Website" srcset="" class="img-fluid border border-dark rounded-1 mb-2" /></a>
+                    <a href="${projectList[i].link}" target="_blank" rel="nofollow noopener noreferrer" class="text-decoration-none link-dark"><img src="/asset/image/project/${projectList[i].image}" alt="${projectList[i].name} Website" title="${projectList[i].name}" srcset="" class="img-fluid border border-dark rounded-1 mb-2" loading="lazy" /></a>
                     <h5 class="card-title fw-bold"><a href="${projectList[i].link}" target="_blank" rel="nofollow noopener noreferrer" class="text-decoration-none link-dark text-decoration-underline">${projectList[i].name}</a></h5>
                     <p class="card-text mb-2">${projectList[i].desc}</p>
                 </div>
