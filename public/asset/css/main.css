@@ -1,57 +1,43 @@
-/* Cascading Style Sheet Main */
 @font-face {
-    font-family: "space-grotesk";
+    font-family: 'space-grotesk';
     src: url(../font/space-grotesk.ttf);
 }
-/* Kit */
 * {
-    font-family: "space-grotesk", sans-serif;
+    font-family: 'space-grotesk', sans-serif;
 }
 *::selection {
-    --root-dark: #212529;
-    --root-light: #f8f9fa;
-    color: var(--root-light);
-    background-color: var(--root-dark);
+    --bs-dark: #212529;
+    --bs-light: #f8f9fa;
+    color: var(--bs-light);
+    background-color: var(--bs-dark);
 }
-/* Root */
 .form-control:focus {
     box-shadow: 0 0 0 0.25rem rgba(110, 110, 110, 0.25) !important;
 }
 .dropdown-item:hover,
 .dropdown-item:focus {
-    background-color: var(--root-dark-bg-subtle) !important;
+    background-color: var(--bs-dark-bg-subtle) !important;
 }
 .dropdown-item.active,
 .dropdown-item:active {
-    background-color: var(--root-dark) !important;
+    background-color: var(--bs-dark) !important;
 }
 .nav-link:focus-visible {
     box-shadow: 0 0 0 0.25rem rgba(110, 110, 110, 0.25) !important;
-    border-radius: var(--root-border-radius);
+    border-radius: var(--bs-border-radius);
     transition: 250ms all;
 }
 .navbar-toggler:focus {
-    box-shadow: 0 0 0 calc(var(--root-navbar-toggler-focus-width) - 0.15rem) var(--root-dark) !important;
+    box-shadow: 0 0 0 calc(var(--bs-navbar-toggler-focus-width) - 0.15rem) var(--bs-dark) !important;
 }
-/* Element */
-/* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
     display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 body {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
-main {
-    animation-name: fadeIn;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-}
-/* ID */
-/* Button Scroll to Top */
 #scrollTop {
     opacity: 0;
     right: 25px;
@@ -64,17 +50,13 @@ main {
     border: 1px solid #212529;
     outline: 5px solid #f8f9fa;
 }
-/* Class */
-/* Unit */
 .h-73px {
     height: 73px !important;
 }
-/* Single Page */
 .single-page {
     padding-top: 73px !important;
     min-height: calc(100vh - 73px) !important;
 }
-/* Text, Border, Button, Link for Color Magenta */
 .btn-magenta {
     color: #ffffff !important;
     background: #c208c2 !important;
@@ -91,14 +73,4 @@ main {
 }
 .text-justify {
     text-align: justify !important;
-}
-/* Keyframe */
-/* Fade in at Header adn Main Element */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }

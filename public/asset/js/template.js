@@ -1,5 +1,3 @@
-// JavaScript Template
-// Navigation Template
 var nav = document.getElementsByTagName('nav')[0]
 if (nav) {
     var state
@@ -9,7 +7,7 @@ if (nav) {
     nav.outerHTML = `<nav class="navbar navbar-expand-lg bg-light border-bottom fixed-top">
             <div class="container py-2">
                 <a class="navbar-brand fw-bold" href="/">Sultan Kautsar</a>
-                <button class="navbar-toggler" type="button" data-root-toggle="collapse" data-root-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -26,7 +24,6 @@ if (nav) {
             </div>
         </nav>`
 }
-// Footer Template
 var footer = document.getElementsByTagName('footer')[0]
 if (footer) {
     footer.outerHTML = `<footer>
