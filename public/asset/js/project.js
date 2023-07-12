@@ -106,9 +106,9 @@ projectList = [
     },
 ]
 
-var project = document.getElementById('projectList')
+let project = document.getElementById('projectList')
 if (project) {
-    for (var i = 0; i < projectList.length; i++) {
+    for (let i = 0; i < projectList.length; i++) {
         project.innerHTML += `<div class="col-lg-6 mb-4">
             <div class="card bg-light border-dark shadow h-100">
                 <div class="card-header d-flex flex-wrap gap-1 small"><span class="${projectList[i].tag[0] == 'LAMP' ? 'text-bg-danger' : 'text-bg-dark'} rounded-1 px-1">${projectList[i].tag[0]}</span><span class="${projectList[i].tag[1] == 'WordPress' ? 'text-bg-primary' : 'text-bg-dark'} rounded-1 px-1">${projectList[i].tag[1]}</span><span class="${projectList[i].tag[2] == 'E-commerce' || projectList[i].tag[2] == 'Company' || projectList[i].tag[2] == 'Agency' ? 'text-bg-success' : 'text-bg-warning'} rounded-1 px-1">${projectList[i].tag[2]}</span></div>

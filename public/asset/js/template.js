@@ -1,9 +1,9 @@
-var nav = document.getElementsByTagName('nav')[0]
+let nav = document.getElementsByTagName('nav')[0]
 if (nav) {
-    var state
-    var active = ' active'
-    var aria = ' aria-current="page"'
-    var path = window.location.pathname
+    let state
+    let active = ' active'
+    let aria = ' aria-current="page"'
+    let path = window.location.pathname
     nav.outerHTML = `<nav class="navbar navbar-expand-lg bg-light border-bottom fixed-top">
             <div class="container py-2">
                 <a class="navbar-brand fw-bold" href="/">Sultan Kautsar</a>
@@ -24,7 +24,7 @@ if (nav) {
             </div>
         </nav>`
 }
-var footer = document.getElementsByTagName('footer')[0]
+let footer = document.getElementsByTagName('footer')[0]
 if (footer) {
     footer.outerHTML = `<footer>
             <div class="d-flex justify-content-center align-items-center bg-light border-top h-73px">
