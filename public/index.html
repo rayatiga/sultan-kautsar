@@ -49,17 +49,21 @@
                 <h1 class="fw-bold"><span class="fw-lighter">Hello I'm</span> Sultan Kautsar.</h1>
                 <p>
                     I'm Founder of <a href="https://rayatiga.com/" class="link-magenta">Rayatiga</a>, agency engaged in the field of information technology provides web services such as domain name reservation<sup
-                        ><a href="https://rayatiga.com/hosting/pricing#domain" rel="nofollow noopener noreferrer" class="link-magenta"><i class="bi bi-1-circle-fill"></i></a></sup
+                        ><a href="https://rayatiga.com/hosting/pricing#domain" rel="nofollow noopener noreferrer" class="link-magenta"><i class="bi bi-1-circle-fill" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Go to Rayatiga Domain Pricing."></i></a></sup
                     >, WordPress hosting<sup
-                        ><a href="https://rayatiga.com/hosting/pricing#wordpress" rel="nofollow noopener noreferrer" class="link-magenta"><i class="bi bi-2-circle-fill"></i></a></sup
+                        ><a href="https://rayatiga.com/hosting/pricing#wordpress" rel="nofollow noopener noreferrer" class="link-magenta"><i class="bi bi-2-circle-fill" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Go to Rayatiga WordPress Pricing."></i></a></sup
                     >, and WordPress-based website establishment<sup
-                        ><a href="https://rayatiga.com/hosting/pricing#complete" rel="nofollow noopener noreferrer" class="link-magenta"><i class="bi bi-3-circle-fill"></i></a
+                        ><a href="https://rayatiga.com/hosting/pricing#complete" rel="nofollow noopener noreferrer" class="link-magenta"><i class="bi bi-3-circle-fill" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Go to Rayatiga Website Pricing."></i></a
                     ></sup>
-                    services. I'm also a Web Developer at <a href="https://breefstudio.com/" rel="nofollow noopener noreferrer" target="_blank" class="link-magenta">PT Breef Digital Indonesia</a>, and Technology Enthusiast.
+                    services. I'm also a Web Developer at <a href="https://breefstudio.com/" rel="nofollow noopener noreferrer" target="_blank" class="link-magenta" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title="Go to Breef Studio website in <i>new tab</i>.">PT Breef Digital Indonesia</a>, and Technology Enthusiast.
                 </p>
-                <a href="/resume/" class="btn btn-dark">My Resume</a>
+                <a href="/resume/" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Go to here to download my PDF resume!.">My Resume</a>
             </div>
         </main>
         <footer>Reloaded by JavaScript.</footer>
+        <script>
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl))
+        </script>
     </body>
 </html>
