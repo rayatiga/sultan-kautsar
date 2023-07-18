@@ -1,0 +1,19 @@
+/* Cascading Style Sheet: Under Development */
+@import url(../css/reset.css);
+@import url(../css/root.css);
+@import url(../css/navigation.css);
+@import url(../css/footer.css);
+@import url(../css/media.css);
+main div.container {
+  display: flex;
+  justify-content: center;
+}
+main div.container div h1 {
+  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 0;
+  background-color: #ffff0055;
+  border: 0.016rem solid #000000dd;
+  padding: 0.2rem;
+  box-shadow: 5px 5px 0px 0px #000000dd;
+}

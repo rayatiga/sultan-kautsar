@@ -1,137 +1,47 @@
 /* Cascading Style Sheet: Root */
-/* Debug: Remove comment when needed! */
 /* * {
     outline: 1px solid #00000055;
     background: #ff000011;
 } */
-/* Font */
 @font-face {
-    font-family: 'JetBrainsMono';
-    src: url(/res/font/JetBrainsMono.ttf);
-    font-display: swap;
+  font-family: "JetBrainsMono";
+  src: url(../font/JetBrainsMono.ttf);
+  font-display: swap;
 }
-/* Everywhere */
 body {
-    font-family: 'JetBrains Mono', 'JetBrainsMono', monospace;
-    background-color: #fdfdfd;
+  font-family: "JetBrains Mono", "JetBrainsMono", monospace;
+  background-color: #fbfaea;
 }
 *::selection {
-    background-color: #0000ff55;
+  background-color: #0000ff55;
 }
 a,
 a:visited {
-    color: #0000ff;
+  color: #0000ff;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
 }
 a:hover {
-    text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 p {
-    line-height: 1.25rem;
+  line-height: 1.25rem;
 }
-.container {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+div.container {
+  padding: 0.5rem 2rem;
 }
-/* Navigation */
-nav {
-    min-height: 7rem;
-    border-bottom: 0.1rem solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-nav .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-nav .container a.brand {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #000000;
-    font-weight: 800;
-    margin-bottom: 1rem;
-}
-nav .container ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding-left: 0;
-    row-gap: 0.5rem;
-    column-gap: 1rem;
-    flex-wrap: wrap;
-    margin: 0rem;
-}
-/* Main */
-main .container {
-    display: flex;
-    gap: 2rem;
-}
-main .container h1 {
-    font-size: 2rem;
-    margin-bottom: 0rem;
-    text-decoration-line: underline;
-    text-decoration-style: double;
-    text-underline-offset: 0.25rem;
-}
-main .container h2.subtitle {
-    margin-top: 0.5rem;
-    font-size: 1.25rem;
-    line-height: 1.8rem;
-}
-main .container h2 mark {
-    background-color: #ffff0055;
-}
-/* Footer */
-footer {
-    margin-top: 0.5rem;
-    border-top: 0.1rem solid;
-    min-height: 3rem;
-    display: flex;
-    align-items: center;
-}
-footer .container {
-    display: flex;
-    flex-grow: 1;
-    gap: 2rem;
-    justify-content: space-between;
-}
-/* Mobile */
-@media (max-width: 575px) {
-    /* Everywhere */
-    .container {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    /* Main */
-    main .container {
-        display: flex;
-        flex-direction: column;
-        gap: 0rem;
-    }
-    /* Footer */
-    footer .container {
-        flex-direction: column;
-        gap: 0rem;
-    }
-}
-/* Display Not Feasible */
-.toosmall {
-    display: none;
-    text-align: center;
-    padding: 0.2rem;
-    color: #ff0000;
-}
-@media (max-width: 167px) {
-    nav, main, footer {
-        display: none;
-    }
-    .toosmall {
-        display: block;
-    }
+#top {
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 99;
+  border-radius: 100%;
+  background-color: #ffffffdd;
+  border: 0.016rem solid;
+  padding: 0.3rem 0.6rem;
+  color: #000000;
+  box-shadow: 2px 3px 0px 0px #000000;
 }

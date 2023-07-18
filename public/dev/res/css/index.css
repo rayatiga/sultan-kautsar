@@ -1,0 +1,67 @@
+/* Cascading Style Sheet: Index */
+@import url(../css/reset.css);
+@import url(../css/root.css);
+@import url(../css/navigation.css);
+@import url(../css/footer.css);
+@import url(../css/media.css);
+main div.container {
+  display: flex;
+  gap: 2rem;
+}
+main div.container div {
+  flex-basis: 50%;
+}
+main div.container aside {
+  flex-basis: 50%;
+}
+main div.container div h1 {
+  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 0;
+  background-color: #ffff0055;
+  border: 0.016rem solid #000000dd;
+  padding: 0.2rem;
+  box-shadow: 5px 5px 0px 0px #000000dd;
+}
+main div.container div h2.subtitle {
+  margin-top: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+}
+main div.container div h2 mark {
+  background-color: #0000ff22;
+}
+main div.container div section button.collapsible {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0;
+  color: #0000ff;
+}
+main div.container div section button.collapsible::after {
+  content: "\002B";
+  margin-left: 0.5rem;
+}
+main div.container div section button.collapsible.collapsible-active {
+  color: #000000;
+}
+main div.container div section button.collapsible.collapsible-active::after {
+  content: "\2212";
+  margin-left: 0.5rem;
+}
+main div.container div section ul.toc {
+  list-style: disc;
+  margin-top: 0.5rem;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  overflow: hidden;
+  line-height: 1.25rem;
+}
+main div.container div section ul.toc ul {
+  list-style: disc;
+  padding-left: 1.125rem;
+}
+main div.container div section ul {
+  list-style: lower-alpha;
+}

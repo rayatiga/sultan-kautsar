@@ -1,0 +1,30 @@
+/* Cascading Style Sheet: Navigation */
+nav {
+  min-height: 7rem;
+  border-bottom: 0.016rem solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav div.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav div.container a.brand {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+nav div.container ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  row-gap: 0.5rem;
+  column-gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0;
+}
