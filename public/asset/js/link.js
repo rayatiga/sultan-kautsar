@@ -45,5 +45,5 @@ let linklist = [
 
 let link = document.getElementById('link')
 for (let i = 0; i < linklist.length; i++) {
-    link.innerHTML += `<li><a href="${linklist[i].url}" class="link-magenta" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="${linklist[i].tooltip}">${linklist[i].display}</a></li>`
+    link.innerHTML += `<li><span>${linklist[i].prefix} &mdash;</span> <a href="${linklist[i].url}" class="link-magenta" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="${linklist[i].tooltip}">${linklist[i].display}</a></li>`
 }
