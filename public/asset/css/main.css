@@ -71,3 +71,8 @@ body {
 .text-justify {
     text-align: justify !important;
 }
+@media (max-width: 475px) {
+    ul li span {
+        display: block !important;
+    }
+}
