@@ -1,4 +1,4 @@
-projectList = [
+let projectList = [
     {
         image: 'makglengcoffee.png',
         name: 'Makgleng Coffee',
