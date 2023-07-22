@@ -1,6 +1,5 @@
 let nav = document.getElementsByTagName('nav')[0]
 if (nav) {
-    let state
     let active = ' active'
     let aria = ' aria-current="page"'
     let path = window.location.pathname
