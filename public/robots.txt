@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /dev
-Disallow: /documentation
 
 Sitemap: https://sultankautsar.com/sitemap.xml
