@@ -36,14 +36,15 @@
     <script defer type="text/javascript" src="/asset/js/main.js"></script>
     <script defer type="text/javascript" src="/asset/js/template.js"></script>
     <script defer type="text/javascript" src="/asset/js/link.js"></script>
+    <script defer src="/asset/js/tooltip.js"></script>
   </head>
-  <body class="bg-light">
+  <body>
     <!-- Navigation -->
     <nav><!-- Rendered by JavaScript --></nav>
     <!-- Main -->
     <main>
       <!-- Single -->
-      <div class="container bg-light text-center d-flex flex-column justify-content-center align-items-center single-page">
+      <div class="container text-center d-flex flex-column justify-content-center align-items-center single-page">
         <h1 class="fw-bold"><span class="fw-lighter">My</span> Links</h1>
         <ul class="list-unstyled" id="link">
           <!-- Rendered by JavaScript -->
@@ -52,10 +53,5 @@
     </main>
     <!-- Footer -->
     <footer><!-- Rendered by JavaScript --></footer>
-    <!-- Tooltip -->
-    <script>
-      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-      const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl))
-    </script>
   </body>
 </html>

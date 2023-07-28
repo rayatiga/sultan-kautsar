@@ -36,17 +36,21 @@
     <link rel="stylesheet" href="/asset/css/main.css" />
     <script defer type="text/javascript" src="/asset/js/main.js"></script>
     <script defer type="text/javascript" src="/asset/js/template.js"></script>
+    <script defer type="text/javascript" src="/asset/js/tooltip.js"></script>
   </head>
-  <body class="bg-light">
+  <body>
     <!-- Navigation -->
     <nav><!-- Rendered by JavaScript --></nav>
     <!-- Main -->
     <main>
       <!-- Single -->
-      <div class="container bg-light text-center d-flex flex-column justify-content-center align-items-center single-page">
+      <div class="container text-center d-flex flex-column justify-content-center align-items-center single-page">
         <h1 class="fw-bold"><span class="fw-lighter">My</span> Resume</h1>
         <p>See My Resume, for detail about skills, project, experience, and all journey that I have.</p>
-        <a href="/asset/pdf/sultan-kautsar-resume.pdf" class="btn btn-dark">Download PDF Resume</a>
+        <div class="d-flex gap-2 flex-wrap justify-content-center">
+          <a href="/asset/pdf/sultan-kautsar-resume.pdf" class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="View pdf resume in browser">View</a>
+          <a href="/asset/pdf/sultan-kautsar-resume.pdf" class="btn btn-dark" download="sultan-kautsar-resume.pdf" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Download pdf resume directly">Download</a>
+        </div>
       </div>
     </main>
     <!-- Footer -->
