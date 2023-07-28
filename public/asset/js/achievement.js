@@ -220,3 +220,7 @@ for (let index = 0; index < achievements.length; index++) {
                               </div>
                             </div>`
 }
+let achievementCount = document.getElementById('achievementCount')
+for (let i = 0; i < achievements.length; i++) {
+  achievementCount.innerHTML = i
+}
