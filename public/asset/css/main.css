@@ -1,16 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+/* Font */
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url(/asset/font/space-grotesk.ttf);
+  font-display: swap;
+}
+/* Debugging */
+/* * {
+  outline: 1px solid #00000055;
+  background: #ff000011;
+} */
+/* Font */
 * {
   font-family: 'Space Grotesk', sans-serif !important;
 }
+/* Selection */
 *::selection {
-  --bs-dark: #212529;
-  --bs-light: #f8f9fa;
-  color: var(--bs-light);
-  background-color: var(--bs-dark);
+  color: currentColor;
+  background-color: #2e229b55;
 }
+/* Form */
 .form-control:focus {
   box-shadow: 0 0 0 0.25rem rgba(110, 110, 110, 0.25) !important;
 }
+/* Navigation */
 .dropdown-item:hover,
 .dropdown-item:focus {
   background-color: var(--bs-dark-bg-subtle) !important;
@@ -27,15 +39,8 @@
 .navbar-toggler:focus {
   box-shadow: 0 0 0 calc(var(--bs-navbar-toggler-focus-width) - 0.15rem) var(--bs-dark) !important;
 }
-body::-webkit-scrollbar {
-  display: none;
-}
-
-body {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-#scrollTop {
+/* Scroll to Top */
+#scrollTopButton {
   opacity: 0;
   right: 25px;
   bottom: 20px;
@@ -47,6 +52,7 @@ body {
   border: 1px solid #212529;
   outline: 5px solid #f8f9fa;
 }
+/* Unit */
 .h-73px {
   height: 73px !important;
 }
@@ -71,6 +77,7 @@ body {
 .text-justify {
   text-align: justify !important;
 }
+/* Media */
 @media (max-width: 475px) {
   ul li span {
     display: block !important;
