@@ -1,4 +1,5 @@
-let achievementList = [
+// Achievement
+let achievements = [
   {
     title: 'IT Support Google',
     excerpt: "Those who have earned Google's Professional IT Support Certificate have completed five courses developed by Google, which include hands-on, hands-on assessments and are designed to prepare them for entry-level IT support positions. They have competence in basic skills, including problem solving and customer service, networking, operating systems, systems administration, and security.",
@@ -204,20 +205,18 @@ let achievementList = [
     tag: ['More', 'More', 'More'],
   },
 ]
-
 let achievement = document.getElementById('achievement')
-
-for (let index = 0; index < achievementList.length; index++) {
-  achievement.innerHTML += `<div class="col-lg-6 mb-4">
-    <div class="card bg-light border-dark shadow h-100">
-        <div class="card-header d-flex flex-wrap gap-1 small"><span class="${achievementList[index].tag[0] == 'Google' || achievementList[index].tag[0] == 'Tel-U' || achievementList[index].tag[0] == 'More' ? 'text-bg-danger' : 'text-bg-dark'} rounded-1 px-1">${achievementList[index].tag[0]}</span><span class="${achievementList[index].tag[1] == 'Coursera' ? 'text-bg-primary' : achievementList[index].tag[1] == 'Bangkit' ? 'text-bg-dark' : 'text-bg-success'} rounded-1 px-1">${achievementList[index].tag[1]}</span><span class="${achievementList[index].tag[2] == 'Google Developers' ? 'text-bg-warning' : achievementList[index].tag[2] == 'Specialization' || achievementList[index].tag[2] == 'Modernization Skill' || achievementList[index].tag[2] == 'Language Test' || achievementList[index].tag[2] == 'More' ? 'text-bg-light border border-dark' : achievementList[index].tag[2] == 'Completion Badge' ? 'text-bg-secondary' : 'text-bg-warning'} rounded-1 px-1">${achievementList[index].tag[2]}</span></div>
-        <div class="card-body">
-            <h5 class="card-title fw-bold">${achievementList[index].title}</h5>
-            <p class="card-text mb-2">${achievementList[index].excerpt}</p>
-        </div>
-        <div class="card-footer">
-            <a href="${achievementList[index].url} rel="nofollow noopener noreferrer" class="text-decoration-none link-dark small float-end" target="_blank">View Certificate <i class="bi bi-box-arrow-up-right"></i></a>
-        </div>
-    </div>
-</div>`
+for (let index = 0; index < achievements.length; index++) {
+  achievement.innerHTML += `<div class="col-md-6 col-lg-6 mb-4">
+                              <div class="card border-dark shadow-sm h-100">
+                              <div class="card-header d-flex flex-wrap gap-1 small"><span class="${achievements[index].tag[0] == 'Google' || achievements[index].tag[0] == 'Tel-U' || achievements[index].tag[0] == 'More' ? 'text-bg-danger' : 'text-bg-dark'} rounded-1 px-1">${achievements[index].tag[0]}</span><span class="${achievements[index].tag[1] == 'Coursera' ? 'text-bg-primary' : achievements[index].tag[1] == 'Bangkit' ? 'text-bg-dark' : 'text-bg-success'} rounded-1 px-1">${achievements[index].tag[1]}</span><span class="${achievements[index].tag[2] == 'Google Developers' ? 'text-bg-warning' : achievements[index].tag[2] == 'Specialization' || achievements[index].tag[2] == 'Modernization Skill' || achievements[index].tag[2] == 'Language Test' || achievements[index].tag[2] == 'More' ? 'text-bg-light border border-dark' : achievements[index].tag[2] == 'Completion Badge' ? 'text-bg-secondary' : 'text-bg-warning'} rounded-1 px-1">${achievements[index].tag[2]}</span></div>
+                                <div class="card-body">
+                                  <h5 class="card-title fw-bold">${achievements[index].title}</h5>
+                                    <p class="card-text mb-2">${achievements[index].excerpt}</p>
+                                </div>
+                                <div class="card-footer">
+                                  <a href="${achievements[index].url} rel="nofollow noopener noreferrer" class="text-decoration-none link-dark small float-end" target="_blank">View Certificate <i class="bi bi-box-arrow-up-right"></i></a>
+                                </div>
+                              </div>
+                            </div>`
 }

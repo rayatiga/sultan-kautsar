@@ -1,4 +1,5 @@
-let scrollTopButton = document.getElementById('scrollTop')
+// Scroll to Top
+let scrollTopButton = document.getElementById('scrollTopButton')
 if (scrollTopButton) {
   window.onscroll = function () {
     showScrollButton()

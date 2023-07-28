@@ -1,9 +1,10 @@
+// Navigation
 let nav = document.getElementsByTagName('nav')[0]
 if (nav) {
   let active = ' active'
   let aria = ' aria-current="page"'
   let path = window.location.pathname
-  nav.outerHTML = `<nav class="navbar navbar-expand-lg bg-light border-bottom fixed-top">
+  nav.outerHTML = `<nav class="navbar navbar-expand-lg bg-body border-bottom fixed-top">
                       <div class="container py-2">
                         <a class="navbar-brand fw-bold" href="/">Sultan Kautsar</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,11 +24,12 @@ if (nav) {
                       </div>
                     </nav>`
 }
+// Footer
 let footer = document.getElementsByTagName('footer')[0]
 if (footer) {
   footer.outerHTML = `<footer>
-                        <div class="d-flex justify-content-center align-items-center bg-light border-top h-73px">
-                          <p class="text-center text-secondary m-0">Copyright © Sultan Kautsar 2023</p>
+                        <div class="d-flex justify-content-center align-items-center bg-body border-top h-73px">
+                          <p class="text-center m-0">Copyright © Sultan Kautsar 2023</p>
                         </div>
                       </footer>`
 }
