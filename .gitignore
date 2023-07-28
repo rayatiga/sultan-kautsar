@@ -65,5 +65,5 @@ node_modules/
 # dotenv environment variables file
 .env
 
-# Additional
-public/sv
+# Development
+**/dev
