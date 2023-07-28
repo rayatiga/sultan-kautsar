@@ -215,7 +215,7 @@ for (let index = 0; index < achievements.length; index++) {
                                     <p class="card-text mb-2">${achievements[index].excerpt}</p>
                                 </div>
                                 <div class="card-footer">
-                                  <a href="${achievements[index].url} rel="nofollow noopener noreferrer" class="text-decoration-none link-dark small float-end" target="_blank">View Certificate <i class="bi bi-box-arrow-up-right"></i></a>
+                                  <a href="${achievements[index].url}" rel="nofollow noopener noreferrer" class="text-decoration-none link-dark small float-end" target="_blank">View Certificate <i class="bi bi-box-arrow-up-right"></i></a>
                                 </div>
                               </div>
                             </div>`
