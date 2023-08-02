@@ -103,10 +103,10 @@ let project = document.getElementById('projectList')
 if (project) {
   for (let i = 0; i < projects.length; i++) {
     project.innerHTML += `<div class="col-md-6 col-lg-6 mb-4">
-                            <div class="card border-dark shadow-sm h-100">
+                            <div class="card border shadow-sm h-100">
                               <div class="card-header d-flex flex-wrap gap-1 small"><span class="${projects[i].tag[0] == 'LAMP' ? 'text-bg-danger' : 'text-bg-dark'} rounded-1 px-1">${projects[i].tag[0]}</span><span class="${projects[i].tag[1] == 'WordPress' ? 'text-bg-primary' : 'text-bg-dark'} rounded-1 px-1">${projects[i].tag[1]}</span><span class="${projects[i].tag[2] == 'E-commerce' || projects[i].tag[2] == 'Company' || projects[i].tag[2] == 'Agency' ? 'text-bg-success' : 'text-bg-warning'} rounded-1 px-1">${projects[i].tag[2]}</span></div>
                               <div class="card-body">
-                                <a onclick="alert('Sorry, ${projects[i].name} is not available right now.')" href="${projects[i].link}" rel="nofollow noopener noreferrer" class="text-decoration-none link-dark"><img src="/asset/image/project/${projects[i].image}" alt="${projects[i].name} Website" title="${projects[i].name}" srcset="" class="img-fluid border border-dark rounded-1 mb-2" loading="lazy" /></a>
+                                <a onclick="alert('Sorry, ${projects[i].name} is not available right now.')" href="${projects[i].link}" rel="nofollow noopener noreferrer" class="text-decoration-none link-dark"><img src="/asset/image/project/${projects[i].image}" alt="${projects[i].name} Website" title="${projects[i].name}" srcset="" class="img-fluid border border-dark-subtle rounded-1 mb-2" loading="lazy" /></a>
                                   <h5 class="card-title fw-bold"><a onclick="alert('Sorry, ${projects[i].name} is not available right now.')" href="${projects[i].link}" rel="nofollow noopener noreferrer" class="text-decoration-none link-dark text-decoration-underline">${projects[i].name}</a></h5>
                                   <p class="card-text mb-2">${projects[i].desc}</p>
                               </div>
