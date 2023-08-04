@@ -18,7 +18,7 @@ if (nav) {
                             <li class="nav-item"><a class="nav-link${path == '/contact/' ? (state = active) : (state = '')}"${path == '/contact/' ? (state = aria) : (state = '')} href="/contact/">Contact</a></li>
                             <li class="nav-item"><a class="nav-link${path == '/project/' ? (state = active) : (state = '')}"${path == '/project/' ? (state = aria) : (state = '')} href="/project/">Project</a></li>
                             <li class="nav-item d-lg-none"><a class="nav-link${path == '/resume/' ? (state = active) : (state = '')}"${path == '/resume/' ? (state = aria) : (state = '')} href="/resume/">Resume</a></li>
-                            <li class="nav-item d-none d-lg-block"><a href="/resume/" class="btn btn-dark ms-2${path == '/resume/' ? (state = active) : (state = '')}"${path == '/resume/' ? (state = aria) : (state = '')}>Resume</a></li>
+                            <li class="nav-item d-none d-lg-block"><a href="/resume/" class="btn btn-dark border ms-2${path == '/resume/' ? (state = active) : (state = '')}"${path == '/resume/' ? (state = aria) : (state = '')}>Resume</a></li>
                           </ul>
                         </div>
                       </div>

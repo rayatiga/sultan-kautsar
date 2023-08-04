@@ -9,6 +9,11 @@
   outline: 1px solid #00000055;
   background: #ff000011;
 } */
+/* Root */
+:root {
+  --bg-scroll-top: #ffffff;
+  --border-scroll-top: #212529;
+}
 /* Font */
 * {
   font-family: 'Space Grotesk', sans-serif !important;
@@ -43,14 +48,14 @@
 #scrollTopButton {
   opacity: 0;
   right: 25px;
-  bottom: 20px;
+  bottom: 70px;
   z-index: 99;
   position: fixed;
   padding: 5px 10px;
+  background: var(--bg-scroll-top);
   transition: 500ms all;
-  background: #f8f9fa;
-  border: 1px solid #212529;
-  outline: 5px solid #f8f9fa;
+  border: 1px solid var(--border-scroll-top);
+  outline: 5px solid var(--bg-scroll-top);
 }
 /* Unit */
 .h-73px {
@@ -82,4 +87,37 @@
   ul li span {
     display: block !important;
   }
+}
+/* Scheme */
+[data-bs-theme='dark'] {
+  --nav-active: #ffffff;
+  --bs-body-color: #f8f9fa;
+  --bg-scroll-top: #212529;
+  --bs-body-bg-rgb: 24, 27, 31;
+  --border-scroll-top: #f8f9fa;
+  --bs-body-bg: rgb(24, 27, 31);
+  --bg-header: rgba(5, 5, 5, 0.5) !important;
+}
+[data-bs-theme='dark'] .btn-outline-dark {
+  color: #cccccc !important;
+  border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+}
+[data-bs-theme='dark'] .btn-outline-dark:hover {
+  color: #ffffff !important;
+  border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+}
+[data-bs-theme='dark'] .text-dark {
+  color: #ffffff !important;
+}
+#schemeButton {
+  opacity: 1;
+  right: 25px;
+  bottom: 20px;
+  z-index: 99;
+  position: fixed;
+  padding: 5px 10px;
+  background: var(--bg-scroll-top);
+  transition: 500ms all;
+  border: 1px solid var(--border-scroll-top);
+  outline: 5px solid var(--bg-scroll-top);
 }

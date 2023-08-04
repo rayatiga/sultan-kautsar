@@ -35,7 +35,6 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/asset/css/main.css" />
     <script defer type="text/javascript" src="/asset/js/main.js"></script>
-    <script defer type="text/javascript" src="/asset/js/template.js"></script>
   </head>
   <body>
     <!-- Navigation -->
@@ -57,15 +56,20 @@
               <div>
                 <label for="message" class="form-label">Comment or message <span class="text-danger">*</span></label>
                 <textarea name="message" class="form-control bg-transparent border-secondary" id="message" rows="5" placeholder="Enter your comments or messages here." required></textarea>
-                <button type="submit" class="btn btn-dark mt-3 d-none d-md-block">Send Message</button>
-                <button type="submit" class="btn btn-dark mt-3 d-block d-md-none w-100">Send Message</button>
+                <button type="submit" class="btn btn-dark border mt-3 d-none d-md-block">Send Message</button>
+                <button type="submit" class="btn btn-dark border mt-3 d-block d-md-none w-100">Send Message</button>
               </div>
             </form>
           </div>
         </section>
       </div>
+      <!-- Scheme -->
+      <button id="schemeButton" class="rounded-1"><i class="bi bi-sun-fill text-dark-tertiary"></i></button>
     </main>
     <!-- Footer -->
     <footer><!-- Rendered by JavaScript --></footer>
+    <!-- Script -->
+    <script src="/asset/js/scheme.js"></script>
+    <script type="text/javascript" src="/asset/js/template.js"></script>
   </body>
 </html>
