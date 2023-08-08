@@ -1,8 +1,8 @@
 /* Font */
 @font-face {
+  font-display: swap;
   font-family: 'Space Grotesk';
   src: url(/asset/font/space-grotesk.ttf);
-  font-display: swap;
 }
 /* Debugging */
 /* * {
@@ -11,8 +11,10 @@
 } */
 /* Root */
 :root {
-  --bg-scroll-top: #ffffff;
+  --bs-body-bg: #fcfcfc;
+  --bg-scroll-top: #fcfcfc;
   --border-scroll-top: #212529;
+  --bs-body-bg-rgb: 252, 252, 252;
 }
 /* Font */
 * {
@@ -37,8 +39,8 @@
   background-color: var(--bs-dark) !important;
 }
 .nav-link:focus-visible {
-  box-shadow: 0 0 0 0.25rem rgba(110, 110, 110, 0.25) !important;
   border-radius: var(--bs-border-radius);
+  box-shadow: 0 0 0 0.25rem rgba(110, 110, 110, 0.25) !important;
   transition: 250ms all;
 }
 .navbar-toggler:focus {
@@ -48,12 +50,12 @@
 #scrollTopButton {
   opacity: 0;
   right: 25px;
-  bottom: 70px;
   z-index: 99;
+  bottom: 70px;
   position: fixed;
   padding: 5px 10px;
-  background: var(--bg-scroll-top);
   transition: 500ms all;
+  background: var(--bg-scroll-top);
   border: 1px solid var(--border-scroll-top);
   outline: 5px solid var(--bg-scroll-top);
 }
@@ -112,12 +114,12 @@
 #schemeButton {
   opacity: 1;
   right: 25px;
-  bottom: 20px;
   z-index: 99;
+  bottom: 20px;
   position: fixed;
   padding: 5px 10px;
-  background: var(--bg-scroll-top);
   transition: 500ms all;
+  background: var(--bg-scroll-top);
   border: 1px solid var(--border-scroll-top);
   outline: 5px solid var(--bg-scroll-top);
 }
