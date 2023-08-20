@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "nextjs",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "redirects": [
       {
