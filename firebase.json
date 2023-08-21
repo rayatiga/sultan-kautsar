@@ -2,13 +2,6 @@
   "hosting": {
     "public": "nextjs",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "redirects": [
-      {
-        "source": "/rayatiga",
-        "destination": "https://rayatiga.com/",
-        "type": 301
-      }
-    ],
     "headers": [
       {
         "source": "**/*.@(eot|otf|ttf|ttc|woff|woff2|font.css)",
