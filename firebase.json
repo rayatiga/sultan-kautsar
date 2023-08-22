@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "nextjs",
+    "public": "public",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "headers": [
       {
@@ -30,8 +30,6 @@
           }
         ]
       }
-    ],
-    "cleanUrls": false,
-    "trailingSlash": true
+    ]
   }
 }
