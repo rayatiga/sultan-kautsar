@@ -5,7 +5,7 @@
     "redirects": [
       {
         "source": "/rayatiga",
-        "destination": "https://rayatiga.com/",
+        "destination": "https://rayatiga.com",
         "type": 301
       }
     ],
@@ -39,6 +39,6 @@
       }
     ],
     "cleanUrls": true,
-    "trailingSlash": false
+    "trailingSlash": true
   }
 }
