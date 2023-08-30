@@ -13,8 +13,6 @@ document.getElementById('map').outerHTML = `<p>Navigation & Sitemap</p>
 document.getElementById('loc').outerHTML = `<p>Location: ${window.location.pathname}</p>`
 // Display scheme inside footern
 document.getElementById('sme').outerHTML = `<p>Your native theme is <span id="nesme"></span>. Switch scheme to <span onclick="switchScheme()" class="sme"></span>.</p>`
-// Display page information inside footer
-document.getElementById('inf').outerHTML = `<p>Displaying the website in its minimal version. Kindly visit the <a href="/landing">landing page</a> for a more enriching experience.</p>`
 // Display copyright inside footer
 document.getElementById('cr').outerHTML = `<p class="cr">Copyright &copy; 2020-2023 Sultan Kautsar. All Rights Reserved.</p>`
 // Get preffered color scheme, local storage scheme, button sme
