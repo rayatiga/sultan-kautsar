@@ -1,4 +1,4 @@
-/* ===== FONT START ===== */
+/* ===== Font ===== */
 /* Outfit */
 @font-face {
   font-display: swap;
@@ -11,9 +11,9 @@
   font-family: 'Roboto Mono';
   src: url('/asset/font/roboto-mono.ttf');
 }
-/* ===== FONT END ===== */
+/* ===== Font ===== */
 
-/* ===== RESET START ===== */
+/* ===== Reset ===== */
 /* Document */
 html {
   line-height: 1.25;
@@ -174,9 +174,9 @@ template {
 [hidden] {
   display: none;
 }
-/* ===== RESET END ===== */
+/* ===== Reset ===== */
 
-/* ===== GLOBAL START ===== */
+/* ===== Global ===== */
 /* Root */
 :root {
   /* Initial Color */
@@ -324,36 +324,47 @@ code[status='3'] {
 code[status] {
   border: 1px solid var(--code-status-border-color);
 }
-/* Image */
-img[alt='verified'] {
-  width: 1.125em;
-  margin-left: 0.25em;
-  margin-bottom: -0.25em;
-}
 /* JavaScript */
-ul.map {
+ul.navigation-sitemap {
   padding: 0;
   gap: 0.65em;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
-p.cr {
+p.copyright {
   margin-bottom: 0;
 }
-span.sme {
+span.scheme {
   cursor: pointer;
   color: var(--anchor-color);
 }
-[scheme='light'] span.sme::before {
+[scheme='light'] span.scheme::before {
   content: 'dark';
 }
-[scheme='dark'] span.sme::before {
+[scheme='dark'] span.scheme::before {
   content: 'light';
 }
-/* ===== GLOBAL END ===== */
+/* ===== Global ===== */
 
-/* ===== SCHEME START ===== */
+/* 404.html */
+/* 404.html */
+
+/* index.html */
+div.index main p img {
+  width: 1.125em;
+  margin-left: 0.25em;
+  margin-bottom: -0.25em;
+}
+/* index.html */
+
+/* link.html */
+/* link.html */
+
+/* sitemap.html */
+/* sitemap.html */
+
+/* ===== Scheme ===== */
 [scheme='light'] {
   --code-bg: #eeeeee;
   --thumb-bg: #aaaaaa;
@@ -410,4 +421,4 @@ span.sme {
     --code-status-border-color: var(--gray);
   }
 }
-/* ===== SCHEME END ===== */
+/* ===== Scheme ===== */
