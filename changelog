@@ -4,7 +4,7 @@ v1.0
 v1.1
 - Delete span with id "inf"
 - Delete js line for document id "inf"
-- Add prettier ignore and config file
+- Create prettier ignore and config file
 
 v1.2
 - Delete cloud subdomain
@@ -20,3 +20,27 @@ v1.4
 
 v1.5
 - Update changelog character case
+
+v1.6
+- Create folder public v2 and importing the content
+- Update public folder move to public root
+- Update rename from add to create in changelog
+- Update gitignore public v2 to all files except index.html
+
+v1.7
+- Update index.html build output from next js
+- Update bug for basepath changed /landing to none
+
+v1.8
+- Create wrangler deployment script
+- Update firebase public path to v2
+- Create redirects inside _redirects file
+- Update gitignore excepting the _redirects file
+
+v1.9
+- Update sitemap with new link on list main page
+- Delete no required css rule and variable for code status
+
+v2.0
+- Update worker js template to each html file for avoiding cumulative layout shift
+- Add local development navigation on main js

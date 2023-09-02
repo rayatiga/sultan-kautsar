@@ -13,7 +13,8 @@
   <body>
     <div class="container sitemap">
       <header>
-        <span id="header"></span>
+        <h1>Sultan Kautsar</h1>
+        <p>Founder at Rayatiga, Business & Technology Enthusiast</p>
         <hr />
       </header>
       <main>
@@ -25,6 +26,7 @@
         <p>The main page is a navigational sitemap that appears in the footer navigation.</p>
         <ul>
           <li><a href="/">Home</a></li>
+          <li><a href="/link.html">Link</a></li>
           <li><a href="/sitemap.html">Sitemap</a></li>
         </ul>
         <hr />
@@ -36,12 +38,17 @@
       </main>
       <footer>
         <hr />
-        <span id="navigation-sitemap"></span>
-        <span id="location"></span>
+        <p>Navigation & Sitemap</p>
+        <ul class="navigation-sitemap">
+          <li><a href="/" title="Go to home page">Home</a></li>
+          <li><a href="/link.html" title="Go to link page">Link</a></li>
+          <li><a href="/sitemap.html" title="Go to sitemap page">Sitemap</a></li>
+        </ul>
+        <p>Location: <span id="location"></span></p>
         <hr />
-        <span id="scheme"></span>
+        <p>Your native theme is <span id="native-scheme"></span>. Switch scheme to <span onclick="switchScheme()" class="scheme"></span>.</p>
         <hr />
-        <span id="copyright"></span>
+        <p class="copyright">Copyright &copy; 2020-2023 Sultan Kautsar. All Rights Reserved.</p>
       </footer>
     </div>
   </body>

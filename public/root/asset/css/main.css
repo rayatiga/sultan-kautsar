@@ -198,9 +198,6 @@ template {
   --selection-bg: var(--blue);
   --thumb-hover-bg: #999999;
   --border-color: var(--black);
-  --code-status-0-bg: #ffff0077;
-  --code-status-1-bg: #00ff0077;
-  --code-status-2-bg: #ff000077;
   --selection-color: var(--white);
   --input-textarea-bg: var(--light);
   --table-border-color: var(--gray);
@@ -296,34 +293,6 @@ code {
   background-color: var(--code-bg);
   font-family: 'Roboto Mono', monospace;
 }
-code[status='0']::before {
-  content: 'Pending';
-}
-code[status='0'] {
-  background-color: var(--code-status-0-bg);
-}
-code[status='1']::before {
-  content: 'Resolved';
-}
-code[status='1'] {
-  background-color: var(--code-status-1-bg);
-}
-code[status='2']::before {
-  content: 'Unresolved';
-}
-code[status='2'] {
-  background-color: var(--code-status-2-bg);
-}
-code[status='3']::before {
-  content: 'Serving';
-}
-code[status='3'] {
-  background-color: var(--code-status-1-bg);
-  animation: glow 350ms ease-in-out alternate infinite;
-}
-code[status] {
-  border: 1px solid var(--code-status-border-color);
-}
 /* JavaScript */
 ul.navigation-sitemap {
   padding: 0;
@@ -348,6 +317,9 @@ span.scheme {
 /* ===== Global ===== */
 
 /* 404.html */
+div.not-found main h1 {
+  color: var(--red);
+}
 /* 404.html */
 
 /* index.html */
