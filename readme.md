@@ -2,6 +2,8 @@
 
 Welcome to my portfolio! Here, I'm excited to share my journey, spanning over three years, as a skilled web system administrator. My expertise encompasses cloud technologies, UI/UX design, and digital business development. Through this portfolio, I aim to provide a glimpse into my professional growth and the projects I've undertaken.
 
+![image](https://github.com/rayatiga/sultan-kautsar/assets/42274355/82cbf445-4513-4a66-b9f0-bce7411e8a3a)
+
 ## About Me
 
 With a strong foundation in web system administration, I've dedicated myself to refining my skills and staying at the forefront of technological advancements. My passion led me to establish Rayatiga, a platform through which I derive immense satisfaction from creating efficient and reliable websites.
