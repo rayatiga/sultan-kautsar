@@ -1,4 +1,1 @@
 .firebase
-public/v2/*
-!public/v2/index.html
-!public/v2/_redirects
