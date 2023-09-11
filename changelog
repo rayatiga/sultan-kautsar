@@ -55,3 +55,49 @@ v2.1
 
 v2.2
 - Update changelog
+- Update adding more card
+- Update change size unit to pixel
+
+v2.3
+- Create profile picture jpg
+- Update image path to profile.jpg file
+
+v2.4
+- Update css media responsive adjusting anchor width and icons position
+
+v2.5
+- Update wrangler deploy with user interactive
+- Create v1 and v2 directory
+- Update move public to public v1
+- Create v1 with legacy content
+
+v2.6
+- Update wrangler deploy message in public directory
+
+v2.7
+- Create public v3 folder slicing design from figma
+- Create copy from public v2 to public v3 asset html
+
+v2.8
+- Delete public v3 asset svg folder
+- Update flex gap for button
+- Delete public v1 v2 v3 and move v1 to public only
+
+v2.9
+- Create rule to all element in main css
+
+v3.0
+- Create gtag.js below head open tag
+- Delete firebase integration
+- Delete fireabase gitignore
+- Delete title on navigation sitemap
+- Update title at verified to verified person
+
+v3.1
+- Create tag site to display information about web style on bottom right
+
+v3.2
+- Update comment section on css and js adwith file name colon
+
+v3.3
+- Update local storage and attribute scheme to sultan-kautsar-scheme
