@@ -101,3 +101,9 @@ v3.2
 
 v3.3
 - Update local storage and attribute scheme to sultan-kautsar-scheme
+
+v3.4
+- Update favicon to dark and white 48x48
+
+v3.5
+- Delete bottom information inside main.js
