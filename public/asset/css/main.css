@@ -1,5 +1,4 @@
 /* ===== Font ===== */
-/* Inconsolata */
 @font-face {
   font-display: swap;
   font-family: 'Inconsolata';
@@ -8,7 +7,6 @@
 /* ===== Font ===== */
 
 /* ===== Global ===== */
-/* Root */
 :root {
   --red: #ff0000;
   --gray: #787878;
@@ -85,7 +83,6 @@ body {
   padding: var(--box-padding);
   max-width: var(--box-width);
 }
-/* Unit */
 a {
   cursor: pointer;
   text-decoration: none;

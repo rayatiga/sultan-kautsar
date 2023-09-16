@@ -1,12 +1,11 @@
 /* ===== Global ===== */
-// Display location inside footer
+// Location
 let locationPath = document.getElementById('location')
 locationPath.innerHTML = window.location.pathname
-// Get preffered color scheme, local storage scheme, button scheme
+// Scheme
 let preferScheme = window.matchMedia('(prefers-color-scheme: light)').matches
 let currentScheme = localStorage.getItem('sultan-kautsar-scheme')
 let nativeScheme = document.getElementById('native-scheme')
-// Initial set scheme by user device theme
 if (currentScheme == null && preferScheme) {
   currentScheme = 'light'
 } else if (currentScheme == null && !preferScheme) {
@@ -15,7 +14,6 @@ if (currentScheme == null && preferScheme) {
 localStorage.setItem('sultan-kautsar-scheme', currentScheme)
 document.body.setAttribute('sultan-kautsar-scheme', currentScheme)
 nativeScheme.innerHTML = preferScheme == true ? 'light' : 'dark'
-// Scheme switcher to light or dark triggered by clicking button
 function switchScheme() {
   const toLight = () => {
     localStorage.setItem('sultan-kautsar-scheme', 'light')
@@ -37,15 +35,19 @@ function switchScheme() {
 /* ===== Global ===== */
 
 /* ===== Other ===== */
-// Display developer navigation if in local host
-if (window.location.hostname == '127.0.0.1' || window.location.hostname == 'localhost') {
+// Localhost detector
+function onLocal() {
+  return window.location.hostname == '127.0.0.1'
+}
+// Developer navigation
+if (onLocal()) {
   console.warn(`Window hostname is ${window.location.hostname}. Developer navigation mode active.`)
   let navdev = document.getElementsByClassName('navigation-sitemap')[0]
   let navlist = {
     href: ['/404.html', '/index.html', '/link.html', '/sitemap.html'],
-    name: ['404', 'Home', 'Link', 'Sitemap'],
+    name: ['404', 'Index', 'Link', 'Sitemap'],
   }
-  navdev.innerHTML = `<!-- Developer navigation by main.js -->`
+  navdev.innerHTML = `<!-- main.js: Developer Navigation -->`
   let count = 0
   for (let i = 0; i < navlist.href.length; i++) {
     navdev.innerHTML += `<li><a href="${navlist.href[i]}">${navlist.name[i]}</a></li>`

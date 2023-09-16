@@ -119,3 +119,12 @@ v3.7
 - Create span with attribute onclick act like anchor
 - Update character case capitalize on heading
 - Delete tag site information on bottom right corner
+
+v3.8
+- Update fix open graph image link
+- Update adjusting develeper navigation
+
+v3.9
+- Delete no required comment on main.css
+- Delete no required comment on main.js
+- Create on local to detect developer mode on localhost
