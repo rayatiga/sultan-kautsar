@@ -128,3 +128,12 @@ v3.9
 - Delete no required comment on main.css
 - Delete no required comment on main.js
 - Create on local to detect developer mode on localhost
+
+v4.0
+- Create image display on home page index
+- Create css rule for managing image
+
+v4.1
+- Update fixing image png blurry to svg format
+- Update image tag add lazy loading for performance
+- Update pointer event none to image on main.css

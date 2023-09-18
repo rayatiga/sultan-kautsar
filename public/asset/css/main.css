@@ -172,7 +172,20 @@ ul.navigation-sitemap {
 div.index main p img {
   width: 1.125em;
   margin-left: 0.25em;
+  pointer-events: none;
   margin-bottom: -0.25em;
+}
+div.index main div[image] {
+  gap: 0.35em;
+  display: flex;
+  flex-wrap: wrap;
+}
+div.index main div[image] img {
+  width: 100%;
+  pointer-events: none;
+  border-radius: 0.25em;
+  max-width: max-content;
+  border: 1px solid var(--border-color);
 }
 /* ===== Index: index.html ===== */
 
