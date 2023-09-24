@@ -47,8 +47,8 @@ if (onLocal()) {
     href: ['/404.html', '/index.html', '/link.html', '/sitemap.html'],
     name: ['404', 'Index', 'Link', 'Sitemap'],
   }
-  navdev.innerHTML = `<!-- main.js: Developer Navigation -->`
   let count = 0
+  navdev.innerHTML = ''
   for (let i = 0; i < navlist.href.length; i++) {
     navdev.innerHTML += `<li><a href="${navlist.href[i]}">${navlist.name[i]}</a></li>`
     count++
