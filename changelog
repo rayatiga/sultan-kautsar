@@ -162,3 +162,9 @@ v4.5
 v4.6
 - Update tick with single quote if there is no multiline and javascript needed
 - Create inner html before looping a developer navigation to ensure there is no duplicate
+
+v4.7
+- Update sitemap page displaying for reserved and development section
+- Delete developer navigation on the main.js
+- Delete peeps image svg on the asset img folder
+- Delete iamge tag for peeps on home page
