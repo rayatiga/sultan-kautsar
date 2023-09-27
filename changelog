@@ -168,3 +168,10 @@ v4.7
 - Delete developer navigation on the main.js
 - Delete peeps image svg on the asset img folder
 - Delete iamge tag for peeps on home page
+
+v4.8
+- Update documentation comments rule
+- Update google tag and analytics
+- Update css line height and navigation
+- Create navigation list by main.js worker
+- Delete non required developer navigation
