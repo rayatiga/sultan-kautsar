@@ -175,3 +175,7 @@ v4.8
 - Update css line height and navigation
 - Create navigation list by main.js worker
 - Delete non required developer navigation
+
+v4.9
+- Update the heading and adjusting text style
+- Update font family to inter from system ui
