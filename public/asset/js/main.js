@@ -12,7 +12,7 @@ document.body.insertAdjacentHTML(
 
 // set attribute aria current page to navigation
 document.querySelectorAll('header nav ul li a').forEach((navList) => {
-  if (navList.href === window.location.href || navList.href === window.location.href + '.html' || navList.href === window.location.href.replace('.html', '/')) {
+  if (navList.href === window.location.href || navList.href === window.location.href + '.html' || navList.href === window.location.href.slice(0, -1) + '.html') {
     navList.setAttribute('aria-current', 'page')
   }
 })
