@@ -1,0 +1,290 @@
+/* ===== Global ===== */
+/* Inter Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+  --red: #ff0000;
+  --gray: #787878;
+  --blue: #0000cc;
+  --dark: #131313;
+  --white: #ffffff;
+  --light: #fdfdfd;
+  --black: #000000;
+  --ocean: #00aeff;
+  /* Applied Color (color, bg) */
+  --code-bg: #eeeeee;
+  --thumb-bg: #aaaaaa;
+  --body-bg: var(--light);
+  --track-bg: var(--light);
+  --body-color: var(--black);
+  --anchor-color: var(--blue);
+  --selection-bg: var(--blue);
+  --thumb-hover-bg: #999999;
+  --border-color: var(--black);
+  --code-status-0-bg: #ffff0077;
+  --code-status-1-bg: #00ff0077;
+  --code-status-2-bg: #ff000077;
+  --selection-color: var(--white);
+  --input-textarea-bg: var(--light);
+  --table-border-color: var(--gray);
+  --input-textarea-color: var(--black);
+  --code-status-border-color: var(--dark);
+  --input-textarea-border-color: var(--gray);
+  /* Applied Unit (size, width, padding, family) */
+  --font-size: 1em;
+  --box-width: 45em;
+  --font-weight: 400;
+  --line-height: 1.5;
+  --box-padding: 1em;
+  --border-radius: 0.25em;
+  --scrollbar-width: 12px;
+  --body-font-family: 'Inter', 'system-ui', sans-serif;
+}
+::selection {
+  color: var(--selection-color);
+  background-color: var(--selection-bg);
+}
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--thumb-bg);
+}
+::-webkit-scrollbar-track {
+  background-color: var(--track-bg);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--thumb-hover-bg);
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
+  line-height: var(--line-height);
+}
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--body-color);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  background-color: var(--body-bg);
+  font-family: var(--body-font-family);
+}
+.container {
+  padding: var(--box-padding);
+  max-width: var(--box-width);
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+a,
+a:visited {
+  color: var(--anchor-color);
+}
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+a[aria-current='page'] {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+a[href='#main-content'] {
+  top: 16px;
+  left: 16px;
+  position: absolute;
+  transition: 0.35s all;
+  transform: translateY(-170%);
+}
+a[href='#main-content']:focus {
+  transform: translateY(0);
+}
+button {
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  padding: 0.15em 0.35em;
+  color: var(--body-color);
+  background-color: var(--body-bg);
+  border: 1px solid var(--input-textarea-border-color);
+}
+button,
+input,
+textarea {
+  font-size: 1em;
+  font-family: inherit;
+}
+button.scheme {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  color: var(--anchor-color);
+}
+button.scheme:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+code {
+  font-weight: 400;
+  font-size: 0.85em;
+  display: inline-block;
+  padding: 0.05em 0.25em;
+  border-radius: var(--border-radius);
+  vertical-align: middle;
+  background-color: var(--code-bg);
+  font-family: inherit;
+}
+code[status] {
+  border: 1px solid var(--code-status-border-color);
+}
+footer ul {
+  gap: 1em;
+  padding: 0;
+  display: flex;
+  row-gap: 0.25em;
+  flex-wrap: wrap;
+  list-style: none;
+}
+h1,
+h2 {
+  font-weight: 400;
+}
+header h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+header p {
+  margin-top: 0.75em;
+}
+hr {
+  border: 0;
+  border-top: 0.07em solid var(--border-color);
+}
+main h1 {
+  font-size: 1.75em;
+}
+main h2 {
+  font-size: 1.25em;
+}
+nav ul {
+  gap: 1em;
+  padding: 0;
+  display: flex;
+  row-gap: 0.25em;
+  flex-wrap: wrap;
+  list-style: none;
+}
+p {
+  letter-spacing: 0.025em;
+}
+p.copyright {
+  margin-bottom: 0;
+}
+small.development {
+  color: var(--red);
+}
+span.navigation {
+  height: 1.5em;
+}
+strong {
+  font-weight: 600;
+}
+ul {
+  padding-left: 1.25em;
+  list-style-type: square;
+}
+/* ===== Global ===== */
+
+/* ===== 404: 404.html ===== */
+/* ===== 404: 404.html ===== */
+
+/* ===== Index: index.html ===== */
+div.index main p img {
+  width: 1.125em;
+  margin-left: 0.25em;
+  margin-bottom: -0.25em;
+}
+div.index main div[image] {
+  gap: 0.35em;
+  display: flex;
+  flex-wrap: wrap;
+}
+div.index main div[image] img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  max-width: max-content;
+  border: 1px solid var(--border-color);
+}
+/* ===== Index: index.html ===== */
+
+/* ===== Link: link.html ===== */
+/* ===== Link: link.html ===== */
+
+/* ===== Sitemap: sitemap.html ===== */
+/* ===== Sitemap: sitemap.html ===== */
+
+/* ===== Scheme ===== */
+[sultan-kautsar-scheme='light'] {
+  --code-bg: #eeeeee;
+  --thumb-bg: #aaaaaa;
+  --body-bg: var(--light);
+  --track-bg: var(--light);
+  --body-color: var(--black);
+  --anchor-color: var(--blue);
+  --thumb-hover-bg: #999999;
+  --border-color: var(--black);
+  --input-textarea-bg: var(--light);
+  --input-textarea-color: var(--black);
+  --code-status-border-color: var(--dark);
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --code-bg: #eeeeee;
+    --thumb-bg: #aaaaaa;
+    --body-bg: var(--light);
+    --track-bg: var(--light);
+    --body-color: var(--black);
+    --anchor-color: var(--blue);
+    --thumb-hover-bg: #999999;
+    --border-color: var(--black);
+    --input-textarea-bg: var(--light);
+    --input-textarea-color: var(--black);
+    --code-status-border-color: var(--dark);
+  }
+}
+[sultan-kautsar-scheme='dark'] {
+  --code-bg: #333333;
+  --thumb-bg: #333333;
+  --body-bg: var(--dark);
+  --track-bg: var(--dark);
+  --body-color: var(--white);
+  --anchor-color: var(--ocean);
+  --thumb-hover-bg: #444444;
+  --border-color: var(--white);
+  --input-textarea-bg: var(--dark);
+  --input-textarea-color: var(--white);
+  --code-status-border-color: var(--gray);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --code-bg: #333333;
+    --thumb-bg: #333333;
+    --body-bg: var(--dark);
+    --track-bg: var(--dark);
+    --body-color: var(--white);
+    --anchor-color: var(--ocean);
+    --thumb-hover-bg: #444444;
+    --border-color: var(--white);
+    --input-textarea-bg: var(--dark);
+    --input-textarea-color: var(--white);
+    --code-status-border-color: var(--gray);
+  }
+}
+/* ===== Scheme ===== */
+
+/* ===== Other ===== */
+/* ===== Other ===== */
