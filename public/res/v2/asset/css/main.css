@@ -1,7 +1,7 @@
 @font-face {
   font-display: swap;
   font-family: 'Space Grotesk';
-  src: url(../font/space-grotesk.ttf);
+  src: url(/res/v2/asset/font/space-grotesk.ttf);
 }
 :root {
   --bs-body-bg: #fcfcfc;
