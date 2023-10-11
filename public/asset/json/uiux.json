@@ -1,0 +1,30 @@
+[
+  {
+    "title": "SMB Telkom University",
+    "description": "SMB is a registration portal for students. At this time, it is a registration web for Telkom University student candidates.",
+    "image": "/asset/img/project-uiux-smb-telkom-university.png",
+    "link": "https://dribbble.com/shots/14695620-Sign-Up-SMB-Telkom-University",
+    "tag": ["Adobe XD", "Sign Up", "1 Page"]
+  },
+  {
+    "title": "CeLOE Telkom University",
+    "description": "CeLOE is a Telkom University Student E-Learning program to fulfill the educational needs of its students.",
+    "image": "/asset/img/project-uiux-celoe-telkom-university.png",
+    "link": "https://dribbble.com/shots/14407108-E-Learning-CeLOE-Telkom-University",
+    "tag": ["Adobe XD", "Dashboard", "1 Page"]
+  },
+  {
+    "title": "CashMine",
+    "description": "This user interface design inspired by financial websites designed for user registration single page.",
+    "image": "/asset/img/project-uiux-cashmine.png",
+    "link": "https://dribbble.com/shots/11544674-Cash-Mine-Financial-Web",
+    "tag": ["Adobe XD", "Sign Up", "1 Page"]
+  },
+  {
+    "title": "Velppy",
+    "description": "The ecommerce store single product selling for many variant of shoes on the store with transparent shoes showcase.",
+    "image": "/asset/img/project-uiux-velppy.png",
+    "link": "https://dribbble.com/shots/11422013-Shoes-Store",
+    "tag": ["Adobe XD", "Single Product", "1 Page"]
+  }
+]

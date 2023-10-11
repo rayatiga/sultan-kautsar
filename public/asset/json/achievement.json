@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Google IT Support Certified",
+    "description": "Competence in many basic skills, including problem solving and customer service, networking, operating systems, systems administration, and security.",
+    "link": "https://www.coursera.org/account/accomplishments/specialization/certificate/QJT55DKGDYRH",
+    "tag": ["Google", "Coursera", "Specialization"]
+  },
+  {
+    "title": "Architecting GCE Certified",
+    "description": "Deployed solution elements, including infrastructure components such as networks, systems and applications services using GCP, with a focus on Compute Engine.",
+    "link": "https://www.coursera.org/account/accomplishments/specialization/certificate/U47F93996VM2",
+    "tag": ["Google", "Coursera", "Specialization"]
+  },
+  {
+    "title": "Bangkit Academy Certified",
+    "description": "Bangkit is a Google-led academy designed to produce high-caliber technical talent. Successfully completing Bangkit, specializing in Cloud Computing, graduated with Disctiction.",
+    "link": "/asset/pdf/achievement-bangkit-academy-2022.pdf",
+    "tag": ["Google", "Bangkit Academy", "Specialization"]
+  },
+  {
+    "title": "Website on Google Cloud Certified",
+    "description": "Initiating services, set-up network and public ip, uploading resources via command-line, deploy lampp stack, configuring http server config file, and deploy site.",
+    "link": "https://www.coursera.org/account/accomplishments/specialization/certificate/U47F93996VM2",
+    "tag": ["Google", "GCSB", "Modernization"]
+  }
+]
