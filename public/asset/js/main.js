@@ -1,4 +1,4 @@
-// Dynamic main height to 100vh
+// Dynamic main height to minimum height 100vh
 const main = document.querySelector('main')
 const header = document.querySelector('header')
 const footer = document.querySelector('footer')

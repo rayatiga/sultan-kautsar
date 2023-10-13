@@ -1,3 +1,4 @@
+/* Importing Inter font */
 @font-face {
   font-display: swap;
   font-family: 'Inter';
@@ -9,21 +10,19 @@
   --animate-delay: 0.25s;
 }
 
+/* Prevent anchor overlap inside navbar */
 html {
   scroll-padding-top: calc(56px + 24px);
 }
 
+/* Set font family to all inside body with Inter */
 body {
   font-family: 'Inter', system-ui, sans-serif;
 }
 
+/* Specify the min height for navbar */
 header nav {
   min-height: 56px;
-}
-
-header nav li svg {
-  width: 18px;
-  height: 18px;
 }
 
 /* Set height fit to screen (reducing cumulative shift layout) */
@@ -31,14 +30,12 @@ main.rayatiga-main-height {
   min-height: calc(100vh - (56px + 1px));
 }
 
-main form #floatingTextarea {
+/* Adjust height of text area inside contact page */
+main #contact form #floatingTextarea {
   min-height: 150px;
 }
 
-main .rayatiga-iframe-height {
-  height: 720px;
-}
-
+/* Specify the min height for footer */
 footer {
   min-height: 56px;
 }
