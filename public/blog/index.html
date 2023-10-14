@@ -24,11 +24,11 @@
         <nav>
           <div class="container">
             <div class="navigation">
-              <a href="/">Sultan Kautsar</a>
+              <a href="/" class="brand">Sultan Kautsar</a>
               <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about.html">About</a></li>
-                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/blog/">Blog</a></li>
                 <li><a href="/resource.html">Resource</a></li>
                 <li><a href="/contact.html">Contact</a></li>
               </ul>
@@ -44,8 +44,22 @@
       <main>
         <div class="container">
           <div class="content">
-            <h1><span>Under</span> <span>Development</span></h1>
-            <p>Sorry, this page is under development. Please come back later.</p>
+            <h1><span>Blog</span> <span>Sultan Kautsar</span></h1>
+            <p>I'm so excited that you're here. I'm Sultan Kautsar, and I'm the author of this blog. I'm Web System Administrator by day, but by night, I'm a passionate blogger who loves to write about technology especially web, cloud, and linux system.</p>
+            <p>Here is a list of all the blog posts I've written so far. I hope you find something useful and interesting. If you have any questions, feel free to reach out to me. I'd love to hear from you.</p>
+            <div class="post">
+              <div class="card">
+                <div class="card-body">
+                  <img src="/blog/img/bard.jpg" width="1920" height="1080" alt="Bard: A powerful new AI language model" />
+                  <div class="excerpt">
+                    <h2><a href="/blog/bard.html">Bard: A powerful new AI language model</a></h2>
+                    <p>Bard is a large language model (LLM) developed by Google AI. It is a powerful tool that can be used for a variety of tasks, including generating text, translating languages, writing different kinds of creative content, and answering your questions in an informative way.</p>
+                    <div class="label"><span>AI</span><span>Google</span><span>News</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>You reached the end of the page.</p>
             <div class="button-group">
               <a href="/"
                 ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-home">
@@ -54,12 +68,12 @@
                 </svg>
                 Homepage</a
               >
-              <a href="#" onclick="history.back()"
-                ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-undo-2">
-                  <path d="M9 14 4 9l5-5" />
-                  <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5v0a5.5 5.5 0 0 1-5.5 5.5H11" />
+              <a href="#"
+                ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-up-square">
+                  <rect width="18" height="18" x="3" y="3" rx="2" />
+                  <path d="m8 14 4-4 4 4" />
                 </svg>
-                Back</a
+                Go to Top</a
               >
             </div>
           </div>
@@ -73,5 +87,6 @@
         </div>
       </footer>
     </div>
+    <button class="scheme" title="Switch Scheme"></button>
   </body>
 </html>

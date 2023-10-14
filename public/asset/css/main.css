@@ -1,57 +1,60 @@
-/* Import */
+/* ===== Global ===== */
+/* Font */
 @font-face {
   font-display: swap;
   font-family: 'Inter';
   src: url('/asset/font/inter.ttf') format('truetype');
 }
-
-/* Reset */
+/* All */
 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
+/* Variable */
+:root {
+  --color-1: #faf0e6ff;
+  --color-2: #212529ff;
+  --color-3: #352f4435;
+  --color-4: #ffffffff;
+  --color-5: #ffffff25;
+  --color-6: #ffffff50;
+  --color-7: #352f44ff;
+  --color-8: #ffffffaa;
+  --color-9: #00000025;
+  --color-10: #00000050;
+  --color-11: #343a40ff;
+}
+/* Selection */
+::selection {
+  color: var(--color-4);
+  background-color: var(--color-7);
+}
+/* Util */
 html {
   line-height: 1.5;
 }
 body {
   margin: 0;
   font-size: 1em;
-  color: var(--clr-2);
+  color: var(--color-2);
   justify-content: center;
   background-size: 32px 32px;
-  background-color: var(--clr-1);
   background-attachment: fixed;
+  background-color: var(--color-1);
   background-position: -32px -32px;
   font-family: 'Inter', 'system-ui', sans-serif;
-  background-image: radial-gradient(var(--clr-3) 1px, transparent 0);
+  background-image: radial-gradient(var(--color-3) 1px, transparent 0);
 }
-
-/* Variables */
-:root {
-  --clr-1: #faf0e6;
-  --clr-2: #212529;
-  --clr-3: #352f4450;
-  --clr-4: #ffffff;
-  --clr-5: #ffffff25;
-  --clr-6: #ffffff50;
-  --clr-7: #352f44;
-  --clr-8: #ffffffaa;
-  --clr-9: #00000025;
-  --clr-10: #00000050;
-  --clr-11: #343a40;
+div.wrapper {
+  overflow: hidden;
 }
-
-/* Global */
-.wrapper {
-  overflow-x: hidden;
-}
-.container {
+div.container {
   width: 100%;
   padding: 0 1em;
   max-width: 1200px;
 }
-[aria-current='page'] {
+a[aria-current='page'] {
   text-decoration: underline;
   text-underline-offset: 0.25em;
 }
@@ -69,7 +72,6 @@ h2,
 p {
   margin: 0;
 }
-
 /* Header */
 header nav {
   display: flex;
@@ -77,30 +79,43 @@ header nav {
   min-height: 4em;
   align-items: center;
   justify-content: center;
-  outline: 1px solid var(--clr-3);
+  outline: 1px solid var(--color-3);
 }
-header nav .navigation {
+header nav div.navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header nav .navigation ul {
+header nav div.navigation ul {
   gap: 1em;
   margin: 0;
   padding: 0;
   display: flex;
   list-style: none;
 }
-header nav .navigation > a {
+header nav div.navigation a.brand {
   font-weight: 500;
   font-size: 1.25em;
 }
-header nav .navigation ul li a:hover {
+header nav div.navigation ul li a:hover {
   text-decoration: underline;
   text-underline-offset: 0.25em;
 }
+header nav div.navigation div.hamburger {
+  z-index: 998;
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+}
+header nav div.navigation div.hamburger span {
+  width: 25px;
+  height: 3px;
+  margin: 3px;
+  transition: all 0.3s ease;
+  background-color: var(--color-2);
+}
 @media (max-width: 768px) {
-  header nav .navigation ul {
+  header nav div.navigation ul {
     gap: 0;
     top: 0;
     right: 0;
@@ -113,28 +128,37 @@ header nav .navigation ul li a:hover {
     align-items: center;
     flex-direction: column;
     transform: translateX(125%);
-    background-color: var(--clr-1);
-    border-left: 1px solid var(--clr-3);
+    background-color: var(--color-1);
+    border-left: 1px solid var(--color-3);
     transition: transform 0.25s ease-in-out;
   }
-  header nav .navigation ul.show {
+  header nav div.navigation ul.show {
     transform: translateX(0);
+    z-index: 997;
   }
-  header nav .navigation ul li {
+  header nav div.navigation ul li {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  header nav .navigation ul li a {
+  header nav div.navigation ul li a {
     width: 100%;
     padding: 1em;
     text-align: center;
   }
-  main .content div a {
-    width: 100%;
+  header nav div.navigation div.hamburger {
+    display: flex;
+  }
+  header nav div.navigation div.hamburger.clicked span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  header nav div.navigation div.hamburger.clicked span:nth-child(2) {
+    opacity: 0;
+  }
+  header nav div.navigation div.hamburger.clicked span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -8px);
   }
 }
-
 /* Main */
 main {
   display: flex;
@@ -142,62 +166,62 @@ main {
   align-items: center;
   justify-content: center;
   min-height: calc(100vh - 8em);
+  animation: fadeInUp 0.5s forwards;
 }
-main .content {
+main div.content {
   gap: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-main .content h1 {
+main div.content h1 {
   font-size: 2.5em;
   font-weight: 600;
 }
-main .content h1 span {
+main div.content h1 span {
   font-weight: 400;
 }
-main .content h1 span:last-child {
+main div.content h1 span:last-child {
   font-weight: inherit;
 }
-main .content p {
+main div.content p {
   font-weight: 300;
   font-size: 1.25em;
 }
-main .content p a {
+main div.content p a {
   font-weight: 500;
 }
-main .content p a:hover {
+main div.content p a:hover {
   text-decoration: underline;
   text-underline-offset: 0.25em;
 }
-main .content .button-group {
+main div.content div.button-group {
   gap: 1em;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-main .content .button-group a {
+main div.content div.button-group a {
   gap: 0.5em;
   display: flex;
   font-weight: 500;
   font-size: 1.25em;
   padding: 0.5em 1em;
-  color: var(--clr-4);
   align-items: center;
+  color: var(--color-4);
   border-radius: 0.25em;
   justify-content: center;
-  background-color: var(--clr-2);
+  background-color: var(--color-2);
   transition: background-color 0.25s ease-in-out;
 }
-main .content .button-group a:hover {
-  background-color: var(--clr-11);
+main div.content div.button-group a:hover {
+  background-color: var(--color-11);
 }
 @media (max-width: 768px) {
-  main .content .button-group a {
+  main div.content div.button-group a {
     width: 100%;
   }
 }
-
 /* Footer */
 footer {
   display: flex;
@@ -205,51 +229,19 @@ footer {
   text-align: center;
   align-items: center;
   justify-content: center;
-  outline: 1px solid var(--clr-3);
+  outline: 1px solid var(--color-3);
 }
-footer .footer {
+footer div.footer {
   padding: 1em 0;
 }
-
-/* Hamburger */
-.hamburger {
-  z-index: 100;
-  display: none;
-  cursor: pointer;
-  flex-direction: column;
-}
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  margin: 3px;
-  transition: all 0.3s ease;
-  background-color: var(--clr-2);
-}
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
-  .navigation ul {
-    display: none;
-  }
-  .hamburger.clicked span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-  .hamburger.clicked span:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.clicked span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -8px);
-  }
-}
-
-/* Scheme */
-.scheme {
+/* Other */
+button.scheme {
   right: 1em;
   width: 3em;
   bottom: 1em;
   height: 3em;
   border: none;
+  z-index: 999;
   display: flex;
   cursor: pointer;
   position: fixed;
@@ -257,80 +249,259 @@ footer .footer {
   align-items: center;
   border-radius: 999em;
   justify-content: center;
-  background-color: var(--clr-5);
-  outline: 1px solid var(--clr-3);
+  background-color: var(--color-5);
+  outline: 1px solid var(--color-3);
   transition: background-color 0.25s ease-in-out;
 }
-.scheme:hover {
-  background-color: var(--clr-6);
+button.scheme:hover {
+  background-color: var(--color-6);
 }
-.scheme:focus-visible {
-  outline: 1px solid var(--clr-7);
+button.scheme:focus-visible {
+  outline: 1px solid var(--color-7);
 }
-
-/* Dark */
-.dark {
-  color: var(--clr-4);
-  background-color: var(--clr-2);
-  background-image: radial-gradient(var(--clr-5) 1px, transparent 0);
+body.dark {
+  color: var(--color-4);
+  background-color: var(--color-2);
+  background-image: radial-gradient(var(--color-5) 1px, transparent 0);
 }
-.dark header nav {
-  outline: 1px solid var(--clr-6);
+body.dark header nav {
+  outline: 1px solid var(--color-6);
 }
-.dark header nav .navigation ul li a:hover {
-  color: var(--clr-4);
+body.dark header nav div.navigation ul li a:hover {
+  color: var(--color-4);
   text-decoration: underline;
   text-underline-offset: 0.25em;
 }
-.dark main .content h1 {
-  color: var(--clr-4);
-}
-.dark main .content p a {
-  color: var(--clr-4);
-}
-.dark main .content .button-group a {
-  color: var(--clr-2);
-  background-color: var(--clr-4);
-}
-.dark main .content .button-group a:hover {
-  background-color: var(--clr-8);
-}
-.dark footer {
-  outline: 1px solid var(--clr-6);
-}
-.dark footer .footer {
-  color: var(--clr-4);
-}
-.dark .hamburger span {
-  background-color: var(--clr-4);
-}
-.dark .scheme {
-  color: var(--clr-2);
-  background-color: var(--clr-9);
-  outline: 1px solid var(--clr-6);
-}
-.dark .scheme:hover {
-  background-color: var(--clr-10);
-}
-.dark .scheme svg {
-  color: var(--clr-4);
+body.dark header nav div.navigation div.hamburger span {
+  background-color: var(--color-4);
 }
 @media (max-width: 768px) {
-  .dark header nav .navigation ul {
-    background-color: var(--clr-2);
-    border-left: 1px solid var(--clr-6);
+  body.dark header nav div.navigation ul {
+    background-color: var(--color-2);
+    border-left: 1px solid var(--color-6);
   }
-  .dark header nav .navigation ul li a {
-    color: var(--clr-4);
+  body.dark header nav div.navigation ul li a {
+    color: var(--color-4);
   }
-  .dark header nav .navigation ul li a:hover {
-    color: var(--clr-4);
+  body.dark header nav div.navigation ul li a:hover {
+    color: var(--color-4);
     text-decoration: underline;
     text-underline-offset: 0.25em;
   }
 }
+body.dark main div.content h1 {
+  color: var(--color-4);
+}
+body.dark main div.content p a {
+  color: var(--color-4);
+}
+body.dark main div.content .button-group a {
+  color: var(--color-2);
+  background-color: var(--color-4);
+}
+body.dark main div.content .button-group a:hover {
+  background-color: var(--color-8);
+}
+body.dark footer {
+  outline: 1px solid var(--color-6);
+}
+body.dark footer div.footer {
+  color: var(--color-4);
+}
+body.dark button.scheme {
+  color: var(--color-2);
+  background-color: var(--color-9);
+  outline: 1px solid var(--color-6);
+}
+body.dark button.scheme:hover {
+  background-color: var(--color-10);
+}
+body.dark button.scheme svg {
+  color: var(--color-4);
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ===== Global ===== */
 
-/* Contact: contact.html */
+/* ===== Other ===== */
+/* blog.html */
+.blog main div.post {
+  gap: 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.blog main div.post div.card div.card-body {
+  gap: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0.5em;
+  border: 1px solid var(--color-3);
+}
+@media (max-width: 768px) {
+  .blog main div.post div.card div.card-body {
+    flex-direction: column;
+  }
+}
+.blog main div.post div.card div.card-body img {
+  width: 100%;
+  height: auto;
+  max-width: 240px;
+  object-fit: cover;
+  border-radius: 0.5em;
+  border: 1px solid var(--color-3);
+}
+@media (max-width: 768px) {
+  .blog main div.post div.card div.card-body img {
+    max-width: 100%;
+  }
+}
+.blog main div.post div.card div.card-body div.excerpt {
+  gap: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+.blog main div.post div.card div.card-body div.excerpt h2 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+.blog main div.post div.card div.card-body div.excerpt h2:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+.blog main div.post div.card div.card-body div.excerpt p {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 300;
+}
+.blog main div.post div.card div.card-body div.excerpt div.label {
+  gap: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5em;
+}
+.blog main div.post div.card div.card-body div.excerpt div.label span {
+  font-weight: 300;
+  font-size: 0.75em;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  border: 1px solid var(--color-3);
+}
+.blog.dark main div.post div.card div.card-body {
+  border: 1px solid var(--color-6);
+}
+.blog.dark main div.post div.card div.card-body div.excerpt div.label span {
+  border: 1px solid var(--color-6);
+}
+/* Article */
+.blog main article {
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.75;
+}
+.blog main article div.breadcrumb {
+  gap: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+.blog main article div.breadcrumb a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+.blog main article div.breadcrumb a:last-child {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+.blog main article figcaption {
+  font-size: 1em;
+  font-weight: 300;
+}
+.blog main article figcaption img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 0.5em;
+  border: 1px solid var(--color-3);
+}
+.blog main article figcaption p {
+  margin: 0;
+  font-size: 0.75em;
+  font-weight: 300;
+  color: var(--color-7);
+  text-align: center;
+}
+.blog.dark main article figcaption p {
+  color: var(--color-8);
+}
+.blog main article ul li {
+  font-size: 1.25em;
+  font-weight: 300;
+}
+.blog main article ul li strong {
+  font-weight: 500;
+}
+.blog main article div.foot {
+  gap: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5em;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog main article div.foot p {
+  font-size: 1em;
+  font-weight: 400;
+}
+.blog main article div.foot div.label {
+  gap: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.blog main article div.foot div.label span {
+  font-weight: 300;
+  font-size: 0.75em;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  border: 1px solid var(--color-3);
+}
+.blog main article div.foot button {
+  font-size: 0.75em;
+  cursor: pointer;
+  border: 1px solid var(--color-3);
+  background-color: var(--color-2);
+  color: var(--color-4);
+  font-family: 'Inter', 'system-ui', sans-serif;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  transition: background-color 0.25s ease-in-out;
+}
+.blog main article div.foot button:hover {
+  background-color: var(--color-11);
+}
+.dark.blog main article div.foot div.label span {
+  border: 1px solid var(--color-6);
+}
+.dark.blog main article div.foot button {
+  border: 1px solid var(--color-6);
+  background-color: var(--color-4);
+  color: var(--color-2);
+}
+.dark.blog main article div.foot button:hover {
+  background-color: var(--color-8);
+}
+/* contact.html */
 .contact main form {
   gap: 1em;
   display: flex;
@@ -351,18 +522,18 @@ footer .footer {
   outline: none;
   font-size: 1em;
   border-radius: 0.25em;
-  background-color: var(--clr-1);
-  border: 1px solid var(--clr-3);
+  background-color: var(--color-1);
+  border: 1px solid var(--color-3);
   transition: border 0.25s ease-in-out;
   font-family: 'Inter', 'system-ui', sans-serif;
 }
 .contact main form input:focus,
 .contact main form textarea:focus {
-  border: 1px solid var(--clr-7);
+  border: 1px solid var(--color-7);
 }
 .contact main form input::placeholder,
 .contact main form textarea::placeholder {
-  color: var(--clr-3);
+  color: var(--color-3);
 }
 .contact main form button {
   gap: 0.5em;
@@ -372,11 +543,11 @@ footer .footer {
   font-weight: 500;
   font-size: 1.25em;
   padding: 0.5em 1em;
-  color: var(--clr-4);
+  color: var(--color-4);
   align-items: center;
   border-radius: 0.25em;
   justify-content: center;
-  background-color: var(--clr-2);
+  background-color: var(--color-2);
   font-family: 'Inter', 'system-ui', sans-serif;
   transition: background-color 0.25s ease-in-out;
 }
@@ -387,154 +558,147 @@ footer .footer {
 }
 .contact.dark main form input,
 .contact.dark main form textarea {
-  color: var(--clr-4);
-  background-color: var(--clr-2);
-  border: 1px solid var(--clr-6);
+  color: var(--color-4);
+  background-color: var(--color-2);
+  border: 1px solid var(--color-6);
 }
 .contact.dark main form input:focus,
 .contact.dark main form textarea:focus {
-  border: 1px solid var(--clr-4);
+  border: 1px solid var(--color-4);
 }
 .contact.dark main form input::placeholder,
 .contact.dark main form textarea::placeholder {
-  color: var(--clr-6);
+  color: var(--color-6);
 }
 .contact.dark main form button {
-  color: var(--clr-2);
-  background-color: var(--clr-4);
+  color: var(--color-2);
+  background-color: var(--color-4);
 }
 .contact.dark main form button:hover {
-  background-color: var(--clr-8);
+  background-color: var(--color-8);
 }
-
-/* Resource: resource.html */
-.resource main h2 {
-  font-size: 1.5em;
-  font-weight: 500;
-}
-.resource main .project {
-  gap: 1em;
-  display: flex;
-  flex-wrap: wrap;
-}
-.resource main .project .card {
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 1em;
-  border-radius: 0.5em;
-  background-color: var(--clr-1);
-  border: 1px solid var(--clr-3);
-  max-width: calc(33.3333333333% - 1em);
-}
-@media (max-width: 1024px) {
-  .resource main .project .card {
-    max-width: calc(50% - 1em);
-  }
-}
-@media (max-width: 768px) {
-  .resource main .project .card {
-    max-width: 100%;
-  }
-}
-.resource main .project .card .card-body {
-  gap: 0.5em;
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-}
-.resource main .project .card .card-body h2 {
-  margin: 0;
-  font-weight: 500;
-  font-size: 1.25em;
-}
-.resource main .project .card .card-body img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 0.5em;
-  border: 1px solid var(--clr-3);
-}
-.resource main .project .card .card-body p {
-  margin: 0;
-  font-size: 1em;
-  font-weight: 300;
-}
-.resource main .project .card .card-body .label {
-  gap: 0.5em;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 0.5em;
-}
-.resource main .project .card .card-body .label span {
-  font-weight: 300;
-  font-size: 0.75em;
-  padding: 0.25em 0.5em;
-  border-radius: 0.25em;
-  border: 1px solid var(--clr-3);
-}
-.resource.dark main .project .card {
-  background-color: var(--clr-2);
-  border: 1px solid var(--clr-6);
-}
-.resource.dark main .project .card .card-body h2 {
-  color: var(--clr-4);
-}
-.resource.dark main .project .card .card-body img {
-  border: 1px solid var(--clr-6);
-}
-.resource.dark main .project .card .card-body p {
-  color: var(--clr-4);
-}
-.resource.dark main .project .card .card-body .label span {
-  color: var(--clr-4);
-  border: 1px solid var(--clr-6);
-}
-
-/* Loading form submit button */
-.loading {
+.contact main form button.loading {
   pointer-events: none;
   opacity: 0.5;
 }
-.loading::after {
+.contact main form button.loading::after {
   width: 1em;
   height: 1em;
   content: '';
   position: absolute;
   border-radius: 50%;
+  border: 0.25em solid var(--color-4);
   border-top-color: transparent;
   border-right-color: transparent;
-  border: 0.25em solid var(--clr-4);
-  animation: loading 0.75s linear infinite;
+  animation: loadingCircle 0.75s linear infinite;
 }
-@keyframes loading {
+.contact main form button.loading * {
+  animation: fadeOut 0.75s forwards;
+}
+@keyframes loadingCircle {
   0% {
     transform: rotate(0deg);
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border: 0.25em solid var(--clr-4);
   }
   25% {
     transform: rotate(90deg);
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border: 0.25em solid var(--clr-4);
   }
   50% {
     transform: rotate(180deg);
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border: 0.25em solid var(--clr-4);
   }
   75% {
     transform: rotate(270deg);
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border: 0.25em solid var(--clr-4);
   }
   100% {
     transform: rotate(360deg);
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border: 0.25em solid var(--clr-4);
   }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* resource.html */
+.resource main h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.resource main div.project {
+  gap: 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.resource main div.project div.card {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  background-color: var(--color-1);
+  border: 1px solid var(--color-3);
+  max-width: calc(33.3333333333% - 1em);
+}
+@media (max-width: 1024px) {
+  .resource main div.project div.card {
+    max-width: calc(50% - 1em);
+  }
+}
+@media (max-width: 768px) {
+  .resource main div.project div.card {
+    max-width: 100%;
+  }
+}
+.resource main div.project div.card div.card-body {
+  gap: 0.5em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.resource main div.project div.card div.card-body h2 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+.resource main div.project div.card div.card-body img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5em;
+  border: 1px solid var(--color-3);
+}
+.resource main div.project div.card div.card-body p {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 300;
+}
+.resource main div.project div.card div.card-body div.label {
+  gap: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5em;
+}
+.resource main div.project div.card div.card-body div.label span {
+  font-weight: 300;
+  font-size: 0.75em;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  border: 1px solid var(--color-3);
+}
+.resource.dark main div.project div.card {
+  background-color: var(--color-2);
+  border: 1px solid var(--color-6);
+}
+.resource.dark main div.project div.card div.card-body h2 {
+  color: var(--color-4);
+}
+.resource.dark main div.project div.card div.card-body img {
+  border: 1px solid var(--color-6);
+}
+.resource.dark main div.project div.card div.card-body p {
+  color: var(--color-4);
+}
+.resource.dark main div.project div.card div.card-body div.label span {
+  color: var(--color-4);
+  border: 1px solid var(--color-6);
 }

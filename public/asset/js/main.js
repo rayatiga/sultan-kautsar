@@ -1,22 +1,13 @@
+/* ===== Global =====  */
 // svg icons from lucide
 const moon = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-star"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/><path d="M19 3v4"/><path d="M21 5h-4"/></svg>'
 const sun = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>'
-
-// append scheme button to body
-document.body.insertAdjacentHTML(
-  'beforeend',
-  `
-<button class="scheme" title="switch scheme"></button>
-`
-)
-
 // set attribute aria current page to navigation
-document.querySelectorAll('header nav ul li a').forEach((navList) => {
+document.querySelectorAll('header nav div.navigation ul li a').forEach((navList) => {
   if (navList.href === window.location.href || navList.href === window.location.href + '.html' || navList.href === window.location.href.slice(0, -1) + '.html') {
     navList.setAttribute('aria-current', 'page')
   }
 })
-
 // implement dark mode switch but check local storage first
 const scheme = document.querySelector('.scheme')
 if (localStorage.getItem('scheme') === 'dark') {
@@ -37,10 +28,9 @@ scheme.addEventListener('click', () => {
     scheme.innerHTML = sun
   }
 })
-
 // if hamburger clicked then show ul by translateX to 0
-const hamburger = document.querySelector('.hamburger')
-const ul = document.querySelector('header ul')
+const hamburger = document.querySelector('header nav div.navigation div.hamburger')
+const ul = document.querySelector('header nav div.navigation ul')
 hamburger.addEventListener('click', () => {
   ul.classList.toggle('show')
   hamburger.classList.toggle('clicked')
@@ -52,7 +42,6 @@ document.addEventListener('click', (e) => {
     hamburger.classList.remove('clicked')
   }
 })
-
 // main tag min height = window height - header height and footer height change on resize
 const main = document.querySelector('main')
 const header = document.querySelector('header')
@@ -61,7 +50,6 @@ main.style.minHeight = `calc(100vh - ${header.offsetHeight}px - ${footer.offsetH
 window.addEventListener('resize', () => {
   main.style.minHeight = `calc(100vh - ${header.offsetHeight}px - ${footer.offsetHeight}px)`
 })
-
 // add loading class to form submit button if clicked
 const form = document.querySelector('form')
 if (form) {
@@ -79,3 +67,19 @@ if (form) {
     }, 1750)
   })
 }
+// cut paragraph if more than 200 characters
+const blog = document.querySelector('.blog')
+if (blog) {
+  const paragraph = document.querySelectorAll('.blog .excerpt p')
+  paragraph.forEach((p) => {
+    if (p.textContent.length > 200) {
+      p.textContent = p.textContent.slice(0, 200) + '...'
+    }
+  })
+  // add strong element before colon in list
+  const list = document.querySelectorAll('.blog article li')
+  list.forEach((li) => {
+    li.innerHTML = li.innerHTML.replace(/([^:]*):/, '<strong>$1:</strong>')
+  })
+}
+/* ===== Global =====  */
