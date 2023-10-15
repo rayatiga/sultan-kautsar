@@ -93,7 +93,7 @@ if (article) {
     li.innerHTML = li.innerHTML.replace(/([^:]*):/, '<strong>$1:</strong>')
   })
   // cut breadcrumb anchor if more than 32 characters
-  const breadcrumb = document.querySelectorAll('.blog div.breadcrumb a')
+  const breadcrumb = document.querySelectorAll('.blog div.breadcrumb a:last-child')
   breadcrumb.forEach((a) => {
     if (a.textContent.length > 32) {
       a.textContent = a.textContent.slice(0, 32) + '...'
@@ -109,19 +109,5 @@ if (article) {
       button.textContent = 'Copy Link'
     }, 2000)
   })
-}
-// typing effect on heading main
-const heading = document.querySelector('main h1')
-if (heading && !article) {
-  const text = heading.textContent
-  heading.textContent = ''
-  let i = 0
-  const type = setInterval(() => {
-    heading.textContent += text[i]
-    i++
-    if (i === text.length) {
-      clearInterval(type)
-    }
-  }, 45)
 }
 /* ===== Global =====  */

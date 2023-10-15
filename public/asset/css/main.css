@@ -174,21 +174,6 @@ main div.content h1 {
   font-size: 2.5em;
   font-weight: 400;
 }
-main div.content h1::after {
-  content: '|';
-  opacity: 0.5;
-  position: absolute;
-  display: inline-block;
-  animation: blink 1s ease-in-out infinite;
-}
-@keyframes blink {
-  0% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 0;
-  }
-}
 main div.content h1 span {
   font-weight: 400;
 }
@@ -433,9 +418,9 @@ body.dark button.scheme svg {
   text-decoration: underline;
   text-underline-offset: 0.25em;
 }
-.blog main article div.breadcrumb a:last-child {
-  text-decoration: underline;
-  text-underline-offset: 0.25em;
+.blog main article div.breadcrumb svg {
+  width: 1.25em;
+  height: 1.25em;
 }
 .blog main article figcaption {
   font-size: 1em;
