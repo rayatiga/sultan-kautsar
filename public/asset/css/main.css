@@ -13,17 +13,17 @@
 }
 /* Variable */
 :root {
-  --color-1: #faf0e6ff;
-  --color-2: #212529ff;
+  --color-1: #fbfbff;
+  --color-2: #252532;
   --color-3: #352f4435;
-  --color-4: #ffffffff;
+  --color-4: #fafaff;
   --color-5: #ffffff25;
   --color-6: #ffffff50;
-  --color-7: #352f44ff;
+  --color-7: #352f44;
   --color-8: #ffffffaa;
   --color-9: #00000025;
   --color-10: #00000050;
-  --color-11: #343a40ff;
+  --color-11: #343a40;
 }
 /* Selection */
 ::selection {
@@ -39,12 +39,8 @@ body {
   font-size: 1em;
   color: var(--color-2);
   justify-content: center;
-  background-size: 32px 32px;
-  background-attachment: fixed;
-  background-color: var(--color-1);
-  background-position: -32px -32px;
+  background: center / cover fixed no-repeat url(/asset/img/background.svg) var(--color-1);
   font-family: 'Inter', 'system-ui', sans-serif;
-  background-image: radial-gradient(var(--color-3) 1px, transparent 0);
 }
 div.wrapper {
   overflow: hidden;
@@ -176,16 +172,28 @@ main div.content {
 }
 main div.content h1 {
   font-size: 2.5em;
-  font-weight: 600;
+  font-weight: 400;
+}
+main div.content h1::after {
+  content: '|';
+  opacity: 0.5;
+  position: absolute;
+  display: inline-block;
+  animation: blink 1s ease-in-out infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 main div.content h1 span {
   font-weight: 400;
 }
-main div.content h1 span:last-child {
-  font-weight: inherit;
-}
 main div.content p {
-  font-weight: 300;
+  font-weight: 350;
   font-size: 1.25em;
 }
 main div.content p a {
@@ -261,8 +269,8 @@ button.scheme:focus-visible {
 }
 body.dark {
   color: var(--color-4);
-  background-color: var(--color-2);
-  background-image: radial-gradient(var(--color-5) 1px, transparent 0);
+  background-color: #222222;
+  background: center / cover fixed no-repeat url(/asset/img/background-dark.svg) var(--color-1);
 }
 body.dark header nav {
   outline: 1px solid var(--color-6);
@@ -345,6 +353,10 @@ body.dark button.scheme svg {
   flex-direction: row;
   border-radius: 0.5em;
   border: 1px solid var(--color-3);
+  background-color: var(--color-4);
+}
+.dark.blog main div.post div.card div.card-body {
+  background-color: var(--color-2);
 }
 @media (max-width: 768px) {
   .blog main div.post div.card div.card-body {
@@ -381,7 +393,7 @@ body.dark button.scheme svg {
 .blog main div.post div.card div.card-body div.excerpt p {
   margin: 0;
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 350;
 }
 .blog main div.post div.card div.card-body div.excerpt div.label {
   gap: 0.5em;
@@ -390,7 +402,7 @@ body.dark button.scheme svg {
   margin-top: 0.5em;
 }
 .blog main div.post div.card div.card-body div.excerpt div.label span {
-  font-weight: 300;
+  font-weight: 350;
   font-size: 0.75em;
   padding: 0.25em 0.5em;
   border-radius: 0.25em;
@@ -407,7 +419,8 @@ body.dark button.scheme svg {
   gap: 1em;
   display: flex;
   flex-direction: column;
-  line-height: 1.75;
+  line-height: 1.7;
+  font-size: 0.9em;
 }
 .blog main article div.breadcrumb {
   gap: 0.5em;
@@ -426,7 +439,7 @@ body.dark button.scheme svg {
 }
 .blog main article figcaption {
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 350;
 }
 .blog main article figcaption img {
   width: 100%;
@@ -438,7 +451,7 @@ body.dark button.scheme svg {
 .blog main article figcaption p {
   margin: 0;
   font-size: 0.75em;
-  font-weight: 300;
+  font-weight: 350;
   color: var(--color-7);
   text-align: center;
 }
@@ -447,7 +460,7 @@ body.dark button.scheme svg {
 }
 .blog main article ul li {
   font-size: 1.25em;
-  font-weight: 300;
+  font-weight: 350;
 }
 .blog main article ul li strong {
   font-weight: 500;
@@ -470,7 +483,7 @@ body.dark button.scheme svg {
   flex-wrap: wrap;
 }
 .blog main article div.foot div.label span {
-  font-weight: 300;
+  font-weight: 350;
   font-size: 0.75em;
   padding: 0.25em 0.5em;
   border-radius: 0.25em;
@@ -670,7 +683,7 @@ body.dark button.scheme svg {
 .resource main div.project div.card div.card-body p {
   margin: 0;
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 350;
 }
 .resource main div.project div.card div.card-body div.label {
   gap: 0.5em;
@@ -679,7 +692,7 @@ body.dark button.scheme svg {
   margin-top: 0.5em;
 }
 .resource main div.project div.card div.card-body div.label span {
-  font-weight: 300;
+  font-weight: 350;
   font-size: 0.75em;
   padding: 0.25em 0.5em;
   border-radius: 0.25em;

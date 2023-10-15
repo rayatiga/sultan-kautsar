@@ -67,19 +67,61 @@ if (form) {
     }, 1750)
   })
 }
-// cut paragraph if more than 200 characters
+// cut paragraph if more than 192 characters
 const blog = document.querySelector('.blog')
 if (blog) {
   const paragraph = document.querySelectorAll('.blog .excerpt p')
   paragraph.forEach((p) => {
-    if (p.textContent.length > 200) {
-      p.textContent = p.textContent.slice(0, 200) + '...'
+    if (p.textContent.length > 192) {
+      p.textContent = p.textContent.slice(0, 192) + '...'
     }
   })
+}
+const article = document.querySelector('article')
+if (article) {
+  // append style to article
+  const style = document.createElement('style')
+  style.textContent = `
+    .blog main article h1::after {
+      display: none;
+    }
+  `
+  article.prepend(style)
   // add strong element before colon in list
   const list = document.querySelectorAll('.blog article li')
   list.forEach((li) => {
     li.innerHTML = li.innerHTML.replace(/([^:]*):/, '<strong>$1:</strong>')
   })
+  // cut breadcrumb anchor if more than 32 characters
+  const breadcrumb = document.querySelectorAll('.blog div.breadcrumb a')
+  breadcrumb.forEach((a) => {
+    if (a.textContent.length > 32) {
+      a.textContent = a.textContent.slice(0, 32) + '...'
+    }
+  })
+  // add copy link button
+  const button = document.querySelector('.blog div.foot button')
+  const title = document.querySelector('.blog article h1').textContent
+  button.addEventListener('click', () => {
+    navigator.clipboard.writeText(`${title} (Link: ${window.location.href})`)
+    button.textContent = 'Copied!'
+    setTimeout(() => {
+      button.textContent = 'Copy Link'
+    }, 2000)
+  })
+}
+// typing effect on heading main
+const heading = document.querySelector('main h1')
+if (heading && !article) {
+  const text = heading.textContent
+  heading.textContent = ''
+  let i = 0
+  const type = setInterval(() => {
+    heading.textContent += text[i]
+    i++
+    if (i === text.length) {
+      clearInterval(type)
+    }
+  }, 45)
 }
 /* ===== Global =====  */
