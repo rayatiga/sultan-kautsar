@@ -1,0 +1,54 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  src: url('/asset/font/inter.ttf');
+}
+
+/* Set animate delay between 1, 2, until 5 by 0.25 second */
+:root {
+  --animate-delay: 0.25s;
+}
+
+html {
+  scroll-padding-top: calc(56px + 24px);
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+header nav {
+  min-height: 56px;
+}
+
+header nav li svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Set height fit to screen (reducing cumulative shift layout) */
+main.rayatiga-main-height {
+  min-height: calc(100vh - (56px + 1px));
+}
+
+main form #floatingTextarea {
+  min-height: 150px;
+}
+
+main .rayatiga-iframe-height {
+  height: 720px;
+}
+
+footer {
+  min-height: 56px;
+}
+
+/* Add border light subtle to class with btn-dark  */
+[data-bs-theme='dark'] .btn-dark {
+  border: 1px solid var(--bs-light-border-subtle);
+}
+
+/* Add border light subtle to <badge> with background dark  */
+[data-bs-theme='dark'] .badge.bg-dark {
+  border: 1px solid var(--bs-light-border-subtle);
+}
