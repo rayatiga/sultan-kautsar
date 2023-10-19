@@ -13,3 +13,26 @@ const popoverList = [...popoverTriggerList].map((popoverTriggerEl) => new bootst
 popoverTriggerList.forEach((popoverTriggerEl) => {
   popoverTriggerEl.style.cursor = 'pointer'
 })
+
+// Tooltip trigger
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl))
+
+// Form validation
+;(() => {
+  'use strict'
+  const forms = document.querySelectorAll('.needs-validation')
+  Array.from(forms).forEach((form) => {
+    form.addEventListener(
+      'submit',
+      (event) => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+      },
+      false
+    )
+  })
+})()
