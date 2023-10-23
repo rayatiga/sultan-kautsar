@@ -4,7 +4,7 @@
     <!-- Document -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - Sultan Kautsar</title>
+    <title>404 Not Found - Sultan Kautsar</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <meta name="description" content="Hello! I'm Sultan Kautsar, the founder of Rayatiga, a business agency that provides web services. I'm also a web developer at PT Breef Digital Indonesia, and a technology enthusiast." />
     <meta property="og:image" content="https://sultankautsar.com/asset/img/sultan-kautsar-og.jpg" />
@@ -46,7 +46,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/contact.html">Contact</a>
+                <a class="nav-link" href="/contact.html">Contact</a>
               </li>
             </ul>
           </div>
@@ -55,34 +55,15 @@
     </header>
     <!-- Main -->
     <main class="d-flex justify-content-center align-items-center sultan-kautsar-main-height">
-      <!-- Section: contact -->
-      <section id="contact" class="mt-5 py-5">
+      <!-- Section: not-found -->
+      <section id="not-found" class="mt-5 py-5">
         <div class="container d-flex flex-column gap-2">
-          <h1 class="display-4 animate__animated animate__fadeInUp animate__faster">Get in <span class="text-success">Touch</span></h1>
-          <p class="lead animate__animated animate__fadeInUp animate__faster animate__delay-1s">I'm always open to discussing product design work or partnership opportunities. If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p>
-          <form action="https://formspree.io/f/xgejenzn" class="needs-validation row g-3 animate__animated animate__fadeIn animate__faster animate__delay-2s" method="post" target="_blank" novalidate>
-            <div class="col-md-6 col-sm-12">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name..." minlength="2" maxlength="60" required />
-              <div class="valid-feedback">Looks good.</div>
-              <div class="invalid-feedback">Please enter your name.</div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email..." minlength="6" maxlength="60" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required />
-              <div class="valid-feedback">Your email looks good.</div>
-              <div class="invalid-feedback">Please enter valid email.</div>
-            </div>
-            <div class="col-12">
-              <label for="message">Message</label>
-              <textarea class="form-control" placeholder="Enter your message..." id="message" name="Message" minlength="10" maxlength="2500" required></textarea>
-              <div class="valid-feedback">Your message looks good.</div>
-              <div class="invalid-feedback">Please enter your meessage more than 15 character.</div>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-dark"><i class="bi-send me-2"></i>Submit</button>
-            </div>
-          </form>
+          <h1 class="display-4 animate__animated animate__fadeInUp animate__faster"><span class="text-danger">404</span> Not Found</h1>
+          <p class="lead animate__animated animate__fadeInUp animate__faster animate__delay-1s">We couldn't find the page you're looking for. Maybe you typed the wrong URL or the page has been moved or deleted. Click the button below to go to the home page or back to the previous page.</p>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-dark animate__animated animate__fadeInUp animate__faster animate__delay-2s" href="/"><i class="bi-house-door me-2"></i>Go to Homepage</a>
+            <a class="btn btn-outline-danger animate__animated animate__fadeInUp animate__faster animate__delay-3s" href="#" onclick="window.history.back()"><i class="bi-arrow-left me-2"></i>Go Back</a>
+          </div>
         </div>
       </section>
     </main>
