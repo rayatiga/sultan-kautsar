@@ -83,3 +83,18 @@ footer {
     transform: translate3d(0, 0, 0);
   }
 }
+
+/* Add aspect ratio to resources image project Ui/UX */
+.sultan-kautsar-img-project-uiux {
+  aspect-ratio: 4 / 3;
+}
+
+/* Add aspect ratio to resources image project website */
+.sultan-kautsar-img-project-website {
+  aspect-ratio: 16 / 9;
+}
+
+/* Add aspect ratio to resources image resume */
+.sultan-kautsar-img-resume {
+  aspect-ratio: 17 / 22;
+}
