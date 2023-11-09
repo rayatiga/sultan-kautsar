@@ -1,3 +1,4 @@
+// Achievement data
 fetch('/asset/json/achievement.json')
   .then((response) => {
     return response.json()
@@ -29,6 +30,7 @@ fetch('/asset/json/achievement.json')
     console.log(err)
   })
 
+// UIUX data
 fetch('/asset/json/uiux.json')
   .then((response) => {
     return response.json()
@@ -58,6 +60,7 @@ fetch('/asset/json/uiux.json')
     }
   })
 
+// Website data
 fetch('/asset/json/website.json')
   .then((response) => {
     return response.json()
