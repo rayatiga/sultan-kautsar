@@ -1,10 +1,10 @@
 // Achievement data
-fetch('/asset/json/achievement.json')
+fetch("/asset/json/achievement.json")
   .then((response) => {
-    return response.json()
+    return response.json();
   })
   .then((data) => {
-    let html = document.getElementById('achievement-data')
+    let html = document.getElementById("achievement-data");
     for (let i = 0; i < data.length; i++) {
       html.innerHTML += `
         <div class="col">
@@ -19,24 +19,24 @@ fetch('/asset/json/achievement.json')
         <p class="card-text">${data[i].description}</p>
         </div>
         <div class="card-footer">
-        <a class="text-body-secondary small text-decoration-none" href="${data[i].link}" target="_blank" ${data[i].link.includes('http') ? 'rel="nofollow noindex noopener"' : ''}>Link to certificate <i class="bi-box-arrow-up-right"></i></a>
+        <a class="text-body-secondary small text-decoration-none" href="${data[i].link}" target="_blank" ${data[i].link.includes("http") ? 'rel="nofollow noindex noopener"' : ""}>Link to certificate <i class="bi-box-arrow-up-right"></i></a>
         </div>
         </div>
         </div>
-        `
+        `;
     }
   })
   .catch((err) => {
-    console.log(err)
-  })
+    console.log(err);
+  });
 
 // UIUX data
-fetch('/asset/json/uiux.json')
+fetch("/asset/json/uiux.json")
   .then((response) => {
-    return response.json()
+    return response.json();
   })
   .then((data) => {
-    let html = document.getElementById('uiux-data')
+    let html = document.getElementById("uiux-data");
     for (let i = 0; i < data.length; i++) {
       html.innerHTML += `
         <div class="col">
@@ -52,21 +52,21 @@ fetch('/asset/json/uiux.json')
         <p class="card-text">${data[i].description}</p>
         </div>
         <div class="card-footer">
-        <a class="text-body-secondary small text-decoration-none" href="${data[i].link}" target="_blank" ${data[i].link.includes('http') ? 'rel="nofollow noindex noopener"' : ''}>Link to project <i class="bi-box-arrow-up-right"></i></a>
+        <a class="text-body-secondary small text-decoration-none" href="${data[i].link}" target="_blank" ${data[i].link.includes("http") ? 'rel="nofollow noindex noopener"' : ""}>Link to project <i class="bi-box-arrow-up-right"></i></a>
         </div>
         </div>
         </div>
-        `
+        `;
     }
-  })
+  });
 
 // Website data
-fetch('/asset/json/website.json')
+fetch("/asset/json/website.json")
   .then((response) => {
-    return response.json()
+    return response.json();
   })
   .then((data) => {
-    let html = document.getElementById('website-data')
+    let html = document.getElementById("website-data");
     for (let i = 0; i < data.length; i++) {
       html.innerHTML += `
         <div class="col">
@@ -82,13 +82,13 @@ fetch('/asset/json/website.json')
         <p class="card-text">${data[i].description}</p>
         </div>
         <div class="card-footer">
-        <a class="text-body-secondary small text-decoration-none" href="${data[i].link}" target="_blank" ${data[i].link.includes('http') ? 'rel="nofollow noindex noopener"' : ''}>Link to project <i class="bi-box-arrow-up-right"></i></a>
+        <a class="text-body-secondary small text-decoration-none" href="${data[i].link}" target="_blank" ${data[i].link.includes("http") ? 'rel="nofollow noindex noopener"' : ""}>Link to project <i class="bi-box-arrow-up-right"></i></a>
         </div>
         </div>
         </div>
-        `
+        `;
     }
   })
   .catch((err) => {
-    console.log(err)
-  })
+    console.log(err);
+  });
