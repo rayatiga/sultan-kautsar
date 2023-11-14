@@ -66,6 +66,13 @@ if (activeNav) {
   activeNav.setAttribute("aria-current", "page");
 }
 
+// Footer
+const footerSpan = document.getElementById("footer");
+footerSpan.outerHTML = `
+<div class="container">
+<p class="m-0 py-3 text-center">Copyright <i class="bi-c-circle"></i> 2020 - ${new Date().getFullYear()} <a class="text-body text-decoration-none" href="https://sultankautsar.com">Sultan Kautsar</a>. All Rights Reserved.</p>
+</div>
+`;
 // Scheme toggle
 const schemeToggle = document.getElementById("scheme-toggle");
 schemeToggle.outerHTML = `
