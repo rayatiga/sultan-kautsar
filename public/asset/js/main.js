@@ -51,10 +51,10 @@ navigation.outerHTML = `
 <ul class="dropdown-menu">
 <li><a class="dropdown-item" href="/resource.html">All Resources</a></li>
 <li><hr class="dropdown-divider" /></li>
-<li><a class="dropdown-item" href="/resource.html#achievement">Achievement</a></li>
-<li><a class="dropdown-item" href="/resource.html#uiux">U/UX Project</a></li>
-<li><a class="dropdown-item" href="/resource.html#website">Website Project</a></li>
-<li><a class="dropdown-item" href="/resource.html#resume">Personal Resume</a></li>
+<li><a class="dropdown-item" href="/resource#achievement">Achievement</a></li>
+<li><a class="dropdown-item" href="/resource#uiux">U/UX Project</a></li>
+<li><a class="dropdown-item" href="/resource#website">Website Project</a></li>
+<li><a class="dropdown-item" href="/resource#resume">Personal Resume</a></li>
 </ul>
 </li>
 <li class="nav-item">
