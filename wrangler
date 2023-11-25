@@ -1,5 +1,4 @@
 echo "Deploy to: sultankautsar"
 read -p "Commit message: " commitMessage
-sleep 2
 echo "Deploy directory public/ and commit message $commitMessage"
 wrangler pages deploy public/ --project-name "sultankautsar" --commit-message "$commitMessage"
