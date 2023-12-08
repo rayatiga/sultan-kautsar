@@ -1,52 +1,42 @@
-/* Importing Inter font */
 @font-face {
   font-display: swap;
   font-family: "Inter";
   src: url("/asset/font/inter.ttf");
 }
 
-/* Set animate delay between 1, 2, until 5 by 0.125 second */
 :root {
   --animate-delay: 0.125s;
 }
 
-/* When user select the element */
 ::selection {
   color: var(--bs-white);
   background: var(--bs-primary);
 }
 
-/* Prevent anchor overlap inside navbar */
 html {
   scroll-padding-top: calc(56px + 24px);
 }
 
-/* Set font family to all inside body with Inter */
 body {
   font-family: "Inter", system-ui, sans-serif;
 }
 
-/* Specify the min height for navbar */
 header nav {
   min-height: 56px;
 }
 
-/* Set height fit to screen (reducing cumulative shift layout) */
 main.sultan-kautsar-main-height {
   min-height: calc(100vh - (56px + 1px));
 }
 
-/* Adjust height of text area inside contact page */
 main #contact form #message {
   min-height: 250px;
 }
 
-/* Specify the min height for footer */
 footer {
   min-height: 56px;
 }
 
-/* Set button dark with button light variable in dark scheme  */
 [data-bs-theme="dark"] .btn-dark {
   --bs-btn-color: var(--bs-black);
   --bs-btn-bg: var(--bs-light);
@@ -64,18 +54,15 @@ footer {
   --bs-btn-disabled-border-color: #f8f9fa;
 }
 
-/* Add border light subtle to <badge> with background dark  */
 [data-bs-theme="dark"] .badge.bg-dark {
   border: 1px solid var(--bs-light-border-subtle);
 }
 
-/* Change size to 0.55em the checkmark on valid input background */
 .was-validated .form-control:valid,
 .form-control.is-valid {
   background-size: calc(0.75em + 0.375rem) calc(0.55em + 0.375rem);
 }
 
-/* Adjust fade in up translate 3d to 0.5em */
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
@@ -103,7 +90,25 @@ footer {
   }
 }
 
-/* Set button outline dark with button outline light variable in dark scheme */
+[data-bs-theme=dark] {
+  color-scheme: dark;
+  --bs-body-color: #ffffff;
+  --bs-body-color-rgb: 255,255,255;
+  --bs-body-bg: #212529;
+}
+
+nav.bg-body-tertiary,
+footer.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+}
+
+[data-bs-theme="dark"] nav.bg-body-tertiary,
+[data-bs-theme="dark"] footer.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
 [data-bs-theme="dark"] .btn-outline-dark {
   --bs-btn-color: #f8f9fa;
   --bs-btn-border-color: #f8f9fa;
@@ -121,13 +126,11 @@ footer {
   --bs-gradient: none;
 }
 
-/* Form control focus change color */
 .form-control:focus {
   border-color: #aaaaaa;
   box-shadow: 0 0 0 0.25rem rgba(153, 153, 153, 0.333);
 }
 
-/* Image fluid when in md size */
 @media (max-width: 991px) {
   .img-fluid {
     width: 100%;
@@ -138,7 +141,6 @@ footer {
   }
 }
 
-/* Scheme utility class */
 .bi {
   width: 1em;
   height: 1em;
