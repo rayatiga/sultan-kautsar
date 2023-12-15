@@ -1,9 +1,0 @@
-@media (max-width: 991px) {
-  #index .img-fluid {
-    width: 100%;
-    max-width: 240px;
-  }
-  #index .animate__delay-4s {
-    --animate-delay: 0s;
-  }
-}
