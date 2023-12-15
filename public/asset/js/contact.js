@@ -1,3 +1,5 @@
+// Contact JS
+// Bootstrap: Form Validation
 (() => {
   "use strict";
   const forms = document.querySelectorAll(".needs-validation");
