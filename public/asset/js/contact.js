@@ -1,4 +1,4 @@
-// Contact JS
+/* Contact JS */
 // Bootstrap: Form Validation
 (() => {
   "use strict";
