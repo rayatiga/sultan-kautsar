@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  scroll-padding-top: -64px;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color-border: #332e2e;
+  --color-neutral-dark: #000000;
+  --color-accent: #cfffae;
+  --color-primary: #ffd3f3;
+  --color-secondary: #e3fff8;
+  --color-surface: #fff7f3;
+
+  --spacing-z: 0px;
+  --spacing-2xs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 64px;
+  --spacing-3xl: 128px;
+
+  --screen-sm: 768px;
+  --screen-md: 1280px;
+
+  --radius-z: 0px;
+  --radius-md: 12px;
+  --radius-full: 999px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-surface);
+  align-items: center;
+  color: var(--color-border);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  gap: var(--spacing-2xl);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2xl);
+  width: 100%;
+  align-items: center;
+}
+h1,
+h2,
+h3,
+p {
+  margin: var(--radius-z);
+}
+
+/* Header */
+body header {
+  width: 100%;
+  max-width: var(--screen-md);
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}
+body header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: var(--spacing-2xl);
+  gap: var(--spacing-md);
+}
+@media (max-width: 768px) {
+  body header nav {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+body header nav div ul {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-md);
+  padding: var(--spacing-z);
+  flex-wrap: wrap;
+}
+body header nav div ul li a {
+  text-transform: uppercase;
+  text-decoration-style: dashed;
+  text-underline-offset: var(--spacing-xs);
+  color: var(--color-border);
+  text-decoration-thickness: 2px;
+}
+body header nav div ul li a:hover {
+  text-decoration-style: solid;
+}
+
+/* Section: Hero */
+body main section#hero {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  max-width: var(--screen-md);
+  width: 100%;
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}
+body main section#hero div:first-child {
+  display: flex;
+  gap: var(--spacing-md);
+}
+body main section#hero div:nth-child(2) h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+body main section#hero div:nth-child(2) h1 span {
+  font-weight: 400;
+}
+
+/* Section: Divider Primary */
+body main section#divider-primary {
+  padding-top: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+  border-top: 2px solid var(--color-border);
+  border-bottom: 2px solid var(--color-border);
+  width: 100%;
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}
+@media (max-width: 768px) {
+  body main section#divider-primary {
+    justify-content: start;
+  }
+}
+body main section#divider-primary div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2xl);
+  row-gap: var(--spacing-md);
+}
+@media (max-width: 768px) {
+  body main section#divider-primary div {
+    flex-direction: column;
+  }
+}
+
+/* Section: Ethics */
+body main section#ethics {
+  display: flex;
+  max-width: var(--screen-md);
+  width: 100%;
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}
+body main section#ethics > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+body main section#ethics div h2 {
+  text-decoration: underline;
+  text-underline-offset: var(--spacing-sm);
+  text-decoration-style: dashed;
+  text-decoration-thickness: 2px;
+}
+body main section#ethics > div > div {
+  display: flex;
+  gap: var(--spacing-md);
+}
+@media (max-width: 768px) {
+  body main section#ethics > div > div {
+    flex-direction: column;
+  }
+}
+body main section#ethics > div > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+body main section#ethics > div > div > div > div {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
