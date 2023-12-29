@@ -7,9 +7,7 @@
 }
 html {
   scroll-behavior: smooth;
-}
-body {
-  scroll-padding-top: -64px;
+  scroll-padding-top: 64px;
 }
 html,
 body {
@@ -66,13 +64,13 @@ p {
 }
 
 /* Header */
-body header {
+header {
   width: 100%;
   max-width: var(--screen-md);
   padding-left: var(--spacing-md);
   padding-right: var(--spacing-md);
 }
-body header nav {
+header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,31 +79,31 @@ body header nav {
   gap: var(--spacing-md);
 }
 @media (max-width: 768px) {
-  body header nav {
+  header nav {
     flex-direction: column;
     align-items: start;
   }
 }
-body header nav div ul {
+header nav div ul {
   display: flex;
   list-style: none;
   gap: var(--spacing-md);
   padding: var(--spacing-z);
   flex-wrap: wrap;
 }
-body header nav div ul li a {
+header nav div ul li a {
   text-transform: uppercase;
   text-decoration-style: dashed;
   text-underline-offset: var(--spacing-xs);
   color: var(--color-border);
   text-decoration-thickness: 2px;
 }
-body header nav div ul li a:hover {
+header nav div ul li a:hover {
   text-decoration-style: solid;
 }
 
 /* Section: Hero */
-body main section#hero {
+section#hero {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
@@ -114,20 +112,20 @@ body main section#hero {
   padding-left: var(--spacing-md);
   padding-right: var(--spacing-md);
 }
-body main section#hero div:first-child {
+section#hero div:first-child {
   display: flex;
   gap: var(--spacing-md);
 }
-body main section#hero div:nth-child(2) h1 {
+section#hero div:nth-child(2) h1 {
   font-size: 32px;
   font-weight: 700;
 }
-body main section#hero div:nth-child(2) h1 span {
+section#hero div:nth-child(2) h1 span {
   font-weight: 400;
 }
 
 /* Section: Divider Primary */
-body main section#divider-primary {
+section#divider-primary {
   padding-top: var(--spacing-lg);
   padding-bottom: var(--spacing-lg);
   display: flex;
@@ -141,56 +139,178 @@ body main section#divider-primary {
   padding-right: var(--spacing-md);
 }
 @media (max-width: 768px) {
-  body main section#divider-primary {
+  section#divider-primary {
     justify-content: start;
   }
 }
-body main section#divider-primary div {
+section#divider-primary div {
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-2xl);
   row-gap: var(--spacing-md);
 }
 @media (max-width: 768px) {
-  body main section#divider-primary div {
+  section#divider-primary div {
     flex-direction: column;
   }
 }
 
 /* Section: Ethics */
-body main section#ethics {
+section#ethics {
   display: flex;
   max-width: var(--screen-md);
   width: 100%;
   padding-left: var(--spacing-md);
   padding-right: var(--spacing-md);
 }
-body main section#ethics > div {
+section#ethics > div {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xl);
 }
-body main section#ethics div h2 {
+section#ethics div h2 {
   text-decoration: underline;
   text-underline-offset: var(--spacing-sm);
   text-decoration-style: dashed;
   text-decoration-thickness: 2px;
 }
-body main section#ethics > div > div {
+section#ethics div h2 span {
+  font-weight: 400;
+}
+section#ethics > div > div {
   display: flex;
-  gap: var(--spacing-md);
+  gap: var(--spacing-lg);
 }
 @media (max-width: 768px) {
-  body main section#ethics > div > div {
+  section#ethics > div > div {
     flex-direction: column;
   }
 }
-body main section#ethics > div > div > div {
+section#ethics > div > div > div {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
 }
-body main section#ethics > div > div > div > div {
+section#ethics > div > div > div > div {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+/* Section: Divider Secondary */
+section#divider-secondary {
+  padding-top: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-secondary);
+  border-top: 2px solid var(--color-border);
+  border-bottom: 2px solid var(--color-border);
+  width: 100%;
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}
+section#divider-secondary div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+@media (max-width: 768px) {
+  section#divider-secondary div {
+    align-items: start;
+  }
+}
+section#divider-secondary div p {
+  text-align: center;
+}
+section#divider-secondary div a {
+  text-align: center;
+  text-decoration-style: dashed;
+  text-underline-offset: var(--spacing-xs);
+  color: var(--color-border);
+  text-decoration-thickness: 2px;
+}
+section#divider-secondary div a:hover {
+  text-decoration-style: solid;
+}
+@media (max-width: 768px) {
+  section#divider-secondary div p,
+  section#divider-secondary div a {
+    text-align: left;
+  }
+}
+
+/* Section: Work */
+section#work {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--screen-md);
+  width: 100%;
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}
+section#work h2 {
+  text-decoration: underline;
+  text-underline-offset: var(--spacing-sm);
+  text-decoration-style: dashed;
+  text-decoration-thickness: 2px;
+  margin-bottom: var(--spacing-xl);
+}
+section#work h2 span {
+  font-weight: 400;
+}
+section#work a {
+  text-decoration-style: dashed;
+  text-underline-offset: var(--spacing-xs);
+  color: var(--color-border);
+  text-decoration-thickness: 2px;
+}
+section#work a:hover {
+  text-decoration-style: solid;
+}
+@media (max-width: 1024px) {
+  section#work > div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+  }
+}
+section#work > div > div {
+  display: flex;
+  gap: var(--spacing-2xl);
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  section#work > div > div {
+    display: flex;
+    gap: var(--spacing-lg);
+    flex-direction: column;
+  }
+  section#work > div > div > img {
+    width: 100%;
+  }
+}
+section#work > div > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+@media (max-width: 1024px) {
+  section#work > div > div > div {
+    align-items: center;
+    text-align: center;
+  }
+}
+section#work > div > div > div > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-xl);
+  row-gap: var(--spacing-sm);
+}
+section#work > div > div > div > div > div {
   display: flex;
   align-items: center;
   gap: var(--spacing-md);
