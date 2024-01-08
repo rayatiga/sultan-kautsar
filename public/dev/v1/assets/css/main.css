@@ -41,20 +41,20 @@ body {
 }
 body {
   display: flex;
-  flex-direction: column;
-  background: var(--color-surface);
-  align-items: center;
-  color: var(--color-border);
-  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
+  align-items: center;
+  flex-direction: column;
   gap: var(--spacing-2xl);
+  color: var(--color-border);
+  background: var(--color-surface);
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 main {
+  width: 100%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: var(--spacing-2xl);
-  width: 100%;
-  align-items: center;
 }
 h1,
 h2,
@@ -78,32 +78,32 @@ header {
 }
 header nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
-  padding-top: var(--spacing-2xl);
+  align-items: center;
   gap: var(--spacing-md);
   row-gap: var(--spacing-2xs);
+  justify-content: space-between;
+  padding-top: var(--spacing-2xl);
 }
 @media (max-width: 768px) {
   header nav {
-    flex-direction: column;
     align-items: start;
+    flex-direction: column;
   }
 }
 header nav div ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   gap: var(--spacing-md);
   padding: var(--spacing-z);
-  flex-wrap: wrap;
 }
 header nav div ul li a {
   text-transform: uppercase;
-  text-decoration-style: dashed;
-  text-underline-offset: var(--spacing-xs);
   color: var(--color-border);
+  text-decoration-style: dashed;
   text-decoration-thickness: 2px;
+  text-underline-offset: var(--spacing-xs);
 }
 header nav div ul li a:hover {
   text-decoration-style: solid;
@@ -111,11 +111,11 @@ header nav div ul li a:hover {
 
 /* Section: Hero */
 section#hero {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-md);
-  max-width: var(--screen-md);
   width: 100%;
+  display: flex;
+  gap: var(--spacing-md);
+  flex-direction: column;
+  max-width: var(--screen-md);
   padding-left: var(--spacing-md);
   padding-right: var(--spacing-md);
 }
@@ -134,17 +134,17 @@ section#hero > div:nth-child(2) h1 span {
 
 /* Section: Divider Primary */
 section#divider-primary {
-  padding-top: var(--spacing-lg);
-  padding-bottom: var(--spacing-lg);
+  width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding-top: var(--spacing-lg);
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+  padding-bottom: var(--spacing-lg);
   background-color: var(--color-primary);
   border-top: 2px solid var(--color-border);
   border-bottom: 2px solid var(--color-border);
-  width: 100%;
-  padding-left: var(--spacing-md);
-  padding-right: var(--spacing-md);
 }
 @media (max-width: 768px) {
   section#divider-primary {
@@ -165,19 +165,19 @@ section#divider-primary div {
 
 /* Section: Ethics */
 section#ethics {
-  display: flex;
-  max-width: var(--screen-md);
   width: 100%;
+  display: flex;
+  gap: var(--spacing-xl);
+  flex-direction: column;
+  max-width: var(--screen-md);
   padding-left: var(--spacing-md);
   padding-right: var(--spacing-md);
-  flex-direction: column;
-  gap: var(--spacing-xl);
 }
 section#ethics h2 {
   text-decoration: underline;
-  text-underline-offset: var(--spacing-sm);
   text-decoration-style: dashed;
   text-decoration-thickness: 2px;
+  text-underline-offset: var(--spacing-sm);
 }
 section#ethics h2 span {
   font-weight: 400;
@@ -194,8 +194,8 @@ section#ethics > div {
 }
 section#ethics > div > div {
   display: flex;
-  flex-direction: column;
   gap: var(--spacing-md);
+  flex-direction: column;
 }
 
 section#ethics > div > div > div {
@@ -206,19 +206,19 @@ section#ethics > div > div > div {
 
 /* Section: Divider Secondary */
 section#divider-secondary {
-  padding-top: var(--spacing-lg);
-  padding-bottom: var(--spacing-lg);
+  width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: var(--spacing-xs);
+  flex-direction: column;
+  justify-content: center;
+  padding-top: var(--spacing-lg);
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+  padding-bottom: var(--spacing-lg);
   background-color: var(--color-secondary);
   border-top: 2px solid var(--color-border);
   border-bottom: 2px solid var(--color-border);
-  width: 100%;
-  padding-left: var(--spacing-md);
-  padding-right: var(--spacing-md);
-  flex-direction: column;
-  gap: var(--spacing-xs);
 }
 @media (max-width: 768px) {
   section#divider-secondary {
@@ -229,12 +229,12 @@ section#divider-secondary p {
   text-align: center;
 }
 section#divider-secondary a {
-  text-align: center;
-  text-decoration-style: dashed;
-  text-underline-offset: var(--spacing-xs);
-  color: var(--color-border);
-  text-decoration-thickness: 2px;
   font-weight: 700;
+  text-align: center;
+  color: var(--color-border);
+  text-decoration-style: dashed;
+  text-decoration-thickness: 2px;
+  text-underline-offset: var(--spacing-xs);
 }
 section#divider-secondary a:hover {
   text-decoration-style: solid;
@@ -248,28 +248,28 @@ section#divider-secondary a:hover {
 
 /* Section: Work */
 section#work {
+  width: 100%;
   display: flex;
   flex-direction: column;
   max-width: var(--screen-md);
-  width: 100%;
   padding-left: var(--spacing-md);
   padding-right: var(--spacing-md);
 }
 section#work h2 {
   text-decoration: underline;
-  text-underline-offset: var(--spacing-sm);
   text-decoration-style: dashed;
   text-decoration-thickness: 2px;
   margin-bottom: var(--spacing-xl);
+  text-underline-offset: var(--spacing-sm);
 }
 section#work h2 span {
   font-weight: 400;
 }
 section#work a {
-  text-decoration-style: dashed;
-  text-underline-offset: var(--spacing-xs);
   color: var(--color-border);
+  text-decoration-style: dashed;
   text-decoration-thickness: 2px;
+  text-underline-offset: var(--spacing-xs);
 }
 section#work a:hover {
   text-decoration-style: solid;
@@ -283,15 +283,15 @@ section#work a:hover {
 }
 section#work > div > div {
   display: flex;
-  gap: var(--spacing-2xl);
   align-items: center;
+  gap: var(--spacing-2xl);
 }
 @media (max-width: 1024px) {
   section#work > div > div {
     display: flex;
+    align-items: start;
     gap: var(--spacing-lg);
     flex-direction: column;
-    align-items: start;
   }
   section#work > div > div > img {
     width: 100%;
@@ -301,8 +301,8 @@ section#work > div > div {
 }
 section#work > div > div > div {
   display: flex;
-  flex-direction: column;
   gap: var(--spacing-md);
+  flex-direction: column;
 }
 section#work > div > div > div > div {
   display: flex;
@@ -319,23 +319,23 @@ section#work > div > div > div > div > div {
 
 /* Section: Divider Accent */
 section#divider-accent {
-  padding-top: var(--spacing-lg);
-  padding-bottom: var(--spacing-lg);
+  width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding-top: var(--spacing-lg);
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+  padding-bottom: var(--spacing-lg);
   background-color: var(--color-accent);
   border-top: 2px solid var(--color-border);
   border-bottom: 2px solid var(--color-border);
-  width: 100%;
-  padding-left: var(--spacing-md);
-  padding-right: var(--spacing-md);
 }
 section#divider-accent {
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: var(--spacing-xs);
+  flex-direction: column;
 }
 @media (max-width: 768px) {
   section#divider-accent {
@@ -346,12 +346,12 @@ section#divider-accent p {
   text-align: center;
 }
 section#divider-accent a {
-  text-align: center;
-  text-decoration-style: dashed;
-  text-underline-offset: var(--spacing-xs);
-  color: var(--color-border);
-  text-decoration-thickness: 2px;
   font-weight: 700;
+  text-align: center;
+  color: var(--color-border);
+  text-decoration-style: dashed;
+  text-decoration-thickness: 2px;
+  text-underline-offset: var(--spacing-xs);
 }
 section#divider-accent a:hover {
   text-decoration-style: solid;
@@ -365,18 +365,18 @@ section#divider-accent a:hover {
 
 /* Section: About */
 section#about {
-  display: flex;
-  max-width: var(--screen-md);
   width: 100%;
-  padding: var(--spacing-z) var(--spacing-md);
-  flex-direction: column;
+  display: flex;
   gap: var(--spacing-xl);
+  flex-direction: column;
+  max-width: var(--screen-md);
+  padding: var(--spacing-z) var(--spacing-md);
 }
 section#about h2 {
   text-decoration: underline;
-  text-underline-offset: var(--spacing-sm);
   text-decoration-style: dashed;
   text-decoration-thickness: 2px;
+  text-underline-offset: var(--spacing-sm);
 }
 section#about h2 span {
   font-weight: 400;
@@ -392,11 +392,11 @@ section#about > div {
   }
 }
 section#about > div > div {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: var(--spacing-md);
-  flex: 1;
 }
 section#about > div > div > div {
   display: flex;
@@ -406,13 +406,13 @@ section#about > div > div > div {
 
 /* Footer */
 footer {
-  display: flex;
   width: 100%;
-  max-width: var(--screen-md);
-  padding: var(--spacing-z) var(--spacing-md);
-  flex-direction: column;
+  display: flex;
   align-items: center;
   gap: var(--spacing-md);
+  flex-direction: column;
+  max-width: var(--screen-md);
+  padding: var(--spacing-z) var(--spacing-md);
 }
 @media (max-width: 768px) {
   footer {
@@ -420,18 +420,18 @@ footer {
   }
 }
 footer a {
-  text-decoration-style: dashed;
-  text-underline-offset: var(--spacing-xs);
-  color: var(--color-border);
-  text-decoration-thickness: 2px;
   font-weight: 700;
+  color: var(--color-border);
+  text-decoration-style: dashed;
+  text-decoration-thickness: 2px;
+  text-underline-offset: var(--spacing-xs);
 }
 footer a:hover {
   text-decoration-style: solid;
 }
 footer p {
-  padding: var(--spacing-2xl) var(--spacing-z);
   flex-direction: column;
+  padding: var(--spacing-2xl) var(--spacing-z);
 }
 footer p a {
   text-decoration: none;
