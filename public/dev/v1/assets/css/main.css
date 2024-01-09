@@ -39,6 +39,13 @@ body {
   --radius-md: 12px;
   --radius-full: 999px;
 }
+::selection {
+  color: var(--color-border);
+  background-color: var(--color-primary);
+}
+img::selection {
+  background: none;
+}
 body {
   display: flex;
   font-size: 16px;
@@ -62,7 +69,8 @@ h3,
 p {
   margin: var(--radius-z);
 }
-p {
+p,
+li {
   line-height: 1.5;
 }
 a {
@@ -299,6 +307,22 @@ section#work > div > div {
     object-fit: cover;
   }
 }
+section#work > div > div:nth-child(1) > img {
+  border-top-left-radius: var(--radius-md);
+  border-top-right-radius: var(--radius-md);
+}
+section#work > div > div:nth-child(3) > img {
+  border-bottom-left-radius: var(--radius-md);
+  border-bottom-right-radius: var(--radius-md);
+}
+@media (max-width: 1024px) {
+  section#work > div > div > img {
+    border-radius: var(--radius-md);
+  }
+  section#work > div > div > img {
+    border-radius: var(--radius-md);
+  }
+}
 section#work > div > div > div {
   display: flex;
   gap: var(--spacing-md);
@@ -439,4 +463,124 @@ footer p a {
 footer p a:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
+}
+
+/* Section: Privacy Policy */
+section#privacy-policy {
+  width: 100%;
+  max-width: var(--screen-md);
+  padding: var(--spacing-z) var(--spacing-md);
+}
+section#privacy-policy h1 {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 2px;
+  margin-bottom: var(--spacing-xl);
+  text-underline-offset: var(--spacing-sm);
+}
+section#privacy-policy h1 span {
+  font-weight: 400;
+}
+section#privacy-policy h2 {
+  margin-bottom: var(--spacing-md);
+}
+section#privacy-policy p {
+  margin-bottom: var(--spacing-lg);
+}
+section#privacy-policy ul {
+  margin-top: calc(var(--spacing-md) * -1);
+}
+section#privacy-policy > div {
+  display: flex;
+}
+@media (max-width: 768px) {
+  section#privacy-policy > div {
+    flex-direction: column;
+  }
+}
+section#privacy-policy > div > div {
+  flex: 1;
+}
+section#privacy-policy > div > div:nth-child(1) {
+  border-right: 1px solid var(--color-border);
+  padding: var(--spacing-md) var(--spacing-lg) var(--spacing-md) var(--spacing-z);
+}
+@media (max-width: 768px) {
+  section#privacy-policy > div > div:nth-child(1) {
+    border-right: none;
+    padding-right: var(--spacing-z);
+    padding-bottom: var(--spacing-z);
+  }
+}
+section#privacy-policy > div > div:nth-child(2) {
+  padding-top: var(--spacing-md);
+  padding-left: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+}
+@media (max-width: 768px) {
+  section#privacy-policy > div > div:nth-child(2) {
+    padding-top: var(--spacing-z);
+    padding-left: var(--spacing-z);
+    padding-bottom: var(--spacing-z);
+  }
+}
+
+/* Section: Accessibility Statement */
+section#accessibility-statement {
+  width: 100%;
+  max-width: var(--screen-md);
+  padding: var(--spacing-z) var(--spacing-md);
+}
+section#accessibility-statement h1 {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 2px;
+  margin-bottom: var(--spacing-xl);
+  text-underline-offset: var(--spacing-sm);
+}
+section#accessibility-statement h1 span {
+  font-weight: 400;
+}
+section#accessibility-statement h2 {
+  margin-bottom: var(--spacing-md);
+}
+section#accessibility-statement p {
+  margin-bottom: var(--spacing-lg);
+}
+section#accessibility-statement ul {
+  margin-top: calc(var(--spacing-md) * -1);
+}
+section#accessibility-statement > div {
+  display: flex;
+}
+@media (max-width: 768px) {
+  section#accessibility-statement > div {
+    flex-direction: column;
+  }
+}
+section#accessibility-statement > div > div {
+  flex: 1;
+}
+section#accessibility-statement > div > div:nth-child(1) {
+  border-right: 1px solid var(--color-border);
+  padding: var(--spacing-md) var(--spacing-lg) var(--spacing-md) var(--spacing-z);
+}
+@media (max-width: 768px) {
+  section#accessibility-statement > div > div:nth-child(1) {
+    border-right: none;
+    padding-right: var(--spacing-z);
+    padding-bottom: var(--spacing-z);
+  }
+}
+section#accessibility-statement > div > div:nth-child(2) {
+  padding-top: var(--spacing-md);
+  padding-left: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+}
+@media (max-width: 768px) {
+  section#accessibility-statement > div > div:nth-child(2) {
+    padding-top: var(--spacing-z);
+    padding-left: var(--spacing-z);
+    padding-bottom: var(--spacing-z);
+  }
 }
