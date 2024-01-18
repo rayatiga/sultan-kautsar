@@ -1,4 +1,10 @@
 /* Main CSS */
+/* Default: Font */
+@font-face {
+  font-display: swap;
+  font-family: "Plus Jakarta Sans";
+  src: url("/asset/font/plus-jakarta-sans.ttf");
+}
 /* Default: Root */
 :root {
   --animate-delay: 0.125s;
@@ -14,7 +20,7 @@ html {
 }
 /* Default: Body */
 body {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
 }
 /* Default: Header */
 header nav {
@@ -43,6 +49,10 @@ footer {
 }
 .navbar .dropdown-menu .active .bi {
   display: block !important;
+}
+/* Bootstrap: Font Bold */
+.fw-bold {
+  font-weight: 800 !important;
 }
 /* Bootstrap: Header and Footer */
 nav.bg-body-tertiary,
