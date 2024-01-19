@@ -7,7 +7,8 @@
 }
 /* Default: Root */
 :root {
-  --animate-delay: 0.125s;
+  --blue: var(--bs-primary-bg-subtle);
+  --darkblue: var(--bs-primary-bg-subtle);
 }
 /* Default: Selection */
 ::selection {
@@ -16,28 +17,44 @@
 }
 /* Default: HTML */
 html {
-  scroll-padding-top: calc(56px + 24px);
+  scroll-padding-top: calc(58px + 24px);
 }
 /* Default: Body */
 body {
+  letter-spacing: 0.15px;
   font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
 }
 /* Default: Header */
-header nav {
-  min-height: 56px;
+header {
+  min-height: 57px;
 }
 /* Default: Main */
 main {
-  min-height: calc(100vh - ((56px * 2) + (1px * 2)));
+  margin-top: 57px;
+  min-height: calc(100vh - (58px * 2));
 }
 /* Default: Footer */
 footer {
-  min-height: 56px;
+  min-height: 57px;
 }
 /* Default: Media: Main */
-@media (max-width: 490px) {
+@media (max-width: 447px) {
   main {
-    min-height: calc(100vh - ((80px + 56px) + (1px * 2)));
+    min-height: calc(100vh - (81px + 58px));
+  }
+}
+/* Bootstrap: Header Active */
+header .nav-link.active {
+  border-radius: var(--bs-border-radius);
+  background-color: var(--bs-secondary-bg);
+}
+@media (max-width: 992px) {
+  header .nav-link {
+    padding-left: 1rem !important;
+    padding-left: 1rem !important;
+  }
+  header .nav-link[href='/'] {
+    margin-top: 1rem;
   }
 }
 /* Bootstrap: Icons */
@@ -54,12 +71,6 @@ footer {
 .fw-bold {
   font-weight: 800 !important;
 }
-/* Bootstrap: Header and Footer */
-nav.bg-body-tertiary,
-footer.bg-body-tertiary {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
-}
 /* Bootstrap: Form Control */
 .form-control:focus {
   border-color: #aaaaaa;
@@ -70,17 +81,6 @@ footer.bg-body-tertiary {
   background-size: calc(0.75em + 0.375rem) calc(0.55em + 0.375rem);
 }
 /* Bootstrap: Scheme: Dark */
-[data-bs-theme="dark"] {
-  color-scheme: dark;
-  --bs-body-color: #ffffff;
-  --bs-body-color-rgb: 255, 255, 255;
-  --bs-body-bg: #212529;
-}
-[data-bs-theme="dark"] nav.bg-body-tertiary,
-[data-bs-theme="dark"] footer.bg-body-tertiary {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
-}
 [data-bs-theme="dark"] .btn-dark {
   --bs-btn-color: var(--bs-black);
   --bs-btn-bg: var(--bs-light);
@@ -97,9 +97,6 @@ footer.bg-body-tertiary {
   --bs-btn-disabled-bg: #f8f9fa;
   --bs-btn-disabled-border-color: #f8f9fa;
 }
-[data-bs-theme="dark"] .badge.bg-dark {
-  border: 1px solid var(--bs-light-border-subtle);
-}
 [data-bs-theme="dark"] .btn-outline-dark {
   --bs-btn-color: #f8f9fa;
   --bs-btn-border-color: #f8f9fa;
@@ -115,60 +112,4 @@ footer.bg-body-tertiary {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #f8f9fa;
   --bs-gradient: none;
-}
-/* Animate CSS: Animation Delay */
-.animate__animated.animate__delay-6s {
-  -webkit-animation-delay: 6s;
-  animation-delay: 6s;
-  -webkit-animation-delay: calc(var(--animate-delay) * 6);
-  animation-delay: calc(var(--animate-delay) * 6);
-}
-.animate__animated.animate__delay-7s {
-  -webkit-animation-delay: 7s;
-  animation-delay: 7s;
-  -webkit-animation-delay: calc(var(--animate-delay) * 7);
-  animation-delay: calc(var(--animate-delay) * 7);
-}
-.animate__animated.animate__delay-8s {
-  -webkit-animation-delay: 8s;
-  animation-delay: 8s;
-  -webkit-animation-delay: calc(var(--animate-delay) * 8);
-  animation-delay: calc(var(--animate-delay) * 8);
-}
-.animate__animated.animate__delay-9s {
-  -webkit-animation-delay: 9s;
-  animation-delay: 9s;
-  -webkit-animation-delay: calc(var(--animate-delay) * 9);
-  animation-delay: calc(var(--animate-delay) * 9);
-}
-.animate__animated.animate__delay-10s {
-  -webkit-animation-delay: 10s;
-  animation-delay: 10s;
-  -webkit-animation-delay: calc(var(--animate-delay) * 10);
-  animation-delay: calc(var(--animate-delay) * 10);
-}
-/* Animate CSS: Keyframe */
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 0.5em, 0);
-    transform: translate3d(0, 0.5em, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 0.5em, 0);
-    transform: translate3d(0, 0.5em, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
 }
