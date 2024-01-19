@@ -11,10 +11,10 @@
     <!-- Bootstrap -->
     <link href="/asset/css/bootstrap.css" rel="stylesheet" />
     <link href="/asset/css/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Animate Style -->
-    <link href="/asset/css/animate.css" rel="stylesheet" />
     <!-- Main CSS -->
     <link href="/asset/css/main.css" rel="stylesheet" />
+    <!-- Resource CSS -->
+    <link href="/asset/css/resource.css" rel="stylesheet" />
     <!-- External: Google Analytic -->
     <script src="https://www.googletagmanager.com/gtag/js?id=G-67321R6THH" async></script>
     <script>
@@ -28,87 +28,101 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="sticky-top">
-      <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
-        <div class="container">
-          <a class="navbar-brand fw-medium" href="/"><i class="bi bi-person-workspace align-baseline me-2"></i>Sultan Kautsar</a>
-          <button class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about.html">About</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-current="page" aria-expanded="false">Resource</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item active" href="/resource.html">All Resources</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="/resource.html#achievement">Achievement</a></li>
-                  <li><a class="dropdown-item" href="/resource.html#uiux">U/UX Project</a></li>
-                  <li><a class="dropdown-item" href="/resource.html#website">Website Project</a></li>
-                  <li><a class="dropdown-item" href="/resource.html#resume">Personal Resume</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/contact.html">Contact</a>
-              </li>
-              <!-- Scheme: Toggle -->
-              <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
-                <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-dark-50"></div>
-                <hr class="d-lg-none my-2 text-dark-50" />
-              </li>
-              <li class="nav-item dropdown">
-                <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex w-100 align-items-center" id="bd-theme" data-bs-display="static" data-bs-toggle="dropdown" type="button" aria-expanded="false" aria-label="Toggle theme (auto)">
-                  <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
-                  <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
-                  <li>
-                    <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" type="button" aria-pressed="false">
-                      <svg class="bi me-2 opacity-50 theme-icon"><use href="#sun-fill"></use></svg>
-                      Light
-                      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" type="button" aria-pressed="false">
-                      <svg class="bi me-2 opacity-50 theme-icon"><use href="#moon-stars-fill"></use></svg>
-                      Dark
-                      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" type="button" aria-pressed="true">
-                      <svg class="bi me-2 opacity-50 theme-icon"><use href="#circle-half"></use></svg>
-                      Auto
-                      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                    </button>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+    <header class="navbar navbar-expand-lg bg-body border-bottom fixed-top" role="navigation">
+      <div class="container">
+        <a class="navbar-brand fw-medium" href="/"><i class="bi bi-person-workspace align-baseline me-2"></i>Sultan Kautsar</a>
+        <button class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" aria-current="page">Resource</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" href="/resource.html" aria-current="page">All Resources</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="/resource.html#achievement">Achievement</a></li>
+                <li><a class="dropdown-item" href="/resource.html#uiux">U/UX Project</a></li>
+                <li><a class="dropdown-item" href="/resource.html#website">Website Project</a></li>
+                <li><a class="dropdown-item" href="/resource.html#resume">Personal Resume</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+            <!-- Scheme: Toggle -->
+            <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+              <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-dark-50"></div>
+              <hr class="d-lg-none my-2 text-dark-50" />
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex w-100 align-items-center" id="bd-theme" data-bs-display="static" data-bs-toggle="dropdown" type="button" aria-expanded="false" aria-label="Toggle theme (auto)">
+                <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
+                <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                <li>
+                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" type="button" aria-pressed="false">
+                    <svg class="bi me-2 opacity-50 theme-icon"><use href="#sun-fill"></use></svg>
+                    Light
+                    <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" type="button" aria-pressed="false">
+                    <svg class="bi me-2 opacity-50 theme-icon"><use href="#moon-stars-fill"></use></svg>
+                    Dark
+                    <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" type="button" aria-pressed="true">
+                    <svg class="bi me-2 opacity-50 theme-icon"><use href="#circle-half"></use></svg>
+                    Auto
+                    <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
     </header>
     <!-- Main: Resource -->
-    <main class="d-flex justify-content-center align-items-center" id="resource">
+    <main class="d-flex flex-column align-items-center" id="resource">
+      <section class="d-flex flex-column justify-content-center border-bottom w-100">
+        <div class="container d-flex flex-column gap-2">
+          <h1 class="fw-bold">Resource and Project<i class="bi bi-stars ms-2 align-baseline text-warning"></i></h1>
+          <p class="m-0">I'm always open to discussing product design work or partnership opportunities. If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p>
+        </div>
+      </section>
       <!-- Section -->
       <section class="py-5">
         <div class="container d-flex flex-column gap-2">
-          <h1 class="fw-bold animate__animated animate__fadeInUp animate__faster">Resource and Project</h1>
-          <p class="animate__animated animate__fadeInUp animate__faster animate__delay-1s">I'm always open to discussing product design work or partnership opportunities. If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p>
+          <!-- Section: Coming Soon -->
+          <section class="align-self-center" id="coming-soon">
+            <p class="badge bg-light-subtle text-decoration-none fw-medium text-wrap text-body border lh-base">Not all achievements and projects here. Therefore, an update will be coming soon!</p>
+          </section>
           <!-- Section: Achievement -->
-          <section class="my-3 animate__animated animate__fadeInUp animate__delay-2s" id="achievement">
-            <h1 class="fs-5 py-2 px-3 d-inline-block bg-dark border text-white rounded mb-3"><i class="bi bi-award align-baseline me-2"></i>Achievement</h1>
-            <p>Here are some of my top certification that I use to learn and improve my skills. I hope you find them useful too.</p>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
+          <section class="my-3 d-flex flex-column align-items-center" id="achievement">
+            <div class="d-flex flex-column align-items-center col-lg-10 mb-4">
+              <h2 class="fw-bold py-2 px-3 d-inline-block mb-3">Achievement</h2>
+              <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-2">
+                <span>Issued by:</span>
+                <img class="d-inline-block badge p-2 border bg-light" src="/asset/svg/google.svg" alt="Google Logo" height="36" />
+                <img class="d-inline-block badge p-2 border bg-light" src="/asset/svg/coursera.svg" alt="Coursera Logo" height="36" />
+                <img class="d-inline-block badge p-2 border bg-light" src="/asset/svg/bangkit-academy.svg" alt="Bangkit Academy Logo" height="36" />
+                <img class="d-inline-block badge p-2 border bg-light" src="/asset/svg/cloud-skills-boost.svg" alt="Cloud Skills Boost Logo" height="36" />
+              </div>
+              <p class="text-center">With pride, I present a selection of my professional certifications. These credentials represent my dedication to continuous learning and mastery in information technology. Each program required rigorous training and assessment, solidifying my expertise in tech engineer.</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-2">
               <div class="col">
                 <div class="card h-100">
                   <div class="card-header">
@@ -116,6 +130,7 @@
                     <span class="badge bg-light-subtle text-body border fw-normal">Coursera</span>
                     <span class="badge bg-light-subtle text-body border fw-normal">Specialization</span>
                   </div>
+                  <img class="card-img img-fluid rounded-0" src="/asset/svg/certificate-google-it-support.svg" alt="Google IT Support Certificate" />
                   <div class="card-body">
                     <h5 class="card-title">Google IT Support Certified</h5>
                     <p class="card-text">Competence in many basic skills, including problem solving and customer service, networking, operating systems, systems administration, and security.</p>
@@ -132,6 +147,7 @@
                     <span class="badge bg-light-subtle text-body border fw-normal">Coursera</span>
                     <span class="badge bg-light-subtle text-body border fw-normal">Specialization</span>
                   </div>
+                  <img class="card-img img-fluid rounded-0" src="/asset/svg/certificate-architecting-with-gce.svg" alt="Architecting with GCE Certificate" />
                   <div class="card-body">
                     <h5 class="card-title">Architecting GCE Certified</h5>
                     <p class="card-text">Deployed solution elements, including infrastructure components such as networks, systems and applications services using GCP, with a focus on Compute Engine.</p>
@@ -148,6 +164,7 @@
                     <span class="badge bg-light-subtle text-body border fw-normal">Bangkit Academy</span>
                     <span class="badge bg-light-subtle text-body border fw-normal">Specialization</span>
                   </div>
+                  <img class="card-img img-fluid rounded-0" src="/asset/svg/certificate-bangkit-academy.svg" alt="Bangkit Academy Certificate" />
                   <div class="card-body">
                     <h5 class="card-title">Bangkit Academy Certified</h5>
                     <p class="card-text">Bangkit is a Google-led academy designed to produce high-caliber technical talent. Successfully completing Bangkit, specializing in Cloud Computing, graduated with Disctiction.</p>
@@ -164,22 +181,32 @@
                     <span class="badge bg-light-subtle text-body border fw-normal">GCSB</span>
                     <span class="badge bg-light-subtle text-body border fw-normal">Modernization</span>
                   </div>
+                  <img class="card-img img-fluid rounded-0" src="/asset/img/certificate-website-on-google-cloud.png" alt="Website on Google Cloud Certificate" />
                   <div class="card-body">
                     <h5 class="card-title">Website on Google Cloud Certified</h5>
                     <p class="card-text">Initiating services, set-up network and public ip, uploading resources via command-line, deploy lampp stack, configuring http server config file, and deploy site.</p>
                   </div>
                   <div class="card-footer">
-                    <a class="text-body-secondary small text-decoration-none" href="https://www.coursera.org/account/accomplishments/specialization/certificate/U47F93996VM2" target="_blank" rel="nofollow noindex noopener">Link to certificate <i class="bi bi-box-arrow-up-right align-baseline ms-1"></i></a>
+                    <a class="text-body-secondary small text-decoration-none" href="https://www.cloudskillsboost.google/public_profiles/1ce55bb8-54a4-49b4-83aa-20d5e35b873c/badges/2591790/" target="_blank" rel="nofollow noindex noopener">Link to certificate <i class="bi bi-box-arrow-up-right align-baseline ms-1"></i></a>
+                    <a class="ms-2 text-body-secondary small text-decoration-none" href="https://www.cloudskillsboost.google/public_profiles/1ce55bb8-54a4-49b4-83aa-20d5e35b873c/" target="_blank" rel="nofollow noindex noopener">GCSB Public Profile <i class="bi bi-box-arrow-up-right align-baseline ms-1"></i></a>
                   </div>
                 </div>
               </div>
             </div>
           </section>
           <!-- Section: UIUX -->
-          <section class="my-3 animate__animated animate__fadeInUp animate__delay-3s" id="uiux">
-            <h1 class="fs-5 py-2 px-3 d-inline-block bg-dark border text-white rounded mb-3"><i class="bi bi-layout-text-window-reverse align-baseline me-2"></i>UI/UX Project</h1>
-            <p>Here are some of my favorite UI/UX design project that I use to learn and improve my skills. I hope you find them useful too.</p>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
+          <section class="my-3 d-flex flex-column align-items-center" id="uiux">
+            <div class="d-flex flex-column align-items-center col-lg-10 mb-4">
+              <h2 class="fw-bold py-2 px-3 d-inline-block mb-3">UI/UX Project</h2>
+              <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-2">
+                <span>Tools used:</span>
+                <img class="d-inline-block badge p-2 border bg-light" src="/asset/svg/adobe-xd.svg" alt="Adobe XD Logo" height="36" />
+                <img class="d-inline-block badge p-2 border bg-light" src="/asset/svg/figma.svg" alt="Figma Logo" height="36" />
+                <img class="d-inline-block badge p-2 border bg-light" src="/asset/svg/corel-draw.svg" alt="CorelDRAW Logo" height="36" />
+              </div>
+              <p class="text-center">Below, you'll find a curated selection of my UI/UX projects, each one a testament to my dedication to crafting intuitive and visually stunning experiences. These projects span diverse industries and platforms, showcasing my ability to adapt to different challenges and bring fresh perspectives to each design. Dive into the details and see how I've translated complex needs into user-centric interfaces that are both functional and delightful.</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-2">
               <div class="col">
                 <div class="card h-100">
                   <div class="card-header">
@@ -251,10 +278,24 @@
             </div>
           </section>
           <!-- Section: Website -->
-          <section class="my-3 animate__animated animate__fadeInUp animate__delay-4s" id="website">
-            <h1 class="fs-5 py-2 px-3 d-inline-block bg-dark border text-white rounded mb-3"><i class="bi bi-globe-americas align-baseline me-2"></i>Website Project</h1>
-            <p>Here are some of my favorite website projects that I use to learn and improve my skills. I hope you find them useful too.</p>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
+          <section class="my-3 d-flex flex-column align-items-center" id="website">
+            <div class="d-flex flex-column align-items-center col-lg-10 mb-4">
+              <h2 class="fw-bold py-2 px-3 d-inline-block mb-3">Website Project</h2>
+              <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-2">
+                <span>Tech used:</span>
+                <img class="d-inline-block badge p-2 border bg-light" src="/asset/svg/linux.svg" alt="Linux Logo" height="36" />
+                <img class="d-inline-block badge p-2 border bg-light" src="/asset/svg/google-cloud.svg" alt="Google Cloud Logo" height="36" />
+                <img class="d-inline-block badge p-2 border bg-light" src="/asset/svg/apache.svg" alt="Apache Logo" height="36" />
+                <img class="d-inline-block badge p-2 border bg-light" src="/asset/svg/php.svg" alt="PHP Logo" height="36" />
+                <img class="d-inline-block badge p-2 border bg-light" src="/asset/svg/phpmyadmin.svg" alt="PhpMyAdmin Logo" height="36" />
+                <img class="d-inline-block badge p-2 border bg-light" src="/asset/svg/wordpress.svg" alt="WordPress Logo" height="36" />
+                <img class="d-inline-block badge p-2 border bg-light" src="/asset/svg/html.svg" alt="HTML Logo" height="36" />
+                <img class="d-inline-block badge p-2 border bg-light" src="/asset/svg/css.svg" alt="CSS Logo" height="36" />
+                <img class="d-inline-block badge p-2 border bg-light" src="/asset/svg/javascript.svg" alt="JavaScript Logo" height="36" />
+              </div>
+              <p class="text-center">Excited to showcase some of my recent work! Below you'll find a selection of website projects I've tackled, ranging from crafting compelling profiles for e-commerce companies to shaping individual personal brands online. Each project reflects my passion for creating digital spaces that resonate with audiences and effectively tell unique stories.</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-2">
               <div class="col">
                 <div class="card h-100">
                   <div class="card-header">
@@ -360,26 +401,26 @@
             </div>
           </section>
           <!-- Section: Resume -->
-          <section class="mt-3 animate__animated animate__fadeInUp animate__delay-5s" id="resume">
-            <h1 class="fs-5 py-2 px-3 d-inline-block bg-dark border text-white rounded mb-3"><i class="bi bi-person-check align-baseline me-2"></i>Personal Resume</h1>
-            <p>Here are my personal resume that I use to describe all my experience, skills, and other information. I hope you find them useful too.</p>
-            <div class="row g-4">
-              <div class="col">
-                <div class="card">
-                  <div class="card-body p-0">
-                    <img class="card-img-top" src="/asset/svg/sultan-kautsar-resume.svg" alt="Sultan Kautsar Resume" />
-                  </div>
-                  <div class="card-footer">
-                    <a class="mt-2 btn btn-dark btn-sm" href="/asset/pdf/sultan-kautsar-resume.pdf" target="_blank"><i class="bi bi-cloud-download align-baseline me-2"></i>Download PDF</a>
-                    <p class="mt-2 small text-secondary">Last updated: October 19, 2023</p>
-                  </div>
-                </div>
+          <section class="mt-3 d-flex flex-column align-items-center" id="resume">
+            <div class="d-flex flex-column align-items-center col-lg-10 mb-4">
+              <h2 class="fw-bold py-2 px-3 d-inline-block mb-3">Personal Resume</h2>
+              <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-2">
+                <span>Tools used:</span>
+                <img class="d-inline-block badge p-2 border bg-light" src="/asset/svg/google-docs.svg" alt="Google Docs Logo" height="36" />
+              </div>
+              <p class="text-center">Eager to share my diverse skillset and accomplishments, I've compiled my personal resume below. It paints a comprehensive picture of my professional journey, from my academic background and key qualifications to my work experience and notable achievements.</p>
+              <p class="text-center">Whether you're seeking a passionate and dedicated contributor, a skilled problem-solver, or a driven team player, I encourage you to delve into my resume and discover how I can add value to your endeavors.</p>
+              <p class="text-center">I'm confident that my experiences and abilities align with your needs, and I'm eager to discuss how we can collaborate for mutual success.</p>
+            </div>
+            <div class="card col-12">
+              <div class="card-body p-0">
+                <img class="card-img-top" src="/asset/svg/sultan-kautsar-resume.svg" alt="Sultan Kautsar Resume" />
+              </div>
+              <div class="card-footer">
+                <a class="mt-2 btn btn-dark btn-sm" href="/asset/pdf/sultan-kautsar-resume.pdf" target="_blank"><i class="bi bi-cloud-download align-baseline me-2"></i>Download PDF</a>
+                <p class="mt-2 small text-secondary">Last updated: October 19, 2023</p>
               </div>
             </div>
-          </section>
-          <!-- Section: Coming Soon -->
-          <section class="mt-5 animate__animated animate__fadeInUp animate__delay-6s" id="coming-soon">
-            <p class="text-secondary"><i class="bi bi-exclamation-circle align-baseline me-2"></i>Other project and resources are coming soon.</p>
           </section>
         </div>
       </section>

@@ -11,10 +11,10 @@
     <!-- Bootstrap -->
     <link href="/asset/css/bootstrap.css" rel="stylesheet" />
     <link href="/asset/css/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Animate Style -->
-    <link href="/asset/css/animate.css" rel="stylesheet" />
     <!-- Main CSS -->
     <link href="/asset/css/main.css" rel="stylesheet" />
+    <!-- Contact CSS -->
+    <link href="/asset/css/contact.css" rel="stylesheet" />
     <!-- Contact CSS -->
     <link href="/asset/css/contact.css" rel="stylesheet" />
     <!-- External: Google Analytic -->
@@ -30,104 +30,106 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="sticky-top">
-      <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
-        <div class="container">
-          <a class="navbar-brand fw-medium" href="/"><i class="bi bi-person-workspace align-baseline me-2"></i>Sultan Kautsar</a>
-          <button class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about.html">About</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Resource</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/resource.html">All Resources</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="/resource.html#achievement">Achievement</a></li>
-                  <li><a class="dropdown-item" href="/resource.html#uiux">U/UX Project</a></li>
-                  <li><a class="dropdown-item" href="/resource.html#website">Website Project</a></li>
-                  <li><a class="dropdown-item" href="/resource.html#resume">Personal Resume</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="/contact.html" aria-current="page">Contact</a>
-              </li>
-              <!-- Scheme: Toggle -->
-              <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
-                <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-dark-50"></div>
-                <hr class="d-lg-none my-2 text-dark-50" />
-              </li>
-              <li class="nav-item dropdown">
-                <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex w-100 align-items-center" id="bd-theme" data-bs-display="static" data-bs-toggle="dropdown" type="button" aria-expanded="false" aria-label="Toggle theme (auto)">
-                  <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
-                  <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
-                  <li>
-                    <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" type="button" aria-pressed="false">
-                      <svg class="bi me-2 opacity-50 theme-icon"><use href="#sun-fill"></use></svg>
-                      Light
-                      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" type="button" aria-pressed="false">
-                      <svg class="bi me-2 opacity-50 theme-icon"><use href="#moon-stars-fill"></use></svg>
-                      Dark
-                      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" type="button" aria-pressed="true">
-                      <svg class="bi me-2 opacity-50 theme-icon"><use href="#circle-half"></use></svg>
-                      Auto
-                      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                    </button>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+    <header class="navbar navbar-expand-lg bg-body border-bottom fixed-top" role="navigation">
+      <div class="container">
+        <a class="navbar-brand fw-medium" href="/"><i class="bi bi-person-workspace align-baseline me-2"></i>Sultan Kautsar</a>
+        <button class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Resource</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/resource.html">All Resources</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="/resource.html#achievement">Achievement</a></li>
+                <li><a class="dropdown-item" href="/resource.html#uiux">U/UX Project</a></li>
+                <li><a class="dropdown-item" href="/resource.html#website">Website Project</a></li>
+                <li><a class="dropdown-item" href="/resource.html#resume">Personal Resume</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/contact.html" aria-current="page">Contact</a>
+            </li>
+            <!-- Scheme: Toggle -->
+            <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+              <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-dark-50"></div>
+              <hr class="d-lg-none my-2 text-dark-50" />
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex w-100 align-items-center" id="bd-theme" data-bs-display="static" data-bs-toggle="dropdown" type="button" aria-expanded="false" aria-label="Toggle theme (auto)">
+                <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
+                <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                <li>
+                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" type="button" aria-pressed="false">
+                    <svg class="bi me-2 opacity-50 theme-icon"><use href="#sun-fill"></use></svg>
+                    Light
+                    <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" type="button" aria-pressed="false">
+                    <svg class="bi me-2 opacity-50 theme-icon"><use href="#moon-stars-fill"></use></svg>
+                    Dark
+                    <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" type="button" aria-pressed="true">
+                    <svg class="bi me-2 opacity-50 theme-icon"><use href="#circle-half"></use></svg>
+                    Auto
+                    <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
     </header>
     <!-- Main: Contact -->
-    <main class="d-flex justify-content-center align-items-center" id="contact">
+    <main class="d-flex flex-column align-items-center" id="contact">
+      <section class="d-flex flex-column justify-content-center border-bottom w-100">
+        <div class="container d-flex flex-column gap-2">
+          <h1 class="fw-bold">Contact</h1>
+          <p class="m-0">I'm always open to discussing product design work or partnership opportunities. If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p>
+        </div>
+      </section>
       <!-- Section -->
       <section class="py-5">
         <div class="container d-flex flex-column gap-2">
-          <h1 class="fw-bold animate__animated animate__fadeInUp animate__faster">Get in Touch</h1>
-          <p class="animate__animated animate__fadeInUp animate__faster animate__delay-1s">I'm always open to discussing product design work or partnership opportunities. If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p>
-          <form class="needs-validation row g-3" action="https://formspree.io/f/xgejenzn" method="post" target="_blank" novalidate>
-            <div class="col-md-6 col-sm-12 animate__animated animate__fadeInUp animate__faster animate__delay-2s">
+          <h2 class="fs-5 fw-bolder">Get in Touch</h2>
+          <form class="needs-validation row col-12 g-3" action="https://formspree.io/f/xgejenzn" method="post" target="_blank" novalidate>
+            <div class="col-md-6 col-sm-12">
               <label for="name">Name</label>
               <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." minlength="2" maxlength="60" required />
               <div class="valid-feedback">Looks good.</div>
               <div class="invalid-feedback">Please enter your name.</div>
             </div>
-            <div class="col-md-6 col-sm-12 animate__animated animate__fadeInUp animate__faster animate__delay-3s">
+            <div class="col-md-6 col-sm-12">
               <label for="email">Email</label>
               <input class="form-control" id="email" name="email" type="email" placeholder="Enter your email..." minlength="6" maxlength="60" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required />
               <div class="valid-feedback">Your email looks good.</div>
               <div class="invalid-feedback">Please enter valid email.</div>
             </div>
-            <div class="col-12 animate__animated animate__fadeInUp animate__faster animate__delay-4s">
+            <div class="col-12">
               <label for="message">Message</label>
               <textarea class="form-control" id="message" name="Message" placeholder="Enter your message..." minlength="10" maxlength="2500" required></textarea>
               <div class="valid-feedback">Your message looks good.</div>
               <div class="invalid-feedback">Please enter your meessage more than 15 character.</div>
             </div>
             <input name="_gotcha" type="text" style="display: none" />
-            <span class="col-12 small text-body-secondary animate__animated animate__fadeInUp animate__faster animate__delay-4s">Powered by <a class="text-decoration-none" href="https://formspree.io/" target="_blank" rel="nofollow noopener noreferrer">Formspree</a>.</span>
-            <div class="col-12 animate__animated animate__fadeInUp animate__faster animate__delay-5s">
+            <span class="col-12 small text-body-secondary">Powered by <a class="text-decoration-none" href="https://formspree.io/" target="_blank" rel="nofollow noopener noreferrer">Formspree</a>.</span>
+            <div class="col-12">
               <button class="btn btn-dark" type="submit"><i class="bi bi-send align-baseline me-2"></i>Submit</button>
             </div>
           </form>
@@ -135,7 +137,7 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="bg-body-tertiary border-top">
+    <footer class="bg-body border-top">
       <div class="container">
         <p class="m-0 py-3 text-center">Copyright <i class="bi bi-c-circle align-baseline"></i> 2020 - 2023 <a class="text-body text-decoration-none" href="https://sultankautsar.com">Sultan Kautsar</a>. All Rights Reserved.</p>
       </div>
