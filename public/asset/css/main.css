@@ -38,7 +38,7 @@ footer {
   min-height: 57px;
 }
 /* Default: Media: Main */
-@media (max-width: 447px) {
+@media (max-width: 492px) {
   main {
     min-height: calc(100vh - (81px + 58px));
   }
