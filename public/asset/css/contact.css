@@ -1,15 +1,15 @@
-/* Contact CSS */
-/* Default: Contact Form Message */
+/* File: contact.css */
+/* Default: Form Text Area */
 #contact form #message {
   min-height: 250px;
 }
-/* Default: Section */
+/* Default: Section One */
 #contact > section:nth-child(1) {
   min-height: 32vh;
   padding: 4rem 0;
   background-color: var(--blue);
 }
-/* Default: Dark: Section */
+/* Framework: Bootstrap: Dark Mode Section One */
 [data-bs-theme="dark"] #contact > section:nth-child(1) {
   background-color: var(--darkblue);
 }

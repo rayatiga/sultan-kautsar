@@ -1,5 +1,5 @@
-/* Contact JS */
-// Bootstrap: Form Validation
+/* File: contact.js */
+/* Framework: Bootstrap: Form Validation */
 (() => {
   "use strict";
   const forms = document.querySelectorAll(".needs-validation");

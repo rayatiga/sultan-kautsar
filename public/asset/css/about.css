@@ -1,11 +1,11 @@
-/* About CSS */
-/* Default: Section */
+/* File: about.css */
+/* Default: Section One */
 #about > section:nth-child(1) {
   min-height: 32vh;
   padding: 4rem 0;
   background-color: var(--blue);
 }
-/* Default: Dark: Section */
+/* Framework: Bootstrap: Dark Mode Section One */
 [data-bs-theme="dark"] #about > section:nth-child(1) {
   background-color: var(--darkblue);
 }
