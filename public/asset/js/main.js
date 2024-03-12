@@ -28,3 +28,8 @@ popoverTriggerList.forEach((popoverTriggerEl) => {
 /* Framework: Bootstrap: Tooltip */
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+/* Framework: AOS: Initialization */
+AOS.init({
+  duration: 500,
+  disable: "mobile",
+});
