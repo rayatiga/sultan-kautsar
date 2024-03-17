@@ -30,6 +30,8 @@ const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]
 const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
 /* Framework: AOS: Initialization */
 AOS.init({
+  offset: 50,
   duration: 500,
-  disable: "mobile",
+  delay: 150,
+  once: true,
 });
