@@ -1,0 +1,26 @@
+Sultan Kautsar Documentation
+
+Scope 1: Domain
+Sultan Kautsar use domain sultankautsar.com.
+
+Scope 2: Page
+There are list of page inside website sultankautsar.com.
+Active page: about.html, contact.html, index.html, resource.html.
+Archive page: 404.html.
+
+Scope 3: Technology
+Firebase Hosting and Cloudflare Pages.
+
+Scope 4: Asset
+Favicon: favicon.ico.
+Cascading Style Sheet: asset/css/*.css.
+Font: asset/font/*.ttf, asset/font/*.woff, asset/font/*.woff2.
+Image: asset/img/*.png.
+JavaScript: asset/js/*.js.
+PDF: asset/pdf/*.pdf.
+SVG: asset/svg/*.svg.
+
+Scope 5: Other File
+_redirects: Cloudflare Pages Redirect Rule.
+documentation.txt: This documentation.
+sitemap.xml: Website page structure.
