@@ -14,7 +14,7 @@ window.addEventListener("scroll", function () {
   }
 });
 /* Default: Email Button */
-document.body.insertAdjacentHTML("beforeend", `<button class="btn bg-body border position-fixed shadow-sm" onclick="emailButton()" data-bs-title="Email Me" data-bs-toggle="tooltip" style="bottom: 12px; right: 12px;" title="Email Me" data-aos="fade-up" data-aos-delay="0" data-aos-offset="0"><i class="bi bi-envelope-at"></i></button>`);
+document.body.insertAdjacentHTML("beforeend", `<button class="btn bg-body border position-fixed shadow-sm" onclick="emailButton()" data-bs-title="Email Me" data-bs-toggle="tooltip" style="bottom: 12px; right: 12px;" title="Email Me"><i class="bi bi-envelope-at"></i></button>`);
 /* Default: Function Email Button */
 function emailButton() {
   window.open("mailto:contact@sultankautsar.com");
@@ -28,10 +28,3 @@ popoverTriggerList.forEach((popoverTriggerEl) => {
 /* Framework: Bootstrap: Tooltip */
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
-/* Framework: AOS: Initialization */
-AOS.init({
-  offset: 50,
-  duration: 500,
-  delay: 150,
-  once: true,
-});
