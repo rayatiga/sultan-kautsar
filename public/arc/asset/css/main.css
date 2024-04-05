@@ -217,7 +217,6 @@ figure.hero {
   overflow: hidden;
 }
 figure.closing {
-  width: 100%;
   max-width: 480px;
 }
 figcaption {
