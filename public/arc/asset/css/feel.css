@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap");
+
+body {
+  font-family: "Vollkorn", serif;
+}
+
+.feel-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 320px) {
+  .feel-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+#result {
+  display: none;
+  margin-bottom: 24px;
+}
+
+br {
+  display: block;
+  margin: 12px;
+  content: "";
+}
+
+h2 {
+  font-size: 20px;
+  margin: 16px 0 12px 0;
+}
+
+blockquote {
+  color: #dddddd;
+  margin-left: 16px;
+  padding-left: 16px;
+  border-left: 4px solid #555555;
+}
+
+a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px 4px;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+  background-color: #1f1f1f;
+  transition: all 0.25s ease-in-out;
+}
+
+a:hover {
+  opacity: 0.85;
+}
