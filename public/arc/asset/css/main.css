@@ -149,7 +149,6 @@ body {
 }
 main {
   gap: 16px;
-  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -241,6 +240,10 @@ figcaption {
   .gallery {
     grid-template-columns: 1fr;
   }
+}
+video {
+  padding: 4px;
+  border: 1px solid #dddddd;
 }
 footer {
   color: #555555;
