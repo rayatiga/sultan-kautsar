@@ -11,9 +11,9 @@ function footerYear() {
 }
 window.onload = footerYear();
 function playSong() {
-  var audio = new Audio("/arc/asset/audio/blue-salvia.mp3");
+  var audio = document.getElementById("audio");
   audio.play();
-  audio.volume = 0.35;
+  audio.volume = 0.9;
   audio.loop = true;
 }
 function openPopup() {
@@ -21,7 +21,7 @@ function openPopup() {
   var popupOverlay = document.getElementById("popup-overlay");
   var gifAnimated = document.querySelectorAll(".gif.animated");
   for (let i = 0; i < gifAnimated.length; i++) {
-    gifAnimated[i].style.transform = 'translateY(-125%)';
+    gifAnimated[i].style.transform = "translateY(-125%)";
   }
   popupSong.style.display = "flex";
   popupOverlay.style.display = "block";
@@ -33,7 +33,7 @@ function closePopup() {
   var popupOverlay = document.getElementById("popup-overlay");
   var gifAnimated = document.querySelectorAll(".gif.animated");
   for (let i = 0; i < gifAnimated.length; i++) {
-    gifAnimated[i].style.transform = 'translateY(0%)';
+    gifAnimated[i].style.transform = "translateY(0%)";
   }
   popupSong.style.display = "none";
   popupOverlay.style.display = "none";
