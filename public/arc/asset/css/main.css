@@ -147,7 +147,7 @@ body {
   padding: 24px 16px;
   flex-direction: column;
 }
-main {
+main, div {
   gap: 16px;
   display: flex;
   flex-direction: column;
