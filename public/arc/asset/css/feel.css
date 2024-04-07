@@ -16,9 +16,13 @@ body {
   }
 }
 
+#feeling {
+  margin-bottom: 12px;
+}
+
 #result {
   display: none;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 br {
@@ -29,11 +33,12 @@ br {
 
 h2 {
   font-size: 20px;
-  margin: 16px 0 12px 0;
+  margin: 16px 0 -4px 0;
 }
 
 blockquote {
   color: #dddddd;
+  margin-top: 12px;
   margin-left: 16px;
   padding-left: 16px;
   border-left: 4px solid #555555;
