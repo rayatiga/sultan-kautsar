@@ -155,7 +155,7 @@ main, div {
 header {
   color: #555555;
 }
-.post-date {
+.post-date, .dim {
   color: #555555;
 }
 h1 {
