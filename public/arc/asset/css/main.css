@@ -179,6 +179,9 @@ u {
   text-decoration-style: wavy;
   text-decoration-color: #aa5555;
 }
+ul {
+  line-height: 1.5;
+}
 img {
   width: 100%;
   display: block;
