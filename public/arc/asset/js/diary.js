@@ -1,6 +1,6 @@
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
-const paramContent = params.get("r");
+const paramContent = params.get("about");
 
 const intro = document.getElementById("intro");
 const about = document.getElementById("about");
@@ -10,11 +10,11 @@ const quote = document.getElementById("quote");
 const dimmed = document.getElementById("dimmed");
 const character = document.getElementById("character");
 
-if (params.has("r")) {
+if (params.has("about")) {
   about.style.display = "none";
-  intro.style.opacity = 0.25;
-  dimmed.style.opacity = 0.25;
-  character.style.opacity = 0.25;
+  intro.style.display = "none";
+  dimmed.style.display = "none";
+  character.style.display = "none";
   result.style.display = "flex";
   fetch("/arc/asset/json/diary.json")
     .then((response) => response.json())
@@ -31,8 +31,9 @@ if (params.has("r")) {
     });
 } else {
   about.style.display = "flex";
-  intro.style.opacity = 1;
-  dimmed.style.opacity = 1;
-  character.style.opacity = 1;
+  about.scrollIntoView();
+  intro.style.display = "flex";
+  dimmed.style.display = "flex";
+  character.style.display = "flex";
   result.style.display = "none";
 }
