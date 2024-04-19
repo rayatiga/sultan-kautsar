@@ -1,62 +1,144 @@
 [
     {
-        "about": "lelah",
-        "content": "Luangkan waktu untuk memperhatikan cara dia berbagi kisah dan perasaannya yang terdalam. Tanpa perlu kamu merasa terburu-buru untuk bertanya."
+        "aboutList": [
+            {
+                "about": "lelah",
+                "content": "Luangkan waktu untuk memperhatikan cara dia berbagi kisah dan perasaannya yang terdalam. Tanpa perlu kamu merasa terburu-buru untuk bertanya."
+            },
+            {
+                "about": "malam",
+                "content": "Melakukan panggilan video dan nyalakan kameramu. Amati bagaimana dia tidur, perhatikan juga posisi tidurnya dan apakah dia terlihat gelisah. Pastikan dia sudah benar-benar tertidur dengan pulas dan nyaman, dengarkan juga apakah dia mendengkur atau bernapas dengan lancar."
+            },
+            {
+                "about": "marah",
+                "content": "Tanyakan dengan penuh perhatian mengapa dia tampak berbeda dan dengarkan dengan seksama ceritanya tentang apa yang dia alami. Berikan dia dukungan dan semangat dengan penuh kasih sayang."
+            },
+            {
+                "about": "menangis",
+                "content": "Hubungi dia dan tanyakan dengan penuh perhatian mengapa dia tampak berbeda. Tanyakan dengan penuh empati dan dengarkan dengan saksama ceritanya. Berikan dia waktu untuk mengungkapkan perasaannya dan tunjukkan bahwa kamu benar-benar ingin mendengarkan. Berikan dia dukungan emosional dan katakan padanya bahwa kamu selalu ada untuknya."
+            },
+            {
+                "about": "jalan",
+                "content": "Berjalan bergandengan tangan dengannya di sisimu, dengan erat dan penuh kasih sayang. Selalu perhatikan dia, pastikan dia merasa aman dan nyaman. Bersama-sama, bagaikan dua insan yang saling melengkapi."
+            },
+            {
+                "about": "bangun",
+                "content": "Bisikanlah kata-kata indah untuknya saat dia mulai meraba dunia dengan matanya yang masih mengantuk. Ceritakan kisah-kisah inspiratif tentang cinta dan kebaikan."
+            },
+            {
+                "about": "prioritas",
+                "content": "Memprioritaskan kepentingannya di atas kepentingan pribadi. Dia harus menjadi prioritas utama, layaknya seorang pasangan. Tanpa terhalang oleh apa pun."
+            },
+            {
+                "about": "waktu",
+                "content": "Luangkan waktu sejenak untuk berkabar. Tanyakan bagaimana dia hari ini, apa yang dia lakukan, dan bagaimana perasaannya. Kirimkan pesan singkat yang penuh perhatian, telepon dia sebentar, atau ajak dia bertemu saat kamu punya waktu luang. Kesibukan bukan alasan untuk mengabaikan orang yang penting bagimu. Selalu luangkan waktu untuk mereka yang kamu sayangi."
+            },
+            {
+                "about": "respon",
+                "content": "Menjadi sumber ketenangan dengan selalu merespons dengan cepat. Tunjukkan rasa hormat dan penghargaanmu dengan selalu ada untuknya. Selalu meluangkan waktu untuknya, bahkan saat bersama teman-temanmu. Dia adalah orang yang paling penting."
+            },
+            {
+                "about": "badmood",
+                "content": "Makanan dan minuman adalah dua hal yang bisa meredakan bad mood-nya. Segera transfer uangnya jika kamu tahu dia ingin jajan, jangan berlama-lama."
+            },
+            {
+                "about": "apresiasi",
+                "content": "Bahkan untuk pencapaian terkecilnya, jangan ragu untuk memberikan apresiasi. Tunjukkan rasa banggamu dengan sepenuh hati dan beri dia pujian yang tulus. Dengan apresiasi yang tulus, dia akan semakin termotivasi untuk mencapai hal-hal yang lebih besar dan merasa semakin dicintai. Apresiasi yang kamu berikan akan membantunya untuk terus berkembang dan menjadi pribadi yang lebih baik."
+            },
+            {
+                "about": "hadiah",
+                "content": "Bukan hanya di saat-saat spesial, tapi juga di hari-hari biasa, memberikan kejutan kecil di setiap saat, sekecil apa pun itu, selalu berhasil membuatnya tersenyum lebar."
+            },
+            {
+                "about": "pakaian",
+                "content": "Tidak terlalu pandai untuk memilih pakaian. Tapi dia well dressed. Yang pasti, baju polo, celana chinos, jam tangan, gelang tali, sepatu bersih, badan wangi membuat dia merasa dihargai."
+            },
+            {
+                "about": "pendidikan",
+                "content": "Dia tidak membutuhkan apa-apa lagi selain dukunganmu yang penuh. Berikan dia semua yang dia butuhkan untuk mencapai kesuksesan. Jangan ragu untuk menawarkan bantuanmu, bahkan untuk hal-hal kecil. Jadilah orang yang bisa dia andalkan untuk menyelesaikan masalahnya. Buat dia merasa bahwa kamu selalu ada untuknya dan kamu menghargai semua yang dia lakukan. Beri dia tahu betapa kamu bangga dengan kerja keras dan dedikasinya dalam belajar."
+            },
+            {
+                "about": "pekerjaan",
+                "content": "Setiap hari dia dihadapkan dengan kesibukan pekerjaan. Ingatkan dia untuk selalu menjaga diri di tengah kesibukan. Ajari dia untuk selalu mengawali semua pekerjaannya dengan doa. Berikan dia dukungan penuh dalam mencapai targetnya. Dan jangan lupa untuk selalu menanyakan bagaimana keadaannya dan seberapa lelah dia di akhir waktu kerja."
+            }
+        ]
     },
     {
-        "about": "malam",
-        "content": "Melakukan panggilan video dan nyalakan kameramu. Amati bagaimana dia tidur, perhatikan juga posisi tidurnya dan apakah dia terlihat gelisah. Pastikan dia sudah benar-benar tertidur dengan pulas dan nyaman, dengarkan juga apakah dia mendengkur atau bernapas dengan lancar."
-    },
-    {
-        "about": "marah",
-        "content": "Tanyakan dengan penuh perhatian mengapa dia tampak berbeda dan dengarkan dengan seksama ceritanya tentang apa yang dia alami. Berikan dia dukungan dan semangat dengan penuh kasih sayang."
-    },
-    {
-        "about": "menangis",
-        "content": "Hubungi dia dan tanyakan dengan penuh perhatian mengapa dia tampak berbeda. Tanyakan dengan penuh empati dan dengarkan dengan saksama ceritanya. Berikan dia waktu untuk mengungkapkan perasaannya dan tunjukkan bahwa kamu benar-benar ingin mendengarkan. Berikan dia dukungan emosional dan katakan padanya bahwa kamu selalu ada untuknya."
-    },
-    {
-        "about": "jalan",
-        "content": "Berjalan bergandengan tangan dengannya di sisimu, dengan erat dan penuh kasih sayang. Selalu perhatikan dia, pastikan dia merasa aman dan nyaman. Bersama-sama, bagaikan dua insan yang saling melengkapi."
-    },
-    {
-        "about": "bangun",
-        "content": "Bisikanlah kata-kata indah untuknya saat dia mulai meraba dunia dengan matanya yang masih mengantuk. Ceritakan kisah-kisah inspiratif tentang cinta dan kebaikan."
-    },
-    {
-        "about": "prioritas",
-        "content": "Memprioritaskan kepentingannya di atas kepentingan pribadi. Dia harus menjadi prioritas utama, layaknya seorang pasangan. Tanpa terhalang oleh apa pun."
-    },
-    {
-        "about": "waktu",
-        "content": "Luangkan waktu sejenak untuk berkabar. Tanyakan bagaimana dia hari ini, apa yang dia lakukan, dan bagaimana perasaannya. Kirimkan pesan singkat yang penuh perhatian, telepon dia sebentar, atau ajak dia bertemu saat kamu punya waktu luang. Kesibukan bukan alasan untuk mengabaikan orang yang penting bagimu. Selalu luangkan waktu untuk mereka yang kamu sayangi."
-    },
-    {
-        "about": "respon",
-        "content": "Menjadi sumber ketenangan dengan selalu merespons dengan cepat. Tunjukkan rasa hormat dan penghargaanmu dengan selalu ada untuknya. Selalu meluangkan waktu untuknya, bahkan saat bersama teman-temanmu. Dia adalah orang yang paling penting."
-    },
-    {
-        "about": "badmood",
-        "content": "Makanan dan minuman adalah dua hal yang bisa meredakan bad mood-nya. Segera transfer uangnya jika kamu tahu dia ingin jajan, jangan berlama-lama."
-    },
-    {
-        "about": "apresiasi",
-        "content": "Bahkan untuk pencapaian terkecilnya, jangan ragu untuk memberikan apresiasi. Tunjukkan rasa banggamu dengan sepenuh hati dan beri dia pujian yang tulus. Dengan apresiasi yang tulus, dia akan semakin termotivasi untuk mencapai hal-hal yang lebih besar dan merasa semakin dicintai. Apresiasi yang kamu berikan akan membantunya untuk terus berkembang dan menjadi pribadi yang lebih baik."
-    },
-    {
-        "about": "hadiah",
-        "content": "Bukan hanya di saat-saat spesial, tapi juga di hari-hari biasa, memberikan kejutan kecil di setiap saat, sekecil apa pun itu, selalu berhasil membuatnya tersenyum lebar."
-    },
-    {
-        "about": "pakaian",
-        "content": "Tidak terlalu pandai untuk memilih pakaian. Tapi dia well dressed. Yang pasti, baju polo, celana chinos, jam tangan, gelang tali, sepatu bersih, badan wangi membuat dia merasa dihargai."
-    },
-    {
-        "about": "pendidikan",
-        "content": "Dia tidak membutuhkan apa-apa lagi selain dukunganmu yang penuh. Berikan dia semua yang dia butuhkan untuk mencapai kesuksesan. Jangan ragu untuk menawarkan bantuanmu, bahkan untuk hal-hal kecil. Jadilah orang yang bisa dia andalkan untuk menyelesaikan masalahnya. Buat dia merasa bahwa kamu selalu ada untuknya dan kamu menghargai semua yang dia lakukan. Beri dia tahu betapa kamu bangga dengan kerja keras dan dedikasinya dalam belajar."
-    },
-    {
-        "about": "pekerjaan",
-        "content": "Setiap hari dia dihadapkan dengan kesibukan pekerjaan. Ingatkan dia untuk selalu menjaga diri di tengah kesibukan. Ajari dia untuk selalu mengawali semua pekerjaannya dengan doa. Berikan dia dukungan penuh dalam mencapai targetnya. Dan jangan lupa untuk selalu menanyakan bagaimana keadaannya dan seberapa lelah dia di akhir waktu kerja."
+        "kindList": [
+            {
+                "kind": "makeup",
+                "content": "Dia benar-benar ahli dalam hal makeup! Rutinitas skincare-nya dimulai dengan pembersih wajah dari Viva Cosmetics, memastikan kanvas wajahnya bersih sebelum berkreasi. Untuk hidrasi, dia mengandalkan Skintific moisturizer untuk membuat kulitnya kenyal dan siap diaplikasikan makeup.\nBeralih ke area mata, dia menggunakan primer o.two.o untuk membuat eyeshadow lebih blendable dan tahan lama. Kemudian, dia mempertajam garis matanya dengan eyeliner o.two.o favoritnya,  entah hasil akhir matte atau gel, tergantung pada look yang ingin dia capai. Untuk bulu mata yang lentik dan dramatis, dia memilih maskara Shedella. Tak lupa, dia memoleskan eyeshadow Pinkflash,  dengan pilihan warna yang bisa disesuaikan dengan gaya riasannya,  entah itu natural everyday look dengan warna coklat hangat atau smokey eye malam hari dengan perpaduan warna gelap.\nUntuk bibir, dia jago memadupadankan produk. Dia suka menggunakan lipstik matte YOU Cream Matte untuk mendapatkan warna yang bold dan transferproof. Ketika ingin sentuhan warna yang lebih natural dan tahan lama, dia memakai liptint Emina.\nSebagai sentuhan akhir, dia menggunakan foundation. Dia fleksibel, bisa menggunakan BB Tint Wardah untuk coverage yang ringan dan natural, atau YOU Skintint untuk menutupi noda dan meratakan warna kulit. Setelah itu, dia mengaplikasikan bedak Wardah untuk mengunci makeup-nya dan mendapatkan hasil akhir yang flawless dan bebas kilap. Jelas terlihat dia paham betul produk mana yang cocok untuk teknik dan gaya makeup yang dia inginkan!\n\nMarkup makeup dia:\nCleansing — Viva Cosmetics\nMascara — Shedella\nMoisturizing — Skintific\nEyeliner — o.two.o\nPrimer — o.two.o\nEye Shadow — Pinkflash\nLips — YOU Cream Matte, Emina Liptint\nFoundation — BB Tint Wardah, YOU Skintint\nPowder — Wardah",
+                "image": "makeup.gif"
+            },
+            {
+                "kind": "berpakaian",
+                "content": "Penampilannya memancarkan pesona yang luar biasa. Dia memadukan kaos polosnya yang dimasukkan ke dalam celana, menciptakan siluet ramping dan jenjang yang menawan. Cardigan crop yang dikenakannya menambah sentuhan stylish, sekaligus menegaskan bentuk tubuh mungilnya yang menggemaskan. Celana kulot yang longgar dan flowy memberikan kesan kasual dan santai, namun tetap anggun. Sebagai sentuhan akhir, kerudung yang dipakainya dengan rapi memberi nuansa adem dan santun, melengkapi pesonanya secara keseluruhan.\nPenampilannya memadukan unsur kasual dan feminin dengan sempurna, mencerminkan kepribadiannya yang ceria dan anggun. Dia terlihat sangat cantik dan menawan, siap mencuri perhatian di mana pun dia berada.\nDi balik kecantikannya dengan paduan kaos dan celana, terpancar pesona lain saat dia mengenakan gamis islami. Gayanya yang ceria dan anggun semakin terpancar dalam balutan gamis yang menjuntai anggun, menutupi seluruh auratnya dengan sempurna. Masyaallah.",
+                "image": "berpakaian.gif"
+            },
+            {
+                "kind": "minuman",
+                "content": "Dia adalah penggemar berat Susu Sarjana. Minuman ini menjadi favoritnya, terutama varian Suna Regal Spesial yang menawarkan perpaduan sempurna antara kelezatan regal dan kesegaran susu sapi. Tak hanya itu, dia baru saja mencoba varian Suna Greentea dan langsung jatuh cinta dengan rasa teh hijau yang otentik dan menyegarkan. Kini, Susu Sarjana, baik varian Suna Regal Spesial maupun Suna Greentea, menjadi pilihannya untuk menemani kesehariannya. Dia selalu memesan Susu Sarjana dengan request note \"KASIH ES BATU YANG BANYAK KARENA MAU DIKUNYAH, TERIMA KASIH\" kepada penjual. Sungguh lucu sekali! Oh iya, Cimory rasa Cashew dia juga suka.",
+                "image": "minuman.gif"
+            },
+            {
+                "kind": "makanan",
+                "content": "Dia memiliki selera makan yang luas, mulai dari makanan sederhana hingga hidangan restoran yang mewah. Dia tidak pilih-pilih makanan dan selalu menikmati setiap hidangan yang disajikan di hadapannya. Namun, jika boleh memilih, dia memiliki kecintaan khusus pada ayam.\nDia menyukai berbagai olahan ayam, mulai dari pecel ayam yang gurih dan pedas hingga ayam goreng renyah ala Rocket Chicken dengan saus cheesy yang creamy. Dia juga menyukai ayam bakar yang dibumbui dengan rempah-rempah khas Indonesia dan disajikan dengan sambal pedas.\nBagi dia, ayam adalah hidangan yang serbaguna dan selalu bisa dinikmati kapanpun dan dimanapun. Dia suka menyantap ayam dengan nasi putih hangat, lalapan segar, dan sambal favoritnya.\nSebagai camilan, dia memiliki kesukaan yang unik, yaitu cookies khusus ibu hamil. Perpaduan rasa manis dan gurihnya menjadi camilan favoritnya untuk menemani momen santai.",
+                "image": "makanan.gif"
+            },
+            {
+                "kind": "tempat",
+                "content": "Deburan ombak yang menghantam pantai bagaikan alunan musik yang menenangkan jiwanya. Hembusan angin laut yang segar membawa aroma khas yang tak terlupakan. Pasir putih yang halus dan hangat di telapak kakinya bagaikan terapi alami yang meredakan lelah. Pemandangan laut yang luas dan biru membentang sejauh mata memandang, seolah tak ada batasnya.\nDia terpaku, terpesona oleh keindahan pantai yang luar biasa. Kata-kata tak mampu mengungkapkan rasa sukanya yang begitu mendalam. Hanya perasaan kagum dan syukur yang memenuhi hatinya. Dia merasa sangat bersyukur bisa berada di tempat yang begitu indah ini.\nBagi dia, pantai bukan hanya tempat untuk berlibur, tetapi juga tempat untuk menemukan kedamaian dan ketenangan. Di sini, dia bisa melupakan segala masalah dan beban yang ada dalam hidupnya. Dia bisa merasakan kebahagiaan yang sesungguhnya.\nKecintaannya pada pantai begitu besar, tak terhingga. Dia tak pernah bosan menghabiskan waktu di pantai. Setiap kali dia datang ke pantai, dia selalu merasa seperti berada di rumah.\nPantai adalah surganya. Dia tak bisa membayangkan hidupnya tanpa pantai.",
+                "image": "tempat.gif"
+            },
+            {
+                "kind": "langit",
+                "content": "Sejak dulu, dia selalu terpesona dengan langit. Langit bagaikan kanvas raksasa yang selalu berubah-ubah, menghadirkan pertunjukan yang memukau setiap harinya. Dia tidak bisa berkata-kata untuk mendeskripsikan keindahannya, hanya perasaan kagum dan damai yang menyelimuti hatinya saat memandangnya.\nBayangkan betapa bahagianya dia jika bisa melihat langit di pantai. Perpaduan birunya langit dan laut, dihiasi dengan awan-awan putih yang berarak, serta deburan ombak yang menenangkan, akan menjadi simfoni alam yang sempurna. Dia akan duduk di tepi pantai, merasakan angin sepoi-sepoi membelai wajahnya, dan membiarkan keindahan alam tersebut mengisi seluruh jiwanya.\nDi momen itu, dia tidak membutuhkan kata-kata untuk mengungkapkan perasaannya. Langit dan pantai telah berbicara kepadanya dengan bahasa yang jauh lebih indah, bahasa yang hanya bisa dimengerti oleh hatinya.",
+                "image": "langit.gif"
+            },
+            {
+                "kind": "berjalan",
+                "content": "Saat berjalan berpasangan dengannya, dia selalu senang digandeng, dirangkul, atau dipegang pinggangnya. Genggaman, rangkulan, dan sentuhannya itu bagaikan tanda cinta dan kasih sayang yang menghangatkan hatinya. Meskipun terkadang dia merasa geli saat pinggangnya dipegang, dia tetap menyukainya. Baginya, momen-momen kecil itu selalu spesial dan tak tergantikan.",
+                "image": "berjalan.gif"
+            },
+            {
+                "kind": "mimpi",
+                "content": "Di dalam dirinya tersimpan mimpi yang besar. Dia ingin menjadi ibu dari kos putri yang menyediakan tempat tinggal yang nyaman dan aman bagi para penghuninya. Dia membayangkan dirinya tinggal di rumah besar yang indah dengan banyak kamar, dikelilingi oleh putri-putri muda yang ceria dan penuh semangat. Dia ingin menciptakan suasana kekeluargaan yang hangat dan penuh kasih sayang di kosnya.\nSelain menjadi ibu kos, dia selalu terpesona dengan dunia kecantikan. Dia suka bereksperimen dengan berbagai produk makeup dan skincare, dan selalu ingin tampil cantik dan percaya diri. Dia sering membayangkan dirinya memiliki bisnis kosmetik sendiri, di mana dia bisa menciptakan produk-produk berkualitas tinggi yang membantu orang lain merasa cantik dan istimewa.\nDia yakin bahwa dia memiliki bakat dan passion untuk bisnis ini. Dia memiliki pengetahuan yang luas tentang produk kecantikan, dan dia selalu mengikuti tren terbaru. Dia juga memiliki jiwa wirausaha yang kuat, dulu dia pernah menjadi reseller produk kecantikan, dan dia yakin bahwa dia bisa membangun bisnis yang sukses.\nDia tahu bahwa membangun bisnis tidak akan mudah. Dia perlu banyak bekerja keras dan dedikasi untuk mencapai mimpinya. Namun, dia tidak gentar. Dia yakin bahwa dengan tekad dan kerja keras, dia bisa mencapai apa pun yang dia inginkan.",
+                "image": "mimpi.gif"
+            },
+            {
+                "kind": "kebiasaan",
+                "content": "Dia memiliki beberapa kebiasaan yang cukup unik. Salah satu yang paling menonjol adalah kebiasaannya mengatakan \"ngantuk\" dengan lantang setelah selesai makan dengan kenyang. Rasanya seperti sebuah kode yang memberitahukan kepada orang lain bahwa dia sudah siap untuk beristirahat.\nKebiasaan lain yang sering dia tunjukkan adalah kemalasannya dalam membersihkan diri. Meskipun sering menunda-nunda, dia selalu berhasil menyelesaikan pekerjaannya.\nMeskipun memiliki kebiasaan yang terkesan unik, dia adalah sosok yang rajin dan pekerja keras. Dia selalu berusaha untuk menyelesaikan tugasnya dengan sebaik mungkin, meskipun terkadang dia harus berjuang melawan rasa malasnya sendiri.",
+                "image": "kebiasaan.gif"
+            },
+            {
+                "kind": "kendaraan",
+                "content": "Dia begitu terpesona dengan mobil hatchback yang sporty dan penuh gaya, dan tak ada yang lain yang bisa menandingi ketangguhan Honda Civic. Kecintaannya pun meluas pada Honda CR-V, bukan karena alasan lain, selain desain bodinya yang sama-sama memukau. Rupanya, selera kami berdua memang sejalan. Semoga saja mimpi untuk memiliki mobil-mobil impian ini bisa terwujud di waktu yang tepat nanti.\nMenariknya, untuk urusan motor, dia lebih menyukai kenyamanan. Berbeda dengan kami berdua yang saat ini sama-sama menggunakan motor naked bike. Andai dia tahu ketangguhan motorku ini, pasti dia akan terkesan.",
+                "image": "kendaraan.gif"
+            },
+            {
+                "kind": "olahraga",
+                "content": "Di antara berbagai macam aktivitas fisik, dia memiliki kecintaan khusus pada olahraga berenang. Sensasi air yang menyejukkan tubuh dan gerakan bebas tanpa gravitasi selalu mampu membawanya pada rasa rileks dan senang. Namun, di luar berenang, dia terbilang jarang berolahraga. Bisa dibilang, satu-satunya olahraga lain yang dia lakukan secara rutin adalah \"olahraga pekerjaan\".",
+                "image": "olahraga.gif"
+            },
+            {
+                "kind": "kebahagiaan",
+                "content": "Dia memiliki tekad kuat untuk fokus pada kebahagiaannya sendiri. Baginya, kebahagiaan bukan datang dari orang lain, melainkan dari dalam diri sendiri. Oleh karena itu, dia berusaha keras untuk melakukan hal-hal yang membuatnya bahagia.\nMeskipun dia tahu bahwa kebahagiaan tidak selalu mudah diraih, dia tetap teguh pada pendiriannya. Dia yakin bahwa dengan usaha dan dedikasi, dia dapat mencapai kebahagiaan yang dia dambakan.\nBagi dia, fokus pada kebahagiaan diri sendiri bukan berarti egois. Justru, dengan membahagiakan diri sendiri, dia akan menjadi pribadi yang lebih positif dan penuh energi. Hal ini  juga akan membuatnya lebih mudah untuk membantu orang lain.\nDia adalah contoh bagi orang lain bahwa kebahagiaan itu bisa diraih dengan usaha dan dedikasi.",
+                "image": "kebahagiaan.gif"
+            },
+            {
+                "kind": "warna",
+                "content": "Dia memiliki kecintaan yang besar terhadap warna-warna pastel. Warna-warna lembut dan menenangkan ini selalu berhasil membuatnya merasa damai dan bahagia. Di antara semua warna pastel yang indah, dia memiliki hati yang spesial untuk pink pastel. Warna ini bagaikan perwujudan feminitas, kelembutan, dan kasih sayang yang membuatnya merasa nyaman dan feminin.\nBagi dia, pink pastel lebih dari sekadar warna. Ini adalah sebuah pernyataan tentang kepribadiannya yang penuh kelembutan, kasih sayang, dan rasa feminin yang kuat.",
+                "image": "warna.gif"
+            },
+            {
+                "kind": "tubuh",
+                "content": "Rambutnya yang bervolume dan badai menjuntai indah, membingkai wajahnya yang menawan. Matanya yang teduh bagaikan menatap pantai sekaligus langit yang indah, memancarkan kedamaian dan kelembutan, matanya begitu ndamar kanginan. Hidungnya yang mungil dan mulutnya yang sedikit tebal memberikan kesan manis dan feminin. Telinganya yang lucu menambah pesonanya yang tak tertahankan.\nTubuhnya yang slimfit bagaikan ukiran sempurna, setiap lekukannya begitu indah. Badannya yang ramping dan semampai menjadi tipe idealnya, sama seperti bentuk tubuhku. Kakinya yang jenjang jenjang menunjang penampilannya, membuatnya terlihat semakin anggun dan menawan. Sentuhan tangannya yang lembut bagaikan belaian kasih sayang, menghangatkan hati dan jiwanya.\nDia adalah perwujudan kecantikan yang sempurna, memancarkan pesona yang tak terlupakan. Setiap inchi dari tubuhnya memancarkan aura positif, membuatnya tak henti-hentinya ku kagumi.",
+                "image": "tubuh.gif"
+            },
+            {
+                "kind": "kartun",
+                "content": ""
+            }
+        ]
     }
 ]
