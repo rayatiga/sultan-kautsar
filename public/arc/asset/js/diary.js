@@ -13,6 +13,8 @@ const quote = document.getElementById("quote");
 const dimmed = document.getElementById("dimmed");
 const character = document.getElementById("character");
 
+const spotify = document.getElementById("spotify");
+
 const backBtn = document.getElementById("back");
 
 if (params.has("about") && params.get("about") != "back") {
@@ -44,6 +46,12 @@ if (params.has("about") && params.get("about") != "back") {
   result.style.display = "none";
 }
 
+if (params.get("kind") == "playlist" || params.get("about") == "playlist") {
+  spotify.style.display = "block";
+} else {
+  spotify.style.display = "none";
+}
+
 if (params.has("kind") && params.get("kind") != "back") {
   aboutImage.style.display = "block";
   about.style.display = "none";
@@ -58,7 +66,7 @@ if (params.has("kind") && params.get("kind") != "back") {
         if (paramKind == data[1].kindList[i].kind) {
           aboutPick.innerText = data[1].kindList[i].kind;
           quote.innerText = data[1].kindList[i].content;
-          aboutImage.setAttribute("src", `/arc/asset/gif/${data[1].kindList[i].image}`)
+          aboutImage.setAttribute("src", `/arc/asset/gif/${data[1].kindList[i].image}`);
           break;
         }
         aboutPick.innerText = "...";
