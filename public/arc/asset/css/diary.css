@@ -86,6 +86,7 @@ a {
   cursor: pointer;
   background-color: #1f1f1f;
   transition: all 0.125s ease-in-out;
+  border-radius: 8px;
 }
 
 a:hover {
@@ -100,6 +101,31 @@ img#about-image {
   border: 1px solid #dddddd;
   width: auto;
   aspect-ratio: unset;
+}
+
+mark {
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+#eCountdown,
+#pCountdown {
+  cursor: pointer;
+}
+
+.spotify-link {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  text-align: inherit;
+  color: #7777ff;
+  max-width: max-content;
+  word-break: break-all;
+  line-height: 1.25;
+}
+
+.spotify-link:hover {
+  opacity: 0.75;
 }
 
 @media (max-width: 720px) {
