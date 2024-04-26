@@ -104,8 +104,7 @@ eCountdown.addEventListener(
     } else if (promptE == null || promptE == "") {
       alert("Mohon masukkan pin untuk melihat.\nRefresh halaman untuk memasukkan pin ulang.");
     } else {
-      alert("Pin salah.");
-      alert("Refresh halaman untuk memasukkan pin ulang.\nRefresh halaman untuk memasukkan pin ulang.");
+      alert("Pin salah.\nRefresh halaman untuk memasukkan pin ulang.");
     }
   },
   { once: true }
