@@ -140,7 +140,7 @@ pCountdown.addEventListener(
     // Hayoloh, pasti kamu nyari ini ya :P
     // Makasih loh, ya. Keponya sampe effort gini. Haha!
     // Enjoy aman :D
-    if (promptP == "07142019") {
+    if (promptP == "20190714") {
       pCountdownFunc();
     } else if (promptP == null || promptP == "") {
       alert("Mohon masukkan pin untuk melihat.\nRefresh halaman untuk memasukkan pin ulang.");
