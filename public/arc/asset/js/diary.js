@@ -103,8 +103,10 @@ eCountdown.addEventListener(
       eCountdownFunc();
     } else if (promptE == null || promptE == "") {
       alert("Mohon masukkan pin untuk melihat.\nRefresh halaman untuk memasukkan pin ulang.");
+      eCountdown.innerHTML = "Refresh untuk memasukkan pin kembali.";
     } else {
       alert("Pin salah.\nRefresh halaman untuk memasukkan pin ulang.");
+      eCountdown.innerHTML = "Refresh untuk memasukkan pin kembali.";
     }
   },
   { once: true }
@@ -144,8 +146,10 @@ pCountdown.addEventListener(
       pCountdownFunc();
     } else if (promptP == null || promptP == "") {
       alert("Mohon masukkan pin untuk melihat.\nRefresh halaman untuk memasukkan pin ulang.");
+      pCountdown.innerHTML = "Refresh untuk memasukkan pin kembali.";
     } else {
       alert("Pin salah.\nRefresh halaman untuk memasukkan pin ulang.");
+      pCountdown.innerHTML = "Refresh untuk memasukkan pin kembali.";
     }
   },
   { once: true }
