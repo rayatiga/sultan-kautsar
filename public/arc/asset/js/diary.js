@@ -2,10 +2,12 @@ const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const paramAbout = params.get("about");
 const paramKind = params.get("kind");
+const paramFeel = params.get("feel");
 
 const intro = document.getElementById("intro");
 const about = document.getElementById("about");
 const kind = document.getElementById("kind");
+const feel = document.getElementById("feel");
 const result = document.getElementById("result");
 const aboutPick = document.getElementById("about-pick");
 const aboutImage = document.getElementById("about-image");
@@ -77,6 +79,36 @@ if (params.has("kind") && params.get("kind") != "back") {
 } else if (params.get("kind") == "back") {
   about.style.display = "flex";
   kind.scrollIntoView();
+  intro.style.display = "flex";
+  dimmed.style.display = "flex";
+  character.style.display = "flex";
+  result.style.display = "none";
+}
+
+if (params.has("feel") && params.get("feel") != "back") {
+  aboutImage.style.display = "none";
+  about.style.display = "none";
+  intro.style.display = "none";
+  dimmed.style.display = "none";
+  character.style.display = "none";
+  result.style.display = "flex";
+  fetch("/arc/asset/json/diary.json")
+    .then((response) => response.json())
+    .then((data) => {
+      for (let i = 0; i < data[2].feelList.length; i++) {
+        if (paramFeel == data[2].feelList[i].feel) {
+          aboutPick.innerText = data[2].feelList[i].feel;
+          quote.innerText = data[2].feelList[i].content;
+          break;
+        }
+        aboutPick.innerText = "...";
+        quote.innerText = "Aku minta maaf, ini sedang dalam perancangan. Stay tune, ya!";
+      }
+    });
+  backBtn.setAttribute("href", "./diary.html?feel=back");
+} else if (params.get("feel") == "back") {
+  about.style.display = "flex";
+  feel.scrollIntoView();
   intro.style.display = "flex";
   dimmed.style.display = "flex";
   character.style.display = "flex";
