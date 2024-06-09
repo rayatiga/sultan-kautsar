@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sultan Kautsar's Fiancee</title>
+    <meta name="robots" content="noindex" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        font-size: 12px;
+        color: #ffffff;
+        background: #0f0f0f;
+        justify-content: center;
+        font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+      }
+      main {
+        gap: 12px;
+        display: flex;
+        padding: 16px;
+        max-width: 480px;
+        min-height: 100dvh;
+        flex-direction: column;
+        justify-content: center;
+      }
+      main p {
+        line-height: 1.5;
+        letter-spacing: 0.25px;
+      }
+      main p small {
+        float: right;
+        color: #ffffff55;
+        text-align: right;
+      }
+      main img {
+        max-width: 120px;
+        margin: -12px 0 -24px -12px;
+      }
+      main button {
+        color: inherit;
+        cursor: pointer;
+        font-size: 10px;
+        padding: 4px 12px;
+        width: max-content;
+        align-self: flex-end;
+        font-family: inherit;
+        background: transparent;
+        border: 1px solid #ffffff;
+      }
+      .modal {
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: none;
+        position: fixed;
+        align-items: center;
+        background: #000000aa;
+        justify-content: center;
+        backdrop-filter: blur(2px);
+      }
+      .modal .modal-content {
+        padding: 16px;
+        max-width: 480px;
+        position: relative;
+      }
+      .modal .modal-content img {
+        margin: 0;
+        max-width: 100%;
+        pointer-events: none;
+        border: 4px solid #ffffff;
+      }
+      .modal .modal-content img[alt="Barcode"] {
+        right: 16px;
+        bottom: 20px;
+        max-width: 15%;
+        position: absolute;
+      }
+      .modal .modal-content .modal-close {
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        font-size: 24px;
+        color: #000000;
+        position: absolute;
+        padding: 18px 28px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p>Virgiyan,</p>
+      <p>Kesempatan telah diberikan untukku olehmu. Ucapan terima kasih yang sebesar-besarnya aku ucapkan atas kesempatan itu. Sangat bersyukur untuk memilikimu di dalam hidupku. Kesalahan dan luka telah aku berikan kepadamu di masa lampau. Atas hal itu, aku mohon maaf. Aku sadar bahwa aku tidak sempurna, dan aku harap kamu bisa memaafkanku.</p>
+      <p>Usaha sekuat tenagaku aku lakukan untuk menjadi pribadi yang lebih baik bagimu. Aku ingin kamu bahagia, dan aku akan selalu berusaha untuk mewujudkannya. Harapan terbaik versiku untukmu akan selalu kuberikan.</p>
+      <p>Aku ingin melupakan semua hal buruk yang pernah terjadi di antara kita. Waktu yang baru bersamamu ingin aku mulai, dan aku harap kamu juga ingin hal yang sama.</p>
+      <p>Cincin dan bucket emas telah aku berikan secara resmi sebagai tanda keseriusanku pada hari itu, 8 Juni 2024. Aku ingin kamu tahu bahwa aku ingin menjadi pasangan yang baik bagimu, dan aku akan selalu berusaha untuk membahagiakanmu. Usaha apapun untukmu akan selalu kulakukan, dan aku akan selalu mencintaimu dengan ikhlas.</p>
+      <p>Terima kasih telah menerima diriku apa adanya. Perasaan bersyukur selalu kamu ciptakan dalam diriku atas kehadiranmu. Aku harap kita bisa selalu bahagia dan terbuka satu sama lain. Semoga Tuhan selalu memberikan jalan yang terbaik untuk kita berdua.</p>
+      <p>Dengan cinta dan ketulusan,</p>
+      <img src="asset/img/signature.png" alt="Sultan Kautsar Signature" />
+      <p>Sultan Kautsar</p>
+      <p>
+        <small>Sunday, June 9, 2024 @ 5:10 PM<br />Magelang, Indonesia</small>
+      </p>
+      <button onclick="openModal()">See Certificate</button>
+      <div class="modal">
+        <div class="modal-content">
+          <span class="modal-close" onclick="closeModal()">&Cross;</span>
+          <img src="asset/img/certificate.jpg" alt="Certificate" draggable="false" />
+          <img src="asset/img/barcode.jpg" alt="Barcode" draggable="false" />
+        </div>
+      </div>
+    </main>
+    <script>
+      const modal = document.querySelector(".modal");
+      const modalClose = document.querySelector(".modal-close");
+      function openModal() {
+        modal.style.display = "flex";
+      }
+      function closeModal() {
+        modal.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
