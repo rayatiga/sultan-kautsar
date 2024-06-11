@@ -6,9 +6,8 @@ html {
 }
 
 body {
-  /* font-family: "Vollkorn", serif; */
   font-family: "Inter", serif;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 0.275px;
   color: #fbfbfb;
 }
@@ -78,7 +77,6 @@ p {
 }
 
 a {
-  font-size: 16px;
   color: #fbfbfb;
   text-decoration: none;
   text-align: center;
@@ -130,10 +128,6 @@ mark {
 }
 
 @media (max-width: 720px) {
-  body,
-  a {
-    font-size: 14px;
-  }
   h1 {
     font-size: 30px;
   }
