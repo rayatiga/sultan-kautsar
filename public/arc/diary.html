@@ -4,14 +4,188 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-    <title>Diary & Notes</title>
-    <link rel="stylesheet" href="/arc/asset/css/main.css" />
-    <link rel="stylesheet" href="/arc/asset/css/diary.css" />
-    <script defer src="/arc/asset/js/main.js"></script>
-    <script defer src="/arc/asset/js/diary.js"></script>
-    <meta property="og:image" content="https://sultankautsar.com/arc/asset/img/og-htsya.jpg" />
-    <meta name="title" content="Diary & Notes" />
-    <meta name="description" content="Diary & Notes tentang dia, perempuan." />
+    <title>The Diary & Notes</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-padding-top: 64px;
+      }
+      body {
+        display: flex;
+        font-size: 14px;
+        color: #fbfbfb;
+        align-items: center;
+        flex-direction: column;
+        letter-spacing: 0.275px;
+        font-family: "Inter", serif;
+        background-color: #0b0b0b;
+        background-attachment: fixed;
+      }
+      .container {
+        gap: 16px;
+        display: flex;
+        max-width: 720px;
+        padding: 24px 16px;
+        flex-direction: column;
+      }
+      header {
+        color: #555555;
+      }
+      .post-date,
+      .dim {
+        color: #555555;
+      }
+      main,
+      div {
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+      }
+      hr {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #555555;
+      }
+      p {
+        line-height: 1.5;
+      }
+      u {
+        text-underline-offset: 2px;
+        text-decoration-style: wavy;
+        text-decoration-color: #aa5555;
+      }
+      img {
+        width: 100%;
+        display: block;
+        max-width: 720px;
+        object-fit: cover;
+        aspect-ratio: 1 / 1.25;
+        filter: saturate(0.65) brightness(0.85) sepia(0.35);
+        border-radius: 4px;
+      }
+      img.signature {
+        max-width: 92px;
+        aspect-ratio: auto;
+        margin: -16px 0 -28px -8px;
+        filter: brightness(1) sepia(0);
+      }
+      .about-list,
+      .kind-list,
+      .feel-list {
+        gap: 12px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      @media (max-width: 375px) {
+        .about-list,
+        .kind-list,
+        .feel-list {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (max-width: 320px) {
+        .about-list,
+        .kind-list,
+        .feel-list {
+          grid-template-columns: 1fr;
+        }
+      }
+      #diary {
+        margin-bottom: 12px;
+      }
+      #result {
+        display: none;
+        margin-bottom: 12px;
+      }
+      #path {
+        word-break: break-all;
+      }
+      br {
+        content: "";
+        margin: 12px;
+        display: block;
+      }
+      h1 {
+        font-size: 32px;
+        font-weight: 400;
+        word-break: break-all;
+        font-family: "Yeseva One", serif;
+      }
+      h2 {
+        font-size: 24px;
+        font-weight: 400;
+        margin: 16px 0 -4px 0;
+        word-break: break-all;
+        font-family: "Yeseva One", serif;
+      }
+      blockquote {
+        margin-top: 12px;
+      }
+      p {
+        line-height: 1.65;
+      }
+      a {
+        cursor: pointer;
+        color: #fbfbfb;
+        font-size: 13px;
+        padding: 8px 2px;
+        text-align: center;
+        border-radius: 4px;
+        text-decoration: none;
+        border: 1px solid #dddddd;
+        background-color: #0b0b0b;
+        transition: all 0.125s ease-in-out;
+      }
+      a:hover {
+        opacity: 0.75;
+      }
+      img#about-image {
+        width: auto;
+        padding: 4px;
+        max-width: 180px;
+        max-height: 180px;
+        aspect-ratio: unset;
+        margin-bottom: 24px;
+        border: 1px solid #dddddd;
+      }
+      mark {
+        padding: 2px 8px;
+        border-radius: 4px;
+      }
+      #eCountdown,
+      #pCountdown {
+        cursor: pointer;
+      }
+      .spotify-link {
+        padding: 0;
+        border: none;
+        color: #7777ff;
+        border-radius: 0;
+        line-height: 1.25;
+        text-align: inherit;
+        word-break: break-all;
+        max-width: max-content;
+      }
+      .spotify-link:hover {
+        opacity: 0.75;
+      }
+      @media (max-width: 720px) {
+        h1 {
+          font-size: 30px;
+        }
+        h2 {
+          font-size: 22px;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -23,9 +197,9 @@
           <h1>Diary & Notes 📔</h1>
           <p class="dim">Seseorang yang termaksud di dalam,</p>
           <p>Halaman ini memuat segala hal tentang dia.</p>
-          <p style="font-style: italic;" class="dim">Ya Allah, jika Engkau izinkan, aku ingin segera dapat mewujudkan komitmen seumur hidup. Tetapi jika Engkau memiliki rencana indah lain, berikan kebahagiaan dan cinta kasih sayang yang Engkau miliki kepada dia, sebesar-besarnya, selamanya.</p>
-          <p style="font-style: italic;" class="dim">Aamiin.</p>
-          <p>Release 4.0 &mdash; June 4, 2024.<span style="display: block" class="dim">First Release at March 17, 2024</span></p>
+          <p style="font-style: italic" class="dim">Ya Allah, jika Engkau izinkan, aku ingin segera dapat mewujudkan komitmen seumur hidup. Tetapi jika Engkau memiliki rencana indah lain, berikan kebahagiaan dan cinta kasih sayang yang Engkau miliki kepada dia, sebesar-besarnya, selamanya.</p>
+          <p style="font-style: italic" class="dim">Aamiin.</p>
+          <p>Release 5.0 &mdash; June 14, 2024.<span style="display: block" class="dim">First Release at March 17, 2024</span></p>
           <p>Penulis,</p>
           <img src="/arc/asset/img/signature.png" alt="Sultan Signature" class="signature" />
           <p>Sultan Kautsar<span style="display: block" class="dim">Emotional Intelligence Warrior</span></p>
@@ -45,21 +219,21 @@
           <p class="dim">Tentang perasaan bagaimana kamu harus memperlakukan kepada dia.</p>
           <p>Klik untuk membuka.</p>
           <div class="about-list">
-            <a href="./diary.html?about=lelah" style="background-color: #4947bdaa">Lelah</a>
-            <a href="./diary.html?about=malam" style="background-color: #8847bdaa">Malam</a>
-            <a href="./diary.html?about=marah" style="background-color: #bd4747aa">Marah</a>
-            <a href="./diary.html?about=menangis" style="background-color: #bdab47aa">Menangis</a>
-            <a href="./diary.html?about=jalan" style="background-color: #47bd6eaa">Jalan</a>
-            <a href="./diary.html?about=bangun" style="background-color: #bd8047aa">Bangun</a>
-            <a href="./diary.html?about=prioritas" style="background-color: #a147bdaa">Prioritas</a>
-            <a href="./diary.html?about=waktu" style="background-color: #47bd9aaa">Waktu</a>
-            <a href="./diary.html?about=respon" style="background-color: #bd4765aa">Respon</a>
-            <a href="./diary.html?about=badmood" style="background-color: #bd6347aa">Badmood</a>
-            <a href="./diary.html?about=apresiasi" style="background-color: #bd47b3aa">Apresiasi</a>
-            <a href="./diary.html?about=hadiah" style="background-color: #4947bdaa">Hadiah</a>
-            <a href="./diary.html?about=pakaian" style="background-color: #4947bdaa">Pakaian</a>
-            <a href="./diary.html?about=pendidikan" style="background-color: #477abdaa">Pendidikan</a>
-            <a href="./diary.html?about=pekerjaan" style="background-color: #47bdbdaa">Pekerjaan</a>
+            <a href="./diary.html?about=lelah" style="background-color: #4947bdbb">Lelah</a>
+            <a href="./diary.html?about=malam" style="background-color: #8847bdbb">Malam</a>
+            <a href="./diary.html?about=marah" style="background-color: #bd4747bb">Marah</a>
+            <a href="./diary.html?about=menangis" style="background-color: #bdab47bb">Menangis</a>
+            <a href="./diary.html?about=jalan" style="background-color: #47bd6ebb">Jalan</a>
+            <a href="./diary.html?about=bangun" style="background-color: #bd8047bb">Bangun</a>
+            <a href="./diary.html?about=prioritas" style="background-color: #a147bdbb">Prioritas</a>
+            <a href="./diary.html?about=waktu" style="background-color: #47bd9abb">Waktu</a>
+            <a href="./diary.html?about=respon" style="background-color: #bd4765bb">Respon</a>
+            <a href="./diary.html?about=badmood" style="background-color: #bd6347bb">Badmood</a>
+            <a href="./diary.html?about=apresiasi" style="background-color: #bd47b3bb">Apresiasi</a>
+            <a href="./diary.html?about=hadiah" style="background-color: #4947bdbb">Hadiah</a>
+            <a href="./diary.html?about=pakaian" style="background-color: #4947bdbb">Pakaian</a>
+            <a href="./diary.html?about=pendidikan" style="background-color: #477abdbb">Pendidikan</a>
+            <a href="./diary.html?about=pekerjaan" style="background-color: #47bdbdbb">Pekerjaan</a>
           </div>
         </div>
 
@@ -75,7 +249,6 @@
           </blockquote>
           <div id="spotify">
             <a class="spotify-link" href="https://open.spotify.com/playlist/76WHCoMRBKz1FmWgXv0zsQ" target="_blank" rel="nofollow noopener noreferrer">https://open.spotify.com/playlist/76WHCoMRBKz1FmWgXv0zsQ</a>
-            <iframe style="border-radius: 12px" src="https://open.spotify.com/embed/playlist/76WHCoMRBKz1FmWgXv0zsQ?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
         </div>
 
@@ -86,22 +259,23 @@
             <p class="dim">Segala sesuatu dari hal kecil dan random tentang dia.</p>
             <p>Klik untuk membuka.</p>
             <div class="kind-list">
-              <a href="./diary.html?kind=makeup" style="background-color: #4947bdaa">Makeup</a>
-              <a href="./diary.html?kind=berpakaian" style="background-color: #8847bdaa">Berpakaian</a>
-              <a href="./diary.html?kind=minuman" style="background-color: #bd4747aa">Minuman</a>
-              <a href="./diary.html?kind=makanan" style="background-color: #bdab47aa">Makanan</a>
-              <a href="./diary.html?kind=tempat" style="background-color: #47bd6eaa">Tempat</a>
-              <a href="./diary.html?kind=langit" style="background-color: #bd8047aa">Langit</a>
-              <a href="./diary.html?kind=berjalan" style="background-color: #a147bdaa">Berjalan</a>
-              <a href="./diary.html?kind=mimpi" style="background-color: #47bd9aaa">Mimpi</a>
-              <a href="./diary.html?kind=kebiasaan" style="background-color: #bd4765aa">Kebiasaan</a>
-              <a href="./diary.html?kind=kebahagiaan" style="background-color: #bd6347aa">Kebahagiaan</a>
-              <a href="./diary.html?kind=olahraga" style="background-color: #bd47b3aa">Olahraga</a>
-              <a href="./diary.html?kind=kendaraan" style="background-color: #4947bdaa">Kendaraan</a>
-              <a href="./diary.html?kind=warna" style="background-color: #4947bdaa">Warna</a>
-              <a href="./diary.html?kind=tubuh" style="background-color: #477abdaa">Tubuh</a>
-              <a href="./diary.html?kind=kartun" style="background-color: #47bdbdaa">Kartun</a>
-              <a href="./diary.html?kind=playlist" style="background-color: #47bd6eaa">Playlist</a>
+              <a href="./diary.html?kind=makeup" style="background-color: #4947bdbb">Makeup</a>
+              <a href="./diary.html?kind=wajah" style="background-color: #bd479fbb">Wajah</a>
+              <a href="./diary.html?kind=berpakaian" style="background-color: #8847bdbb">Berpakaian</a>
+              <a href="./diary.html?kind=minuman" style="background-color: #bd4747bb">Minuman</a>
+              <a href="./diary.html?kind=makanan" style="background-color: #bdab47bb">Makanan</a>
+              <a href="./diary.html?kind=tempat" style="background-color: #47bd6ebb">Tempat</a>
+              <a href="./diary.html?kind=langit" style="background-color: #bd8047bb">Langit</a>
+              <a href="./diary.html?kind=berjalan" style="background-color: #a147bdbb">Berjalan</a>
+              <a href="./diary.html?kind=mimpi" style="background-color: #47bd9abb">Mimpi</a>
+              <a href="./diary.html?kind=kebiasaan" style="background-color: #bd4765bb">Kebiasaan</a>
+              <a href="./diary.html?kind=kebahagiaan" style="background-color: #bd6347bb">Kebahagiaan</a>
+              <a href="./diary.html?kind=olahraga" style="background-color: #bd47b3bb">Olahraga</a>
+              <a href="./diary.html?kind=kendaraan" style="background-color: #4947bdbb">Kendaraan</a>
+              <a href="./diary.html?kind=warna" style="background-color: #4947bdbb">Warna</a>
+              <a href="./diary.html?kind=tubuh" style="background-color: #477abdbb">Tubuh</a>
+              <a href="./diary.html?kind=kartun" style="background-color: #47bdbdbb">Kartun</a>
+              <a href="./diary.html?kind=playlist" style="background-color: #47bd6ebb">Playlist</a>
             </div>
           </div>
           <div id="feel">
@@ -110,21 +284,21 @@
             <p class="dim">Tentang kalimat tertuju atas apa yang dirasakan oleh dia.</p>
             <p>Klik untuk membuka.</p>
             <div class="feel-list">
-              <a href="./diary.html?feel=sedih" style="background-color: #4947bdaa">Sedih</a>
-              <a href="./diary.html?feel=terharu" style="background-color: #8847bdaa">Terharu</a>
-              <a href="./diary.html?feel=kecewa" style="background-color: #bdab47aa">Kecewa</a>
-              <a href="./diary.html?feel=senang" style="background-color: #47bd6eaa">Senang</a>
-              <a href="./diary.html?feel=marah" style="background-color: #bd4747aa">Marah</a>
-              <a href="./diary.html?feel=takut" style="background-color: #bd8047aa">Takut</a>
-              <a href="./diary.html?feel=malu" style="background-color: #a147bdaa">Malu</a>
-              <a href="./diary.html?feel=bersalah" style="background-color: #47bd9aaa">Bersalah</a>
-              <a href="./diary.html?feel=sengsara" style="background-color: #bd4765aa">Sengsara</a>
-              <a href="./diary.html?feel=benci" style="background-color: #bd6347aa">Benci</a>
-              <a href="./diary.html?feel=cinta" style="background-color: #bd47b3aa">Cinta</a>
-              <a href="./diary.html?feel=empati" style="background-color: #4947bdaa">Empati</a>
-              <a href="./diary.html?feel=khawatir" style="background-color: #4947bdaa">Khawatir</a>
-              <a href="./diary.html?feel=kosong" style="background-color: #477abdaa">Kosong</a>
-              <a href="./diary.html?feel=berduka" style="background-color: #47bdbdaa">Berduka</a>
+              <a href="./diary.html?feel=sedih" style="background-color: #4947bdbb">Sedih</a>
+              <a href="./diary.html?feel=terharu" style="background-color: #8847bdbb">Terharu</a>
+              <a href="./diary.html?feel=kecewa" style="background-color: #bdab47bb">Kecewa</a>
+              <a href="./diary.html?feel=senang" style="background-color: #47bd6ebb">Senang</a>
+              <a href="./diary.html?feel=marah" style="background-color: #bd4747bb">Marah</a>
+              <a href="./diary.html?feel=takut" style="background-color: #bd8047bb">Takut</a>
+              <a href="./diary.html?feel=malu" style="background-color: #a147bdbb">Malu</a>
+              <a href="./diary.html?feel=bersalah" style="background-color: #47bd9abb">Bersalah</a>
+              <a href="./diary.html?feel=sengsara" style="background-color: #bd4765bb">Sengsara</a>
+              <a href="./diary.html?feel=benci" style="background-color: #bd6347bb">Benci</a>
+              <a href="./diary.html?feel=cinta" style="background-color: #bd47b3bb">Cinta</a>
+              <a href="./diary.html?feel=empati" style="background-color: #4947bdbb">Empati</a>
+              <a href="./diary.html?feel=khawatir" style="background-color: #4947bdbb">Khawatir</a>
+              <a href="./diary.html?feel=kosong" style="background-color: #477abdbb">Kosong</a>
+              <a href="./diary.html?feel=berduka" style="background-color: #47bdbdbb">Berduka</a>
             </div>
           </div>
           <div id="life">
@@ -139,7 +313,7 @@
           </div>
           <div id="hope">
             <hr />
-            <h2>Target dan Harapan 🤞🏻</h2>
+            <h2>Target & Harapan 🎯</h2>
             <p class="dim">Mengenal dambaan tujuan dan harapan dia.</p>
             <p>Dia memiliki tekad yang kuat untuk menyelesaikan semua tanggungan yang dia miliki. Beban yang mengikatnya kini menjadi motivasi untuk melangkah maju. Dia ingin berdamai dengan hidupnya, membebaskan diri dari segala tanggungan termasuk rasa bersalah dan penyesalan.</p>
             <p>Siapapun itu, lihat di matanya, masa depan terbentang indah dengan bayangan keluarga kecil yang cemara. Dia mendambakan kehidupan yang penuh kasih sayang dan kebahagiaan bersama orang terkasih. Setiap langkahnya kini diarahkan untuk mewujudkan mimpi itu, membangun masa depan yang lebih cerah bagi dirinya dan keluarganya.</p>
@@ -160,5 +334,136 @@
         <p>Copyright (c) <span id="year">2020</span> Sultan Kautsar - All Rights Reserved.</p>
       </footer>
     </div>
+    <script>
+      function headerPath() {
+        var path = document.getElementById("path");
+        path.innerText = window.location.host + window.location.pathname;
+      }
+      window.onload = headerPath();
+      function footerYear() {
+        var year = document.getElementById("year");
+        var date = new Date();
+        var dateYear = date.getFullYear();
+        year.innerText = dateYear;
+      }
+      window.onload = footerYear();
+
+      const queryString = window.location.search;
+      const params = new URLSearchParams(queryString);
+      const paramAbout = params.get("about");
+      const paramKind = params.get("kind");
+      const paramFeel = params.get("feel");
+
+      const intro = document.getElementById("intro");
+      const about = document.getElementById("about");
+      const kind = document.getElementById("kind");
+      const feel = document.getElementById("feel");
+      const result = document.getElementById("result");
+      const aboutPick = document.getElementById("about-pick");
+      const aboutImage = document.getElementById("about-image");
+      const quote = document.getElementById("quote");
+      const dimmed = document.getElementById("dimmed");
+      const character = document.getElementById("character");
+
+      const spotify = document.getElementById("spotify");
+
+      const backBtn = document.getElementById("back");
+
+      if (params.has("about") && params.get("about") != "back") {
+        aboutImage.style.display = "none";
+        about.style.display = "none";
+        intro.style.display = "none";
+        dimmed.style.display = "none";
+        character.style.display = "none";
+        result.style.display = "flex";
+        fetch("/arc/asset/json/diary.json")
+          .then((response) => response.json())
+          .then((data) => {
+            for (let i = 0; i < data[0].aboutList.length; i++) {
+              if (paramAbout == data[0].aboutList[i].about) {
+                aboutPick.innerText = data[0].aboutList[i].about;
+                quote.innerText = data[0].aboutList[i].content;
+                break;
+              }
+              aboutPick.innerText = "...";
+              quote.innerText = "Aku minta maaf, ini sedang dalam perancangan. Stay tune, ya!";
+            }
+          });
+      } else if (params.get("about") == "back") {
+        about.style.display = "flex";
+        about.scrollIntoView();
+        intro.style.display = "flex";
+        dimmed.style.display = "flex";
+        character.style.display = "flex";
+        result.style.display = "none";
+      }
+
+      if (params.get("kind") == "playlist" || params.get("about") == "playlist") {
+        spotify.style.display = "flex";
+      } else {
+        spotify.style.display = "none";
+      }
+
+      if (params.has("kind") && params.get("kind") != "back") {
+        aboutImage.style.display = "block";
+        about.style.display = "none";
+        intro.style.display = "none";
+        dimmed.style.display = "none";
+        character.style.display = "none";
+        result.style.display = "flex";
+        fetch("/arc/asset/json/diary.json")
+          .then((response) => response.json())
+          .then((data) => {
+            for (let i = 0; i < data[1].kindList.length; i++) {
+              if (paramKind == data[1].kindList[i].kind) {
+                aboutPick.innerText = data[1].kindList[i].kind;
+                quote.innerText = data[1].kindList[i].content;
+                aboutImage.setAttribute("src", `/arc/asset/gif/${data[1].kindList[i].image}`);
+                break;
+              }
+              aboutPick.innerText = "...";
+              quote.innerText = "Aku minta maaf, ini sedang dalam perancangan. Stay tune, ya!";
+            }
+          });
+        backBtn.setAttribute("href", "./diary.html?kind=back");
+      } else if (params.get("kind") == "back") {
+        about.style.display = "flex";
+        kind.scrollIntoView();
+        intro.style.display = "flex";
+        dimmed.style.display = "flex";
+        character.style.display = "flex";
+        result.style.display = "none";
+      }
+
+      if (params.has("feel") && params.get("feel") != "back") {
+        aboutImage.style.display = "none";
+        about.style.display = "none";
+        intro.style.display = "none";
+        dimmed.style.display = "none";
+        character.style.display = "none";
+        result.style.display = "flex";
+        fetch("/arc/asset/json/diary.json")
+          .then((response) => response.json())
+          .then((data) => {
+            for (let i = 0; i < data[2].feelList.length; i++) {
+              if (paramFeel == data[2].feelList[i].feel) {
+                aboutPick.innerText = data[2].feelList[i].feel;
+                quote.innerText = data[2].feelList[i].content;
+                break;
+              }
+              aboutPick.innerText = "...";
+              quote.innerText = "Aku minta maaf, ini sedang dalam perancangan. Stay tune, ya!";
+            }
+          });
+        backBtn.setAttribute("href", "./diary.html?feel=back");
+      } else if (params.get("feel") == "back") {
+        about.style.display = "flex";
+        feel.scrollIntoView();
+        intro.style.display = "flex";
+        dimmed.style.display = "flex";
+        character.style.display = "flex";
+        result.style.display = "none";
+      }
+    </script>
   </body>
 </html>
