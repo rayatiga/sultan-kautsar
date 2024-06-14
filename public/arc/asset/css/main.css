@@ -147,7 +147,8 @@ body {
   padding: 24px 16px;
   flex-direction: column;
 }
-main, div {
+main,
+div {
   gap: 16px;
   display: flex;
   flex-direction: column;
@@ -155,7 +156,8 @@ main, div {
 header {
   color: #555555;
 }
-.post-date, .dim {
+.post-date,
+.dim {
   color: #555555;
 }
 h1 {
