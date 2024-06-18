@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-    <title>The Diary & Notes</title>
+    <title>The Diary</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
@@ -58,7 +58,7 @@
         line-height: 1.5;
       }
       u {
-        text-underline-offset: 2px;
+        text-underline-offset: 4px;
         text-decoration-style: wavy;
         text-decoration-color: #aa5555;
       }
@@ -114,7 +114,7 @@
         display: block;
       }
       h1 {
-        font-size: 32px;
+        font-size: 38px;
         font-weight: 400;
         word-break: break-all;
         font-family: "Yeseva One", serif;
@@ -185,6 +185,87 @@
           font-size: 22px;
         }
       }
+      .gallery img {
+        width: 100%;
+        display: block;
+        max-width: 720px;
+        object-fit: cover;
+        aspect-ratio: 1 / 1.25;
+        filter: saturate(0.65) brightness(0.85) sepia(0.35);
+      }
+      .gallery img.gif {
+        width: 100%;
+        max-width: 720px;
+        aspect-ratio: auto;
+      }
+      .gallery img.gif.animated {
+        aspect-ratio: auto;
+        transition: transform 1.25s ease-in-out;
+      }
+      .gallery img.signature {
+        max-width: 92px;
+        aspect-ratio: auto;
+        margin: -16px 0 -28px -8px;
+        filter: brightness(1) sepia(0);
+      }
+      .gallery figure {
+        padding: 4px;
+        display: flex;
+        max-width: 360px;
+        flex-flow: column;
+        border: 1px #dddddd solid;
+      }
+      .gallery figcaption {
+        font-size: 12px;
+        color: #dddddd;
+        line-height: 1.5;
+        font-style: italic;
+        text-align: center;
+        padding: 8px 8px 4px 8px;
+      }
+      .gallery {
+        display: grid;
+        grid-gap: 6px;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      @media (max-width: 480px) {
+        .gallery {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (max-width: 360px) {
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+      }
+      #navigation {
+        margin-top: 12px;
+      }
+      .navigation-list {
+        gap: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      @media (max-width: 720px) {
+        .navigation-list {
+          justify-content: start;
+        }
+      }
+      .navigation-list a {
+        padding: 0;
+        border: none;
+        background: none;
+      }
+      .navigation-list a:hover {
+        opacity: 1;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+      #back {
+        margin-top: 12px;
+      }
     </style>
   </head>
   <body>
@@ -194,7 +275,7 @@
       </header>
       <main>
         <div id="intro">
-          <h1>Diary & Notes 📔</h1>
+          <h1>The Diary 📔</h1>
           <p class="dim">Seseorang yang termaksud di dalam,</p>
           <p>Halaman ini memuat segala hal tentang dia.</p>
           <p class="dim">Release 5.1 &mdash; June 15, 2024.<span style="display: block" class="dim">First Release at March 17, 2024</span></p>
@@ -202,14 +283,25 @@
           <img src="/arc/asset/img/signature.png" alt="Sultan Signature" class="signature" />
           <p>Sultan Kautsar<span style="display: block" class="dim">Emotional Intelligence Warrior</span></p>
         </div>
-
+        <div id="navigation">
+          <hr />
+          <div class="navigation-list">
+            <a href="./diary.html#character">Karakter</a>
+            <a href="./diary.html#about">Tentang</a>
+            <a href="./diary.html#kind">Sesuatu</a>
+            <a href="./diary.html#feel">Peasaan</a>
+            <a href="./diary.html#life">Hidup</a>
+            <a href="./diary.html#hope">Target & Harapan</a>
+            <a href="./diary.html#gallery">Foto Terbaik</a>
+            <a href="./diary.html#close">Garis Penutup</a>
+          </div>
+        </div>
         <div id="character">
           <hr />
           <h2>Karakter 👰🏻</h2>
           <span class="dim">Sifat yang melekat pada diri dia.</span>
           <p>Perempuan yang berhati lemah lembut, memiliki rasa empati tinggi, perasaan yang kuat, dan kebaikan kecil yang bertabur seluas semesta.</p>
         </div>
-
         <div id="about">
           <hr />
           <h2>Tentang 📒</h2>
@@ -250,8 +342,8 @@
         </div>
 
         <div id="dimmed">
+          <hr />
           <div id="kind">
-            <hr />
             <h2>Sesuatu 🤍</h2>
             <p class="dim">Segala sesuatu dari hal kecil dan random tentang dia.</p>
             <p>Klik untuk membuka.</p>
@@ -275,9 +367,9 @@
               <a href="./diary.html?kind=playlist" style="background-color: #47bd6ebb">Playlist</a>
             </div>
           </div>
+          <hr />
           <div id="feel">
-            <hr />
-            <h2>Feel 🫂</h2>
+            <h2>Perasaan 🫂</h2>
             <p class="dim">Tentang kalimat tertuju atas apa yang dirasakan oleh dia.</p>
             <p>Klik untuk membuka.</p>
             <div class="feel-list">
@@ -298,8 +390,8 @@
               <a href="./diary.html?feel=berduka" style="background-color: #47bdbdbb">Berduka</a>
             </div>
           </div>
+          <hr />
           <div id="life">
-            <hr />
             <h2>Hidup 🧬</h2>
             <p class="dim">Dia hidup di dunia ini dengan penuh arti, bersyukur dunia menjumpai dia.</p>
             <p>Dia hadir ke dunia bukan karena kebetulan, tapi dengan tujuan. Ada hal-hal baik yang bisa dia capai dan kontribusi yang bisa dia berikan. Aku tidak akan biarkan siapapun meragukan keberadaan dia.</p>
@@ -308,13 +400,68 @@
             <p>Bunga yang paling indah pun pernah menjadi benih kecil yang tersembunyi. Perjalanan dia masih panjang, semoga dia tetap semangat belajar, bertumbuh, dan mekar dengan cara dia sendiri.</p>
             <p>Beri tahu dia, dunia membutuhkan cahaya. Mungkin saja dia merasa kecil dan tidak berarti, tapi kebaikan dan semangat yang dia miliki bisa menjadi inspirasi bagi orang lain. Semoga dia selalu percaya pada kekuatan yang dia miliki sediri.</p>
           </div>
+          <hr />
           <div id="hope">
-            <hr />
             <h2>Target & Harapan 🎯</h2>
             <p class="dim">Mengenal dambaan tujuan dan harapan dia.</p>
             <p>Dia memiliki tekad yang kuat untuk menyelesaikan semua tanggungan yang dia miliki. Beban yang mengikatnya kini menjadi motivasi untuk melangkah maju. Dia ingin berdamai dengan hidupnya, membebaskan diri dari segala tanggungan termasuk rasa bersalah dan penyesalan.</p>
             <p>Siapapun itu, lihat di matanya, masa depan terbentang indah dengan bayangan keluarga kecil yang cemara. Dia mendambakan kehidupan yang penuh kasih sayang dan kebahagiaan bersama orang terkasih. Setiap langkahnya kini diarahkan untuk mewujudkan mimpi itu, membangun masa depan yang lebih cerah bagi dirinya dan keluarganya.</p>
             <p>Dia tahu bahwa perjalanan ini tidak akan mudah. Ada rintangan dan tantangan yang harus dihadapi. Namun, dia tidak akan pernah menyerah. Dengan tekad yang bulat dan semangat yang dimiliki, dia yakin bahwa dia mampu meraih kebahagiaan yang diimpikannya.</p>
+          </div>
+          <hr />
+          <div id="gallery">
+            <h2>Foto Terbaik 📷</h2>
+            <p class="dim">Merupakan koleksi <u>foto terbaik sepanjang masa</u> selama kita bersama.</p>
+            <div class="gallery">
+              <figure>
+                <img src="/arc/asset/img/ichiban-sushi.jpg" alt="Virgi on Ichiban Sushi" loading="lazy" />
+                <figcaption>Sebelum memulai puasa, mam salmon dulu! 🍣</figcaption>
+              </figure>
+              <figure>
+                <img src="/arc/asset/img/richeese.jpg" alt="Richeese Flying Chicken" loading="lazy" />
+                <figcaption>Akhirnya, Flying Chicken kita gas juga! 🐔</figcaption>
+              </figure>
+              <figure>
+                <img src="/arc/asset/img/papink.jpg" alt="Virgi and Whale" loading="lazy" />
+                <figcaption>"Papink" nama yang sungguh cute, yah?! 🐳</figcaption>
+              </figure>
+              <figure>
+                <img src="/arc/asset/img/keychain.jpg" alt="Panda Keychain" loading="lazy" />
+                <figcaption>Keychain panda mengapung lucu, buat kamu! 🐼</figcaption>
+              </figure>
+              <figure>
+                <img src="/arc/asset/img/easy-peasy.jpg" alt="Easy Peasy" loading="lazy" />
+                <figcaption>Salad Bar Date, di Easy Peasy! 🥗</figcaption>
+              </figure>
+              <figure>
+                <img src="/arc/asset/img/landmark.jpg" alt="Ice Coolcool" loading="lazy" />
+                <figcaption>AlKid + ngemper + Es Kulkul = Happy! 😋</figcaption>
+              </figure>
+              <figure>
+                <img src="/arc/asset/img/landmark-2.jpg" alt="Virgi and Arumanis" loading="lazy" />
+                <figcaption>Virgi + Bebek Arumanis = SUPER HAPPY! 🥰</figcaption>
+              </figure>
+              <figure>
+                <img src="/arc/asset/img/botton.jpg" alt="Virgi at Magelang" loading="lazy" />
+                <figcaption>Sebelum tali HP putus, terlalu excited, sih! 💖</figcaption>
+              </figure>
+              <figure>
+                <img src="/arc/asset/img/with-mother.jpg" alt="Virgi and My Mother" loading="lazy" />
+                <figcaption>Bukber yang sulit ditiru orang-orang, nih! 🤩</figcaption>
+              </figure>
+              <figure>
+                <img src="/arc/asset/img/kurnia-seafood.jpg" alt="Kurnia Seafood" loading="lazy" />
+                <figcaption>Resto seafood terniat yang pernah kita kunjungi! 🦀</figcaption>
+              </figure>
+              <figure>
+                <img src="/arc/asset/img/plaza-ambarukmo.jpg" alt="Shopping at KKV" loading="lazy" />
+                <figcaption>Belanja di KKV tasnya segede gaban, oi! 🛍️</figcaption>
+              </figure>
+              <figure>
+                <img src="/arc/asset/img/super-anggunly.jpg" alt="Us in The Mirror" loading="lazy" />
+                <figcaption>Nah ini outfit lebarannya, GEMES POL! 🤍</figcaption>
+              </figure>
+            </div>
           </div>
           <div id="close">
             <hr />
