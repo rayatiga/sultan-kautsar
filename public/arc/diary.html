@@ -16,6 +16,7 @@
         box-sizing: border-box;
       }
       html {
+        scroll-behavior: smooth;
         scroll-padding-top: 64px;
       }
       body {
@@ -190,6 +191,7 @@
         display: block;
         max-width: 720px;
         object-fit: cover;
+        border-radius: 2px;
         aspect-ratio: 1 / 1.25;
         filter: saturate(0.65) brightness(0.85) sepia(0.35);
       }
@@ -213,6 +215,7 @@
         display: flex;
         max-width: 360px;
         flex-flow: column;
+        border-radius: 4px;
         border: 1px #dddddd solid;
       }
       .gallery figcaption {
@@ -278,7 +281,8 @@
           <h1>The Diary</h1>
           <p class="dim">Seseorang yang termaksud di dalam,</p>
           <p>Halaman ini memuat segala hal tentang dia.</p>
-          <p class="dim">Release 5.5 &mdash; June 18, 2024.<span style="display: block" class="dim">First Release at March 17, 2024</span></p>
+          <p class="dim">Release 5.6 &mdash; June 18, 2024.<span style="display: block" class="dim">First Release at March 17, 2024.</span></p>
+          <p class="dim">Hingga hari ini, kita kenal dan bersama selama <span id="spend-time">...</span> hari.</p>
           <p>Penulis,</p>
           <img src="/arc/asset/img/signature.png" alt="Sultan Signature" class="signature" />
           <p>Sultan Kautsar<span style="display: block" class="dim">Emotional Intelligence Warrior</span></p>
@@ -412,6 +416,32 @@
           <div id="gallery">
             <h2>Foto Terbaik</h2>
             <p class="dim">Merupakan koleksi <u>foto terbaik sepanjang masa</u> selama kita bersama.</p>
+            <div class="gallery">
+              <figure>
+                <img src="/arc/asset/img/joffi-ramen.jpg" alt="We're on Joffi Ramen" loading="lazy" />
+                <figcaption>Lucu banget dibantuin nugas, dia yang traktir!</figcaption>
+              </figure>
+              <figure>
+                <img src="/arc/asset/img/culinary-umy.jpg" alt="Virgi Jajan di UMY" loading="lazy" />
+                <figcaption>Jajan, jajan, atau jajan. Pokoknya jajan!</figcaption>
+              </figure>
+              <figure>
+                <img src="/arc/asset/img/hartadinata-semarnusantara.jpg" alt="Most Valuable Gift for Virgi" loading="lazy" />
+                <figcaption>Ini jadi the most valuable gift I ever give!</figcaption>
+              </figure>
+              <figure>
+                <img src="/arc/asset/img/watulawang-beach.jpg" alt="We're on Watulawang Beach" loading="lazy" />
+                <figcaption>Pakai jasa fotografi di Pantai Watulawang!</figcaption>
+              </figure>
+              <figure>
+                <img src="/arc/asset/img/cemarasewu-beach.jpg" alt="Virgi on Cemara Sewu" loading="lazy" />
+                <figcaption>Langganan pantai ke Cemara Sewu!</figcaption>
+              </figure>
+              <figure>
+                <img src="/arc/asset/img/mesra-beach.jpg" alt="We're on Mesra Beach" loading="lazy" />
+                <figcaption>Pake jasa fotografi di Pantai Mesra!</figcaption>
+              </figure>
+            </div>
             <div class="gallery">
               <figure>
                 <img src="/arc/asset/img/ichiban-sushi.jpg" alt="Virgi on Ichiban Sushi" loading="lazy" />
@@ -608,6 +638,18 @@
         character.style.display = "flex";
         result.style.display = "none";
       }
+      function updateTime() {
+        let startTime = new Date(2019, 4, 14);
+        let currentTime = new Date();
+        let elapsedTime = currentTime - startTime;
+        elapsedTime /= 1000;
+        let days = Math.floor(elapsedTime / 86400);
+        elapsedTime -= days * 86400;
+        let formattedTime = days;
+        document.querySelector("#spend-time").innerText = formattedTime;
+      }
+      updateTime();
+      setInterval(updateTime, 1000);
     </script>
   </body>
 </html>
