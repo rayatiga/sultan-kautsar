@@ -26,8 +26,8 @@
         align-items: center;
         flex-direction: column;
         letter-spacing: 0.275px;
-        font-family: "Inter", serif;
         background-color: #1b1b1b;
+        font-family: "Inter", serif;
         background-attachment: fixed;
       }
       .container {
@@ -59,7 +59,7 @@
         line-height: 1.5;
       }
       u {
-        text-underline-offset: 4px;
+        text-underline-offset: 6px;
         text-decoration-style: wavy;
         text-decoration-color: #aa5555;
       }
@@ -158,8 +158,10 @@
         border: 1px solid #dddddd;
       }
       mark {
-        padding: 2px 8px;
-        border-radius: 4px;
+        color: #fbfbfb;
+        border-radius: 2px;
+        padding: 1px 6px 3px 6px;
+        background-color: #2d3368;
       }
       #eCountdown,
       #pCountdown {
@@ -190,10 +192,11 @@
         width: 100%;
         display: block;
         max-width: 720px;
+        border-radius: 0;
         object-fit: cover;
-        border-radius: 2px;
         aspect-ratio: 1 / 1.25;
-        filter: saturate(0.65) brightness(0.85) sepia(0.35);
+        filter: saturate(0.65) brightness(0.75) sepia(0.35);
+        border-bottom: 1px solid #555555;
       }
       .gallery img.gif {
         width: 100%;
@@ -211,20 +214,20 @@
         filter: brightness(1) sepia(0);
       }
       .gallery figure {
-        padding: 4px;
         display: flex;
+        overflow: hidden;
         max-width: 360px;
         flex-flow: column;
         border-radius: 4px;
-        border: 1px #dddddd solid;
+        border: 1px #555555 solid;
       }
       .gallery figcaption {
+        padding: 8px;
+        color: #ffffff;
         font-size: 12px;
-        color: #dddddd;
         line-height: 1.5;
         font-style: italic;
         text-align: center;
-        padding: 8px 8px 4px 8px;
       }
       .gallery {
         display: grid;
@@ -281,7 +284,7 @@
           <h1>The Diary</h1>
           <p class="dim">Seseorang yang termaksud di dalam,</p>
           <p>Halaman ini memuat segala hal tentang dia.</p>
-          <p class="dim">Release 5.7 &mdash; June 19, 2024.<span style="display: block" class="dim">First Release at March 17, 2024.</span></p>
+          <p class="dim">Release 5.8 &mdash; June 19, 2024.<span style="display: block" class="dim">First Release at March 17, 2024.</span></p>
           <p class="dim">Kita kenal dan bersama selama <span id="spend-time">...</span> hari.</p>
           <p>Penulis,</p>
           <img src="/arc/asset/img/signature.png" alt="Sultan Signature" class="signature" />
@@ -416,7 +419,7 @@
           <hr />
           <div id="gallery">
             <h2>Foto Terbaik</h2>
-            <p class="dim">Merupakan koleksi <u>foto terbaik sepanjang masa</u> selama kita bersama.</p>
+            <p class="dim">Merupakan koleksi <mark>foto terbaik sepanjang masa</mark> selama kita bersama.</p>
             <div class="gallery">
               <figure>
                 <img src="/arc/asset/img/joffi-ramen.jpg" alt="We're on Joffi Ramen" loading="lazy" />
@@ -424,73 +427,71 @@
               </figure>
               <figure>
                 <img src="/arc/asset/img/culinary-umy.jpg" alt="Virgi Jajan di UMY" loading="lazy" />
-                <figcaption>Jajan, jajan, atau jajan. Pokoknya jajan!</figcaption>
+                <figcaption>Jajan, jajan, atau jajan. Pokoknya always jajan!</figcaption>
               </figure>
               <figure>
                 <img src="/arc/asset/img/hartadinata-semarnusantara.jpg" alt="Most Valuable Gift for Virgi" loading="lazy" />
-                <figcaption>Ini jadi the most valuable gift I ever give!</figcaption>
+                <figcaption>Ini jadi the most valuable gift I ever give to you!</figcaption>
               </figure>
               <figure>
                 <img src="/arc/asset/img/watulawang-beach.jpg" alt="We're on Watulawang Beach" loading="lazy" />
-                <figcaption>Pakai jasa fotografi di Pantai Watulawang!</figcaption>
+                <figcaption>Pakai jasa fotografi di Pantai Watulawang, lucu!</figcaption>
               </figure>
               <figure>
                 <img src="/arc/asset/img/cemarasewu-beach.jpg" alt="Virgi on Cemara Sewu" loading="lazy" />
-                <figcaption>Langganan pantai ke Cemara Sewu!</figcaption>
+                <figcaption>Langganan pantai kita adalah pantai Cemara Sewu!</figcaption>
               </figure>
               <figure>
                 <img src="/arc/asset/img/mesra-beach.jpg" alt="We're on Mesra Beach" loading="lazy" />
-                <figcaption>Pake jasa fotografi di Pantai Mesra!</figcaption>
+                <figcaption>First time pake jasa fotografi di Pantai Mesra!</figcaption>
               </figure>
-            </div>
-            <div class="gallery">
               <figure>
                 <img src="/arc/asset/img/ichiban-sushi.jpg" alt="Virgi on Ichiban Sushi" loading="lazy" />
                 <figcaption>Sebelum memulai puasa, mam salmon dulu!</figcaption>
               </figure>
               <figure>
                 <img src="/arc/asset/img/richeese.jpg" alt="Richeese Flying Chicken" loading="lazy" />
-                <figcaption>Akhirnya, Flying Chicken kita gas juga!</figcaption>
+                <figcaption>Akhirnya, Flying Chicken Richeese kita gas juga!</figcaption>
               </figure>
               <figure>
                 <img src="/arc/asset/img/papink.jpg" alt="Virgi and Whale" loading="lazy" />
-                <figcaption>"Papink" nama yang sungguh cute, yah?!</figcaption>
+                <figcaption>Ini "Papink", nama yang sungguh cute yah?!</figcaption>
               </figure>
               <figure>
                 <img src="/arc/asset/img/keychain.jpg" alt="Panda Keychain" loading="lazy" />
-                <figcaption>Keychain panda mengapung lucu, buat kamu!</figcaption>
+                <figcaption>Keychain panda mengapung lucu, nih buat kamu!</figcaption>
               </figure>
               <figure>
                 <img src="/arc/asset/img/easy-peasy.jpg" alt="Easy Peasy" loading="lazy" />
-                <figcaption>Salad Bar Date, di Easy Peasy!</figcaption>
+                <figcaption>First time kita cobain salad bar, di Easy Peasy!</figcaption>
               </figure>
               <figure>
                 <img src="/arc/asset/img/landmark.jpg" alt="Ice Coolcool" loading="lazy" />
-                <figcaption>AlKid + ngemper + Es Kulkul = Happy!</figcaption>
+                <figcaption>AlKid + ngemper + jajan yang banyak = Happy!</figcaption>
               </figure>
               <figure>
                 <img src="/arc/asset/img/landmark-2.jpg" alt="Virgi and Arumanis" loading="lazy" />
-                <figcaption>Virgi + Bebek Arumanis = SUPER HAPPY!</figcaption>
+                <figcaption>Dia + bebek arumanis gemes = SUPER HAPPY!</figcaption>
               </figure>
               <figure>
                 <img src="/arc/asset/img/botton.jpg" alt="Virgi at Magelang" loading="lazy" />
-                <figcaption>Sebelum tali HP putus, terlalu excited, sih!</figcaption>
+                <figcaption>Sebelum tali HP dia putus, terlalu excited sih!</figcaption>
               </figure>
               <figure>
                 <img src="/arc/asset/img/with-mother.jpg" alt="Virgi and My Mother" loading="lazy" />
-                <figcaption>Bukber yang sulit ditiru orang-orang, nih!</figcaption>
+                <figcaption>Bukber yang sulit ditiru orang-orang ini hei!</figcaption>
               </figure>
               <figure>
                 <img src="/arc/asset/img/kurnia-seafood.jpg" alt="Kurnia Seafood" loading="lazy" />
-                <figcaption>Resto seafood terniat yang pernah kita kunjungi!</figcaption>
+                <figcaption>Kurnia Seafood, resto terniat yang pernah kita kunjungi!</figcaption>
               </figure>
               <figure>
                 <img src="/arc/asset/img/plaza-ambarukmo.jpg" alt="Shopping at KKV" loading="lazy" />
-                <figcaption>Belanja di KKV tasnya segede gaban, oi!</figcaption>
+                <figcaption>Belanja di KKV tasnya segede gaban buset deh!</figcaption>
               </figure>
               <figure>
                 <img src="/arc/asset/img/super-anggunly.jpg" alt="Us in The Mirror" loading="lazy" />
-                <figcaption>Nah ini outfit lebarannya, GEMES POL!</figcaption>
+                <figcaption>Nah ini outfit lebarannya dia yang GEMES POL!</figcaption>
               </figure>
             </div>
           </div>
