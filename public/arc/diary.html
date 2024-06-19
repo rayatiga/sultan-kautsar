@@ -281,8 +281,8 @@
           <h1>The Diary</h1>
           <p class="dim">Seseorang yang termaksud di dalam,</p>
           <p>Halaman ini memuat segala hal tentang dia.</p>
-          <p class="dim">Release 5.6 &mdash; June 18, 2024.<span style="display: block" class="dim">First Release at March 17, 2024.</span></p>
-          <p class="dim">Hingga hari ini, kita kenal dan bersama selama <span id="spend-time">...</span> hari.</p>
+          <p class="dim">Release 5.7 &mdash; June 19, 2024.<span style="display: block" class="dim">First Release at March 17, 2024.</span></p>
+          <p class="dim">Kita kenal dan bersama selama <span id="spend-time">...</span> hari.</p>
           <p>Penulis,</p>
           <img src="/arc/asset/img/signature.png" alt="Sultan Signature" class="signature" />
           <p>Sultan Kautsar<span style="display: block" class="dim">Emotional Intelligence Warrior</span></p>
@@ -368,6 +368,7 @@
               <a href="./diary.html?kind=warna" style="background-color: #4947bdbb">Warna</a>
               <a href="./diary.html?kind=tubuh" style="background-color: #477abdbb">Tubuh</a>
               <a href="./diary.html?kind=kartun" style="background-color: #47bdbdbb">Kartun</a>
+              <a href="./diary.html?kind=pesan" style="background-color: #bd4747bb">Pesan</a>
               <a href="./diary.html?kind=playlist" style="background-color: #47bd6ebb">Playlist</a>
             </div>
           </div>
@@ -514,6 +515,7 @@
         path.innerText = window.location.host + window.location.pathname;
       }
       window.onload = headerPath();
+
       function footerYear() {
         var year = document.getElementById("year");
         var date = new Date();
@@ -522,12 +524,32 @@
       }
       window.onload = footerYear();
 
+      function updateTime() {
+        let startTime = new Date(2019, 4, 14);
+        let currentTime = new Date();
+        let elapsedTime = currentTime - startTime;
+        elapsedTime /= 1000;
+        let days = Math.floor(elapsedTime / 86400);
+        elapsedTime -= days * 86400;
+        let formattedTime = days;
+        document.querySelector("#spend-time").innerText = formattedTime;
+      }
+      updateTime();
+      setInterval(updateTime, 1000);
+
+      let navigationAnchor = document.querySelectorAll(".navigation-list a");
+      for (let i = 0; i < navigationAnchor.length; i++) {
+        const element = navigationAnchor[i];
+        if (window.location.hostname != "127.0.0.1") {
+          element.pathname = "/arc/diary";
+        }
+      }
+
       const queryString = window.location.search;
       const params = new URLSearchParams(queryString);
       const paramAbout = params.get("about");
       const paramKind = params.get("kind");
       const paramFeel = params.get("feel");
-
       const intro = document.getElementById("intro");
       const about = document.getElementById("about");
       const kind = document.getElementById("kind");
@@ -538,11 +560,8 @@
       const quote = document.getElementById("quote");
       const dimmed = document.getElementById("dimmed");
       const character = document.getElementById("character");
-
       const spotify = document.getElementById("spotify");
-
       const backBtn = document.getElementById("back");
-
       if (params.has("about") && params.get("about") != "back") {
         aboutImage.style.display = "none";
         about.style.display = "none";
@@ -571,13 +590,11 @@
         character.style.display = "flex";
         result.style.display = "none";
       }
-
       if (params.get("kind") == "playlist" || params.get("about") == "playlist") {
         spotify.style.display = "flex";
       } else {
         spotify.style.display = "none";
       }
-
       if (params.has("kind") && params.get("kind") != "back") {
         aboutImage.style.display = "block";
         about.style.display = "none";
@@ -608,7 +625,6 @@
         character.style.display = "flex";
         result.style.display = "none";
       }
-
       if (params.has("feel") && params.get("feel") != "back") {
         aboutImage.style.display = "none";
         about.style.display = "none";
@@ -638,18 +654,6 @@
         character.style.display = "flex";
         result.style.display = "none";
       }
-      function updateTime() {
-        let startTime = new Date(2019, 4, 14);
-        let currentTime = new Date();
-        let elapsedTime = currentTime - startTime;
-        elapsedTime /= 1000;
-        let days = Math.floor(elapsedTime / 86400);
-        elapsedTime -= days * 86400;
-        let formattedTime = days;
-        document.querySelector("#spend-time").innerText = formattedTime;
-      }
-      updateTime();
-      setInterval(updateTime, 1000);
     </script>
   </body>
 </html>
