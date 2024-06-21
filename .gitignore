@@ -67,6 +67,7 @@ node_modules/
 
 # Custom ignore
 public/arc
+public/asset/pdf
 public/_redirects
 public/documentation.txt
 public/robots.txt
