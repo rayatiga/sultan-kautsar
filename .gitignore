@@ -65,5 +65,10 @@ node_modules/
 # dotenv environment variables file
 .env
 
-# arc environtment
+# Custom ignore
 public/arc
+public/_redirects
+public/documentation.txt
+public/robots.txt
+public/sitemap.xml
+wrangler
