@@ -31,7 +31,7 @@ header {
 /* Default: Main */
 main {
   margin-top: 57px;
-  min-height: calc(100vh - (58px * 2));
+  min-height: calc(100svh - (58px * 2));
 }
 /* Default: Footer */
 footer {
@@ -40,7 +40,7 @@ footer {
 /* Default: Media: Main */
 @media (max-width: 492px) {
   main {
-    min-height: calc(100vh - (81px + 58px));
+    min-height: calc(100svh - (81px + 58px));
   }
 }
 /* Framework: Bootstrap: Header Active */
