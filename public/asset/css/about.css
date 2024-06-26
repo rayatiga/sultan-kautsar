@@ -1,8 +1,8 @@
 /* File: about.css */
 /* Default: Section One */
 #about > section:nth-child(1) {
-  min-height: 32vh;
   padding: 4rem 0;
+  min-height: 32vh;
   background-color: var(--blue);
 }
 /* Framework: Bootstrap: Dark Mode Section One */
