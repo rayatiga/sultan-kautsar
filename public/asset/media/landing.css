@@ -16,7 +16,7 @@ body {
     font-family: "Inter", sans-serif;
 }
 a {
-    color: #7777ff;
+    color: #3333ff;
     text-decoration: none;
 }
 h1,
@@ -100,7 +100,7 @@ section {
 }
 #hero::before,
 #action::before,
-#pricing::before {
+#focus::before {
     top: 0;
     left: 0;
     width: 100%;
@@ -136,34 +136,34 @@ section {
     margin-top: 12px;
     z-index: 1;
 }
-#feature,
-#pricing,
-#testimonial {
+#principle,
+#focus,
+#word {
     text-align: center;
     padding-top: 120px;
     padding-bottom: 120px;
 }
-#feature h2,
-#pricing h2,
-#testimonial h2 {
+#principle h2,
+#focus h2,
+#word h2 {
     margin-bottom: 8px;
 }
-#feature p,
-#pricing p,
-#testimonial p {
+#principle p,
+#focus p,
+#word p {
     max-width: 600px;
     margin: 0 auto;
 }
-#feature .grid {
+#principle .grid {
     gap: 12px;
     margin-top: 32px;
     text-align: start;
     grid-template-columns: repeat(3, 1fr);
 }
-#feature .card {
+#principle .card {
     color: #ffffff;
 }
-#feature .card::before {
+#principle .card::before {
     top: 0;
     left: 0;
     width: 100%;
@@ -172,26 +172,26 @@ section {
     position: absolute;
     background: #00000044;
 }
-#feature .card:nth-child(1) {
+#principle .card:nth-child(1) {
     background: #ee5555;
 }
-#feature .card:nth-child(2) {
+#principle .card:nth-child(2) {
     background: #ee55ff;
 }
-#feature .card:nth-child(3) {
+#principle .card:nth-child(3) {
     background: #7777ff;
 }
-#feature .card img {
+#principle .card img {
     max-width: 40px;
     margin-bottom: 16px;
     z-index: 1;
 }
 @media (max-width: 768px) {
-    #feature .grid {
+    #principle .grid {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-#pricing {
+#focus {
     color: #ffffff;
     position: relative;
     background: #1f1f1f;
@@ -199,12 +199,12 @@ section {
     border-bottom: 1px solid #eeeeee;
     background: center 70% / cover no-repeat url(/asset/media/landing-focus.jpg);
 }
-#pricing > h2,
-#pricing > p {
+#focus > h2,
+#focus > p {
     position: inherit;
     z-index: 2;
 }
-#pricing .grid {
+#focus .grid {
     gap: 18px;
     row-gap: 12px;
     max-width: 1136px;
@@ -213,49 +213,49 @@ section {
     align-items: center;
 }
 @media (max-width: 768px) {
-    #pricing .grid {
+    #focus .grid {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-#pricing .card {
+#focus .card {
     color: #ffffff;
     text-align: start;
     background: #1f1f1f;
     max-height: max-content;
 }
-#pricing .card:nth-child(1) {
+#focus .card:nth-child(1) {
     border: 1px solid #7777ff;
     box-shadow: 0 0 12px #7777ff11;
 }
-#pricing .card:nth-child(2) {
+#focus .card:nth-child(2) {
     border: 1px solid #ee5555;
     box-shadow: 0 0 12px #ee555511;
 }
-#pricing .card:nth-child(3) {
+#focus .card:nth-child(3) {
     border: 1px solid #ee55ff;
     box-shadow: 0 0 12px #ee55ff11;
 }
-#pricing .best {
+#focus .best {
     gap: 4px;
     display: flex;
     font-size: 14px;
     align-items: center;
 }
-#pricing .card h4 {
+#focus .card h4 {
     font-size: 28px;
 }
-#pricing .card small {
+#focus .card small {
     font-size: 16px;
     font-weight: 500;
 }
-#pricing .card s {
+#focus .card s {
     color: #ff2222;
     font-weight: 500;
 }
-#pricing .card ul {
+#focus .card ul {
     list-style: none;
 }
-#testimonial .grid {
+#word .grid {
     gap: 12px;
     overflow: hidden;
     margin-top: 32px;
@@ -264,15 +264,15 @@ section {
     grid-template-columns: repeat(3, 1fr);
 }
 @media (max-width: 768px) {
-    #testimonial .grid {
+    #word .grid {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-#testimonial .card .star {
+#word .card .star {
     z-index: 1;
 }
 @media (min-width: 769px) {
-    #testimonial .grid::before {
+    #word .grid::before {
         top: 0;
         left: 0;
         content: "";
@@ -282,7 +282,7 @@ section {
         background: linear-gradient(to right, #ffffff, #ffffff00);
         z-index: 2;
     }
-    #testimonial .grid::after {
+    #word .grid::after {
         top: 0;
         right: 0;
         content: "";
@@ -292,7 +292,7 @@ section {
         background: linear-gradient(to left, #ffffff, #ffffff00);
         z-index: 2;
     }
-    #testimonial .card {
+    #word .card {
         width: 500px;
     }
 }
@@ -310,8 +310,4 @@ section {
 footer {
     padding: 24px 32px;
     text-align: center;
-}
-footer p {
-    color: #aaaaaa;
-    font-size: 14px;
 }
