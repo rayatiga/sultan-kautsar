@@ -79,8 +79,18 @@ img {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-clamp: 3;
-    -webkit-line-clamp: 3;
+    line-clamp: 4;
+    -webkit-line-clamp: 4;
+}
+@media (max-width: 768px) {
+    .truncate {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-clamp: unset;
+        -webkit-line-clamp: unset;
+    }
 }
 section {
     padding: 32px;
