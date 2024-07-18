@@ -56,9 +56,9 @@ img {
 .button {
     color: #000000;
     font-size: 14px;
-    transition: 0.25s;
     font-weight: 500;
-    padding: 14px 32px;
+    transition: 0.25s;
+    padding: 12px 24px;
     background: #ffffff;
     border-radius: 12px;
     letter-spacing: 0.2px;
@@ -101,7 +101,7 @@ section {
     background: #00000077;
 }
 #hero h1 {
-    font-size: 64px;
+    font-size: 52px;
     font-weight: 800;
     z-index: 1;
 }
@@ -130,12 +130,12 @@ section {
 #principle h2 {
     margin-bottom: 8px;
 }
-#principle p {
-    max-width: 600px;
+#principle > p {
     margin: 0 auto;
+    max-width: 600px;
 }
 #principle .grid {
-    gap: 12px;
+    gap: 20px;
     margin-top: 32px;
     text-align: start;
     grid-template-columns: repeat(3, 1fr);
@@ -175,16 +175,12 @@ section {
 #focus h2 {
     margin-bottom: 8px;
 }
-#focus > h2,
 #focus > p {
-    position: inherit;
-}
-#focus p {
-    max-width: 600px;
     margin: 0 auto;
+    max-width: 600px;
 }
 #focus .grid {
-    gap: 18px;
+    gap: 20px;
     row-gap: 12px;
     max-width: 1136px;
     margin: 32px auto 0 auto;
@@ -212,12 +208,6 @@ section {
     border: 1px solid #ee55ff;
     box-shadow: 0 0 12px #ee55ff11;
 }
-#focus .best {
-    gap: 4px;
-    display: flex;
-    font-size: 14px;
-    align-items: center;
-}
 #focus .card h4 {
     font-size: 28px;
 }
@@ -240,13 +230,9 @@ section {
 #word h2 {
     margin-bottom: 8px;
 }
-#word > h2,
 #word > p {
-    position: inherit;
-}
-#word p {
-    max-width: 600px;
     margin: 0 auto;
+    max-width: 600px;
 }
 #word p.truncate {
     line-clamp: 5;
@@ -267,7 +253,7 @@ section {
     }
 }
 #word .grid {
-    gap: 12px;
+    gap: 20px;
     overflow: hidden;
     margin-top: 32px;
     position: relative;
@@ -324,6 +310,11 @@ section {
     box-shadow: 0 0 24px #000000aa;
 }
 footer {
+    color: #ffffff;
     padding: 24px 32px;
     text-align: center;
+    background: #000000;
+}
+footer a {
+    color: #ffffff;
 }
