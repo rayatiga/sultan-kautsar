@@ -65,7 +65,7 @@ img {
     text-decoration: none;
     border: 2px solid #ffffff;
     text-transform: uppercase;
-    box-shadow: 0 0 16px #ffffff77;
+    box-shadow: 0 0 16px #ffffff55;
 }
 .button:hover {
     filter: brightness(1.125);
@@ -98,7 +98,7 @@ section {
     content: "";
     height: 100%;
     position: absolute;
-    background: #00000077;
+    background: #00000099;
 }
 #hero h1 {
     font-size: 52px;
@@ -142,6 +142,7 @@ section {
 }
 #principle .card {
     background: #ffffff;
+    transition: box-shadow 0.25s;
 }
 #principle .card:nth-child(1) {
     border: 1px solid #7777ff;
@@ -154,6 +155,20 @@ section {
 #principle .card:nth-child(3) {
     border: 1px solid #ee55ff;
     box-shadow: 0 0 12px #ee55ff11;
+}
+@media (min-width: 768px) {
+    #principle .card:nth-child(1):hover {
+        border: 1px solid #7777ff;
+        box-shadow: 0 0 24px #7777ff44;
+    }
+    #principle .card:nth-child(2):hover {
+        border: 1px solid #ee5555;
+        box-shadow: 0 0 24px #ee555544;
+    }
+    #principle .card:nth-child(3):hover {
+        border: 1px solid #ee55ff;
+        box-shadow: 0 0 24px #ee55ff44;
+    }
 }
 #principle .card img {
     max-width: 40px;
@@ -181,7 +196,6 @@ section {
 }
 #focus .grid {
     gap: 20px;
-    row-gap: 12px;
     max-width: 1136px;
     margin: 32px auto 0 auto;
     grid-template-columns: repeat(3, 1fr);
@@ -195,6 +209,7 @@ section {
 #focus .card {
     text-align: start;
     background: #ffffff;
+    transition: box-shadow 0.25s;
 }
 #focus .card:nth-child(1) {
     border: 1px solid #7777ff;
@@ -207,6 +222,20 @@ section {
 #focus .card:nth-child(3) {
     border: 1px solid #ee55ff;
     box-shadow: 0 0 12px #ee55ff11;
+}
+@media (min-width: 768px) {
+    #focus .card:nth-child(1):hover {
+        border: 1px solid #7777ff;
+        box-shadow: 0 0 24px #7777ff44;
+    }
+    #focus .card:nth-child(2):hover {
+        border: 1px solid #ee5555;
+        box-shadow: 0 0 24px #ee555544;
+    }
+    #focus .card:nth-child(3):hover {
+        border: 1px solid #ee55ff;
+        box-shadow: 0 0 24px #ee55ff44;
+    }
 }
 #focus .card h4 {
     font-size: 28px;
@@ -254,7 +283,6 @@ section {
 }
 #word .grid {
     gap: 20px;
-    overflow: hidden;
     margin-top: 32px;
     position: relative;
     justify-content: center;
@@ -268,6 +296,7 @@ section {
 #word .card {
     text-align: start;
     background: #ffffff;
+    transition: box-shadow 0.25s;
 }
 #word .card:nth-child(1) {
     border: 1px solid #7777ff;
@@ -280,6 +309,20 @@ section {
 #word .card:nth-child(3) {
     border: 1px solid #ee55ff;
     box-shadow: 0 0 12px #ee55ff11;
+}
+@media (min-width: 768px) {
+    #word .card:nth-child(1):hover {
+        border: 1px solid #7777ff;
+        box-shadow: 0 0 24px #7777ff44;
+    }
+    #word .card:nth-child(2):hover {
+        border: 1px solid #ee5555;
+        box-shadow: 0 0 24px #ee555544;
+    }
+    #word .card:nth-child(3):hover {
+        border: 1px solid #ee55ff;
+        box-shadow: 0 0 24px #ee55ff44;
+    }
 }
 #action {
     gap: 16px;
@@ -301,10 +344,10 @@ section {
 }
 #action .button {
     color: #ffffff;
-    background: #000000;
-    box-shadow: 0 0 16px #00000077;
-    border-color: #000000;
     margin-top: 12px;
+    background: #000000;
+    border-color: #000000;
+    box-shadow: 0 0 16px #00000077;
 }
 #action .button:hover {
     box-shadow: 0 0 24px #000000aa;
