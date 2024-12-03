@@ -16,12 +16,11 @@ body {
     font-family: "Inter", sans-serif;
 }
 a {
-    color: #3333ff;
-    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: underline;
 }
-h1,
-#action h2 {
-    text-wrap: balance;
+h1 {
     line-height: 1.25em;
 }
 img {
@@ -50,53 +49,37 @@ img {
 .card h3 {
     font-size: 18px;
     font-weight: 600;
-    z-index: 1;
 }
 .card p {
     width: 100%;
-    z-index: 1;
 }
 .button {
-    color: #ffffff;
+    color: #000000;
     font-size: 14px;
     transition: 0.25s;
     font-weight: 500;
     padding: 14px 32px;
+    background: #ffffff;
     border-radius: 12px;
     letter-spacing: 0.2px;
     text-decoration: none;
-    border: 2px solid #eeeeee;
+    border: 2px solid #ffffff;
     text-transform: uppercase;
     box-shadow: 0 0 16px #ffffff77;
-    background: linear-gradient(45deg, #eeeeee, #ee5555, #ee55ff, #eeeeee) #7777ff;
 }
 .button:hover {
     filter: brightness(1.125);
     box-shadow: 0 0 24px #ffffffaa;
 }
-.truncate {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-clamp: 4;
-    -webkit-line-clamp: 4;
-}
-@media (max-width: 768px) {
-    .truncate {
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        line-clamp: unset;
-        -webkit-line-clamp: unset;
-    }
+.button-group {
+    gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
 }
 section {
     padding: 32px;
 }
-#hero,
-#action {
+#hero {
     gap: 16px;
     display: flex;
     color: #ffffff;
@@ -108,9 +91,7 @@ section {
     justify-content: center;
     background: center 35% / cover no-repeat url(/asset/media/landing-hero.jpg) #ffffff;
 }
-#hero::before,
-#action::before,
-#focus::before {
+#hero::before {
     top: 0;
     left: 0;
     width: 100%;
@@ -124,44 +105,32 @@ section {
     font-weight: 800;
     z-index: 1;
 }
-#hero mark {
-    opacity: 1;
-    padding: 0;
-    color: #7777ff;
-    background-color: transparent;
-    background: -webkit-linear-gradient(45deg, #ffffff, #ee5555, #ee55ff, #ffffff) #ffffff;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    z-index: 1;
-}
-#hero mark.fade-out {
-    opacity: 0;
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 48px;
+    }
 }
 #hero p {
     font-size: 20px;
-    text-wrap: balance;
     z-index: 1;
 }
-#hero .button,
-#action .button {
+#hero p a {
+    color: #ffffff;
+}
+#hero .button-group {
     margin-top: 12px;
+    justify-content: center;
     z-index: 1;
 }
-#principle,
-#focus,
-#word {
+#principle {
     text-align: center;
     padding-top: 120px;
     padding-bottom: 120px;
 }
-#principle h2,
-#focus h2,
-#word h2 {
+#principle h2 {
     margin-bottom: 8px;
 }
-#principle p,
-#focus p,
-#word p {
+#principle p {
     max-width: 600px;
     margin: 0 auto;
 }
@@ -172,30 +141,22 @@ section {
     grid-template-columns: repeat(3, 1fr);
 }
 #principle .card {
-    color: #ffffff;
-}
-#principle .card::before {
-    top: 0;
-    left: 0;
-    width: 100%;
-    content: "";
-    height: 100%;
-    position: absolute;
-    background: #00000044;
+    background: #ffffff;
 }
 #principle .card:nth-child(1) {
-    background: #ee5555;
+    border: 1px solid #7777ff;
+    box-shadow: 0 0 12px #7777ff11;
 }
 #principle .card:nth-child(2) {
-    background: #ee55ff;
+    border: 1px solid #ee5555;
+    box-shadow: 0 0 12px #ee555511;
 }
 #principle .card:nth-child(3) {
-    background: #7777ff;
+    border: 1px solid #ee55ff;
+    box-shadow: 0 0 12px #ee55ff11;
 }
 #principle .card img {
     max-width: 40px;
-    margin-bottom: 16px;
-    z-index: 1;
 }
 @media (max-width: 768px) {
     #principle .grid {
@@ -203,17 +164,24 @@ section {
     }
 }
 #focus {
-    color: #ffffff;
     position: relative;
-    background: #1f1f1f;
+    text-align: center;
+    padding-top: 120px;
+    background: #fefefe;
+    padding-bottom: 120px;
     border-top: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
-    background: center 70% / cover no-repeat url(/asset/media/landing-focus.jpg);
+}
+#focus h2 {
+    margin-bottom: 8px;
 }
 #focus > h2,
 #focus > p {
     position: inherit;
-    z-index: 2;
+}
+#focus p {
+    max-width: 600px;
+    margin: 0 auto;
 }
 #focus .grid {
     gap: 18px;
@@ -224,17 +192,13 @@ section {
     align-items: center;
 }
 @media (max-width: 768px) {
-    #hero h1 {
-        font-size: 36px;
-    }
     #focus .grid {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 #focus .card {
-    color: #ffffff;
     text-align: start;
-    background: #1f1f1f;
+    background: #ffffff;
     max-height: max-content;
 }
 #focus .card:nth-child(1) {
@@ -269,6 +233,40 @@ section {
 #focus .card ul {
     list-style: none;
 }
+#word {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+#word h2 {
+    margin-bottom: 8px;
+}
+#word > h2,
+#word > p {
+    position: inherit;
+}
+#word p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+#word p.truncate {
+    line-clamp: 5;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+@media (max-width: 768px) {
+    #word p.truncate {
+        overflow: hidden;
+        line-clamp: unset;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: unset;
+        -webkit-box-orient: vertical;
+    }
+}
 #word .grid {
     gap: 12px;
     overflow: hidden;
@@ -282,44 +280,50 @@ section {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-#word .card .star {
-    z-index: 1;
+#word .card {
+    text-align: start;
+    background: #ffffff;
+    max-height: max-content;
 }
-@media (min-width: 769px) {
-    #word .grid::before {
-        top: 0;
-        left: 0;
-        content: "";
-        width: 200px;
-        height: 100%;
-        position: absolute;
-        background: linear-gradient(to right, #ffffff, #ffffff00);
-        z-index: 2;
-    }
-    #word .grid::after {
-        top: 0;
-        right: 0;
-        content: "";
-        width: 200px;
-        height: 100%;
-        position: absolute;
-        background: linear-gradient(to left, #ffffff, #ffffff00);
-        z-index: 2;
-    }
-    #word .card {
-        width: 500px;
-    }
+#word .card:nth-child(1) {
+    border: 1px solid #7777ff;
+    box-shadow: 0 0 12px #7777ff11;
+}
+#word .card:nth-child(2) {
+    border: 1px solid #ee5555;
+    box-shadow: 0 0 12px #ee555511;
+}
+#word .card:nth-child(3) {
+    border: 1px solid #ee55ff;
+    box-shadow: 0 0 12px #ee55ff11;
 }
 #action {
+    gap: 16px;
+    display: flex;
     min-height: 320px;
-    background: center / cover no-repeat url(/asset/media/landing-action.jpg) #ffffff;
-}
-#action::before {
-    background: #000000aa;
+    position: relative;
+    text-align: center;
+    background: #fefefe;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
 }
 #action h2 {
     font-size: 32px;
-    z-index: 1;
+    text-wrap: balance;
+    line-height: 1.25em;
+}
+#action .button {
+    color: #ffffff;
+    background: #000000;
+    box-shadow: 0 0 16px #00000077;
+    border-color: #000000;
+    margin-top: 12px;
+}
+#action .button:hover {
+    box-shadow: 0 0 24px #000000aa;
 }
 footer {
     padding: 24px 32px;
