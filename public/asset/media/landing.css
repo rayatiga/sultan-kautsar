@@ -199,7 +199,6 @@ section {
 #focus .card {
     text-align: start;
     background: #ffffff;
-    max-height: max-content;
 }
 #focus .card:nth-child(1) {
     border: 1px solid #7777ff;
@@ -283,7 +282,6 @@ section {
 #word .card {
     text-align: start;
     background: #ffffff;
-    max-height: max-content;
 }
 #word .card:nth-child(1) {
     border: 1px solid #7777ff;
